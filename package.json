@@ -1,12 +1,12 @@
 {
   "name": "vscode-docs",
   "version": "0.10.3",
-  "author": {
-    "name": "Microsoft Corporation"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/Microsoft/vscode-docs.git"
+  },
+  "author": {
+    "name": "Microsoft Corporation"
   },
   "devDependencies": {
     "gulp": "^3.9.1",
