@@ -9,7 +9,7 @@
     "name": "Microsoft Corporation"
   },
   "devDependencies": {
-    "gulp": "^3.9.1",
-    "shelljs": "^0.7.8"
+    "gulp": "3.9.1",
+    "shelljs": "0.7.8"
   }
 }
