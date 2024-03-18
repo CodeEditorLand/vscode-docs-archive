@@ -9,7 +9,7 @@
     "url": "https://github.com/Microsoft/vscode-docs.git"
   },
   "devDependencies": {
-    "gulp": "3.9.1",
-    "shelljs": "0.7.8"
+    "gulp": "4.0.2",
+    "shelljs": "0.8.5"
   }
 }
