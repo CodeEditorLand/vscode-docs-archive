@@ -23,7 +23,7 @@
 	"devDependencies": {
 		"gulp": "4.0.2",
 		"shelljs": "0.8.5",
-		"typescript-esbuild": "latest"
+		"typescript-esbuild": "0.4.5"
 	},
 	"publishConfig": {
 		"access": "public"
