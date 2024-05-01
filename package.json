@@ -27,7 +27,7 @@
 	"devDependencies": {
 		"@playform/build": "0.0.7",
 		"@playform/document": "0.0.6",
-		"shelljs": "^0.7.8"
+		"shelljs": "0.8.5"
 	},
 	"publishConfig": {
 		"access": "public"
