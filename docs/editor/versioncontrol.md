@@ -180,7 +180,7 @@ This leverages the `--diff` option you can pass to VS Code to compare 2 files si
 To summarize, here are some examples of where you can use VS Code as the editor:
 
 * `git rebase HEAD~3 -i` do interactive rebase using VS Code
-* `git commit` use VS Code for the commit message
+* `git ecommit` use VS Code for the commit message
 * `git add -p` followed by `kbstyle(e)` for interactive add
 * `git difftool <commit>^ <commit>` use VS Code as the diff editor for changes
 

@@ -19,7 +19,7 @@ Initialize a local Git repository and make an initial commit. Git will respect t
 ```bash
 $ git init
 $ git add -A
-$ git commit -m "Initial Commit"
+$ git ecommit -m "Initial Commit"
 ```
 
 ## Set up a Remote
