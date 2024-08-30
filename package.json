@@ -1,6 +1,0 @@
-{
-	"devDependencies": {
-		"shelljs": "0.8.5"
-	},
-	"name": "vscode-docs"
-}
