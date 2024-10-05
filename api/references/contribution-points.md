@@ -4,41 +4,54 @@ ContentId: 2F27A240-8E36-4CC2-973C-9A1D8069F83F
 DateApproved: 3/7/2019
 
 # Summarize the whole topic in less than 300 characters for SEO purpose
-MetaDescription: To extend Visual Studio Code, your extension (plug-in) declares which of the various Contribution Points it is using in its package.json Extension Manifest file.
+MetaDescription:
+    To extend Visual Studio Code, your extension (plug-in) declares which of the
+    various Contribution Points it is using in its package.json Extension
+    Manifest file.
 ---
 
 # Contribution Points
 
-**Contribution Points** are a set of JSON declarations that you make in the `contributes` field of the `package.json` [Extension Manifest](/api/references/extension-manifest). Your extension registers **Contribution Points** to extend various functionalities within Visual Studio Code. Here is a list of all available **Contribution Points**:
+**Contribution Points** are a set of JSON declarations that you make in the
+`contributes` field of the `package.json`
+[Extension Manifest](/api/references/extension-manifest). Your extension
+registers **Contribution Points** to extend various functionalities within
+Visual Studio Code. Here is a list of all available **Contribution Points**:
 
-- [`configuration`](/api/references/contribution-points#contributes.configuration)
-- [`commands`](/api/references/contribution-points#contributes.commands)
-- [`menus`](/api/references/contribution-points#contributes.menus)
-- [`keybindings`](/api/references/contribution-points#contributes.keybindings)
-- [`languages`](/api/references/contribution-points#contributes.languages)
-- [`debuggers`](/api/references/contribution-points#contributes.debuggers)
-- [`breakpoints`](/api/references/contribution-points#contributes.breakpoints)
-- [`grammars`](/api/references/contribution-points#contributes.grammars)
-- [`themes`](/api/references/contribution-points#contributes.themes)
-- [`snippets`](/api/references/contribution-points#contributes.snippets)
-- [`jsonValidation`](/api/references/contribution-points#contributes.jsonValidation)
-- [`views`](/api/references/contribution-points#contributes.views)
-- [`viewsContainers`](/api/references/contribution-points#contributes.viewsContainers)
-- [`problemMatchers`](/api/references/contribution-points#contributes.problemMatchers)
-- [`problemPatterns`](/api/references/contribution-points#contributes.problemPatterns)
-- [`taskDefinitions`](/api/references/contribution-points#contributes.taskDefinitions)
-- [`colors`](/api/references/contribution-points#contributes.colors)
-- [`typescriptServerPlugins`](/api/references/contribution-points#contributes.typescriptServerPlugins)
+-   [`configuration`](/api/references/contribution-points#contributes.configuration)
+-   [`commands`](/api/references/contribution-points#contributes.commands)
+-   [`menus`](/api/references/contribution-points#contributes.menus)
+-   [`keybindings`](/api/references/contribution-points#contributes.keybindings)
+-   [`languages`](/api/references/contribution-points#contributes.languages)
+-   [`debuggers`](/api/references/contribution-points#contributes.debuggers)
+-   [`breakpoints`](/api/references/contribution-points#contributes.breakpoints)
+-   [`grammars`](/api/references/contribution-points#contributes.grammars)
+-   [`themes`](/api/references/contribution-points#contributes.themes)
+-   [`snippets`](/api/references/contribution-points#contributes.snippets)
+-   [`jsonValidation`](/api/references/contribution-points#contributes.jsonValidation)
+-   [`views`](/api/references/contribution-points#contributes.views)
+-   [`viewsContainers`](/api/references/contribution-points#contributes.viewsContainers)
+-   [`problemMatchers`](/api/references/contribution-points#contributes.problemMatchers)
+-   [`problemPatterns`](/api/references/contribution-points#contributes.problemPatterns)
+-   [`taskDefinitions`](/api/references/contribution-points#contributes.taskDefinitions)
+-   [`colors`](/api/references/contribution-points#contributes.colors)
+-   [`typescriptServerPlugins`](/api/references/contribution-points#contributes.typescriptServerPlugins)
 
 ## contributes.configuration
 
-Contribute configuration keys that will be exposed to the user. The user will be able to set these configuration options either from User Settings or from the Workspace Settings.
+Contribute configuration keys that will be exposed to the user. The user will be
+able to set these configuration options either from User Settings or from the
+Workspace Settings.
 
-When contributing configuration keys, a JSON schema describing these keys is actually contributed. This ensures the user gets great tooling support when authoring VS Code settings files.
+When contributing configuration keys, a JSON schema describing these keys is
+actually contributed. This ensures the user gets great tooling support when
+authoring VS Code settings files.
 
-You can read these values from your extension using `vscode.workspace.getConfiguration('myExtension')`.
+You can read these values from your extension using
+`vscode.workspace.getConfiguration('myExtension')`.
 
-> **Note:** If you use `markdownDescription` instead of `description`, your setting description will be rendered as Markdown in the settings UI.
+> **Note:** If you use `markdownDescription` instead of `description`, your
+> setting description will be rendered as Markdown in the settings UI.
 
 ### Example
 
@@ -67,9 +80,11 @@ You can read these values from your extension using `vscode.workspace.getConfigu
 
 ## contributes.configurationDefaults
 
-Contribute default language specific editor configurations. This will override default editor configurations for the provided language.
+Contribute default language specific editor configurations. This will override
+default editor configurations for the provided language.
 
-The following example contributes default editor configurations for the `markdown` language:
+The following example contributes default editor configurations for the
+`markdown` language:
 
 ### Example
 
@@ -86,9 +101,13 @@ The following example contributes default editor configurations for the `markdow
 
 ## contributes.commands
 
-Contribute an entry consisting of a title and a command to invoke to the **Command Palette** (`kb(workbench.action.showCommands)`). You can also optionally define a `category` string which will prefix the command title and allow easy grouping within the **Command Palette** drop-down.
+Contribute an entry consisting of a title and a command to invoke to the
+**Command Palette** (`kb(workbench.action.showCommands)`). You can also
+optionally define a `category` string which will prefix the command title and
+allow easy grouping within the **Command Palette** drop-down.
 
-> **Note:** When a command is invoked (from a key binding or from the **Command Palette**), VS Code will emit an activationEvent `onCommand:${command}`.
+> **Note:** When a command is invoked (from a key binding or from the **Command
+> Palette**), VS Code will emit an activationEvent `onCommand:${command}`.
 
 ### Example
 
@@ -106,32 +125,52 @@ Contribute an entry consisting of a title and a command to invoke to the **Comma
 
 ## contributes.menus
 
-Contribute a menu item for a command to the editor or Explorer. The menu item definition contains the command that should be invoked when selected and the condition under which the item should show. The latter is defined with the `when` clause which uses the key bindings [when clause contexts](/docs/getstarted/keybindings#_when-clause-contexts).
+Contribute a menu item for a command to the editor or Explorer. The menu item
+definition contains the command that should be invoked when selected and the
+condition under which the item should show. The latter is defined with the
+`when` clause which uses the key bindings
+[when clause contexts](/docs/getstarted/keybindings#_when-clause-contexts).
 
-In addition to the mandatory `command` property, an alternative command can be defined using the `alt`-property. It will be shown and invoked when pressing `kbstyle(Alt)` while opening a menu.
+In addition to the mandatory `command` property, an alternative command can be
+defined using the `alt`-property. It will be shown and invoked when pressing
+`kbstyle(Alt)` while opening a menu.
 
-Last, a `group`-property defines sorting and grouping of menu items. The `navigation` group is special as it will always be sorted to the top/beginning of a menu.
+Last, a `group`-property defines sorting and grouping of menu items. The
+`navigation` group is special as it will always be sorted to the top/beginning
+of a menu.
 
 Currently extension writers can contribute to:
 
-- The global Command Palette - `commandPalette`
-- The Explorer context menu - `explorer/context`
-- The editor context menu - `editor/context`
-- The editor title menu bar - `editor/title`
-- The editor title context menu - `editor/title/context`
-- The debug callstack view context menu - `debug/callstack/context`
-- The debug toolbar - `debug/toolbar`
-- The [SCM title menu](/api/extension-guides/scm-provider#menus) - `scm/title`
-- [SCM resource groups](/api/extension-guides/scm-provider#menus) menus - `scm/resourceGroup/context`
-- [SCM resources](/api/extension-guides/scm-provider#menus) menus - `scm/resource/context`
-- [SCM change title](/api/extension-guides/scm-provider#menus) menus - `scm/change/title`
-- The [View title menu](/api/references/contribution-points#contributes.views) - `view/title`
-- The [View item menu](/api/references/contribution-points#contributes.views) - `view/item/context`
-- The macOS Touch Bar - `touchBar`
+-   The global Command Palette - `commandPalette`
+-   The Explorer context menu - `explorer/context`
+-   The editor context menu - `editor/context`
+-   The editor title menu bar - `editor/title`
+-   The editor title context menu - `editor/title/context`
+-   The debug callstack view context menu - `debug/callstack/context`
+-   The debug toolbar - `debug/toolbar`
+-   The [SCM title menu](/api/extension-guides/scm-provider#menus) - `scm/title`
+-   [SCM resource groups](/api/extension-guides/scm-provider#menus) menus -
+    `scm/resourceGroup/context`
+-   [SCM resources](/api/extension-guides/scm-provider#menus) menus -
+    `scm/resource/context`
+-   [SCM change title](/api/extension-guides/scm-provider#menus) menus -
+    `scm/change/title`
+-   The
+    [View title menu](/api/references/contribution-points#contributes.views) -
+    `view/title`
+-   The
+    [View item menu](/api/references/contribution-points#contributes.views) -
+    `view/item/context`
+-   The macOS Touch Bar - `touchBar`
 
-> **Note:** When a command is invoked from a (context) menu, VS Code tries to infer the currently selected resource and passes that as a parameter when invoking the command. For instance, a menu item inside the Explorer is passed the URI of the selected resource and a menu item inside an editor is passed the URI of the document.
+> **Note:** When a command is invoked from a (context) menu, VS Code tries to
+> infer the currently selected resource and passes that as a parameter when
+> invoking the command. For instance, a menu item inside the Explorer is passed
+> the URI of the selected resource and a menu item inside an editor is passed
+> the URI of the document.
 
-In addition to a title, commands can also define icons which VS Code will show in the editor title menu bar.
+In addition to a title, commands can also define icons which VS Code will show
+in the editor title menu bar.
 
 ### Example
 
@@ -152,9 +191,14 @@ In addition to a title, commands can also define icons which VS Code will show i
 
 ### Context specific visibility of Command Palette menu items
 
-When registering commands in `package.json`, they will automatically be shown in the **Command Palette** (`kb(workbench.action.showCommands)`). To allow more control over command visibility, there is the `commandPalette` menu item. It allows you to define a `when` condition to control if a command should be visible in the **Command Palette** or not.
+When registering commands in `package.json`, they will automatically be shown in
+the **Command Palette** (`kb(workbench.action.showCommands)`). To allow more
+control over command visibility, there is the `commandPalette` menu item. It
+allows you to define a `when` condition to control if a command should be
+visible in the **Command Palette** or not.
 
-The snippet below makes the 'Hello World' command only visible in the **Command Palette** when something is selected in the editor:
+The snippet below makes the 'Hello World' command only visible in the **Command
+Palette** when something is selected in the editor:
 
 ```json
 "commands": [{
@@ -171,42 +215,50 @@ The snippet below makes the 'Hello World' command only visible in the **Command 
 
 ### Sorting of groups
 
-Menu items can be sorted into groups. They are sorted in lexicographical order with the following defaults/rules.
-You can add menu items to these groups or add new groups of menu items in between, below, or above.
+Menu items can be sorted into groups. They are sorted in lexicographical order
+with the following defaults/rules. You can add menu items to these groups or add
+new groups of menu items in between, below, or above.
 
 The **editor context menu** has these default groups:
 
-- `navigation` - The `navigation` group comes first in all cases.
-- `1_modification` - This group comes next and contains commands that modify your code.
-- `9_cutcopypaste` - The second last default group with the basic editing commands.
-- `z_commands` - The last default group with an entry to open the Command Palette.
+-   `navigation` - The `navigation` group comes first in all cases.
+-   `1_modification` - This group comes next and contains commands that modify
+    your code.
+-   `9_cutcopypaste` - The second last default group with the basic editing
+    commands.
+-   `z_commands` - The last default group with an entry to open the Command
+    Palette.
 
 ![Menu Group Sorting](images/contribution-points/groupSorting.png)
 
 The **explorer context menu** has these default groups:
 
-- `navigation` - Commands related to navigation across VS Code. This group comes first in all cases.
-- `2_workspace` - Commands related to workspace manipulation.
-- `3_compare` - Commands related to comparing files in the diff editor.
-- `4_search` - Commands related to searching in the search view.
-- `5_cutcopypaste` - Commands related to cutting, copying and pasting of files.
-- `6_copypath` - Commands related to copying file paths.
-- `7_modification` - Commands related to the modification of a files.
+-   `navigation` - Commands related to navigation across VS Code. This group
+    comes first in all cases.
+-   `2_workspace` - Commands related to workspace manipulation.
+-   `3_compare` - Commands related to comparing files in the diff editor.
+-   `4_search` - Commands related to searching in the search view.
+-   `5_cutcopypaste` - Commands related to cutting, copying and pasting of
+    files.
+-   `6_copypath` - Commands related to copying file paths.
+-   `7_modification` - Commands related to the modification of a files.
 
 The **editor tab context menu** has these default groups:
 
-- `1_close` - Commands related to closing editors.
-- `3_preview` - Commands related to pinning editors.
+-   `1_close` - Commands related to closing editors.
+-   `3_preview` - Commands related to pinning editors.
 
 The **editor title menu** has these default groups:
 
-- `1_diff` - Commands related to working with diff editors.
-- `3_open` - Commands related to opening editors.
-- `5_close` - Commands related to closing editors.
+-   `1_diff` - Commands related to working with diff editors.
+-   `3_open` - Commands related to opening editors.
+-   `5_close` - Commands related to closing editors.
 
 ### Sorting inside groups
 
-The order inside a group depends on the title or an order-attribute. The group-local order of a menu item is specified by appending `@<number>` to the group identifier as shown below:
+The order inside a group depends on the title or an order-attribute. The
+group-local order of a menu item is specified by appending `@<number>` to the
+group identifier as shown below:
 
 ```json
 "editor/title": [{
@@ -218,17 +270,27 @@ The order inside a group depends on the title or an order-attribute. The group-l
 
 ## contributes.keybindings
 
-Contribute a key binding rule defining what command should be invoked when the user presses a key combination. See the [Key Bindings](/docs/getstarted/keybindings) topic where key bindings are explained in detail.
+Contribute a key binding rule defining what command should be invoked when the
+user presses a key combination. See the
+[Key Bindings](/docs/getstarted/keybindings) topic where key bindings are
+explained in detail.
 
-Contributing a key binding will cause the Default Keyboard Shortcuts to display your rule, and every UI representation of the command will now show the key binding you have added. And, of course, when the user presses the key combination the command will be invoked.
+Contributing a key binding will cause the Default Keyboard Shortcuts to display
+your rule, and every UI representation of the command will now show the key
+binding you have added. And, of course, when the user presses the key
+combination the command will be invoked.
 
-> **Note:** Because VS Code runs on Windows, macOS and Linux, where modifiers differ, you can use "key" to set the default key combination and overwrite it with a specific platform.
+> **Note:** Because VS Code runs on Windows, macOS and Linux, where modifiers
+> differ, you can use "key" to set the default key combination and overwrite it
+> with a specific platform.
 
-> **Note:** When a command is invoked (from a key binding or from the Command Palette), VS Code will emit an activationEvent `onCommand:${command}`.
+> **Note:** When a command is invoked (from a key binding or from the Command
+> Palette), VS Code will emit an activationEvent `onCommand:${command}`.
 
 ### Example
 
-Defining that `kbstyle(Ctrl+F1)` under Windows and Linux and `kbstyle(Cmd+F1)` under macOS trigger the `"extension.sayHello"` command:
+Defining that `kbstyle(Ctrl+F1)` under Windows and Linux and `kbstyle(Cmd+F1)`
+under macOS trigger the `"extension.sayHello"` command:
 
 ```json
 "contributes": {
@@ -245,14 +307,23 @@ Defining that `kbstyle(Ctrl+F1)` under Windows and Linux and `kbstyle(Cmd+F1)` u
 
 ## contributes.languages
 
-Contribute definition of a language. This will introduce a new language or enrich the knowledge VS Code has about a language.
+Contribute definition of a language. This will introduce a new language or
+enrich the knowledge VS Code has about a language.
 
 The main effects of `contributes.languages` are:
 
-- Define a `languageId` that can be reused in other parts of VS Code API, such as `vscode.TextDocument.getLanguageId()` and the `onLanguage` Activation Events.
-  - You can contribute a human-readable using the `aliases` field. The first item in the list will be used as the human-readable label.
-- Associate file name extensions, file name patterns, files that begin with a specific line (such as hashbang), mimetypes to that `languageId`.
-- Contribute a set of [Declarative Language Features](/api/language-extensions/overview#declarative-language-features) for the contributed language. Learn more about the configurable editing features in the [Language Configuration Guide](/api/language-extensions/language-configuration-guide).
+-   Define a `languageId` that can be reused in other parts of VS Code API, such
+    as `vscode.TextDocument.getLanguageId()` and the `onLanguage` Activation
+    Events.
+    -   You can contribute a human-readable using the `aliases` field. The first
+        item in the list will be used as the human-readable label.
+-   Associate file name extensions, file name patterns, files that begin with a
+    specific line (such as hashbang), mimetypes to that `languageId`.
+-   Contribute a set of
+    [Declarative Language Features](/api/language-extensions/overview#declarative-language-features)
+    for the contributed language. Learn more about the configurable editing
+    features in the
+    [Language Configuration Guide](/api/language-extensions/language-configuration-guide).
 
 ### Example
 
@@ -272,23 +343,37 @@ The main effects of `contributes.languages` are:
 
 ## contributes.debuggers
 
-Contribute a debugger to VS Code. A debugger contribution has the following properties:
+Contribute a debugger to VS Code. A debugger contribution has the following
+properties:
 
-- `type` is a unique ID that is used to identify this debugger in a launch configuration.
-- `label` is the user visible name of this debugger in the UI.
-- `program` the path to the debug adapter that implements the VS Code debug protocol against the real debugger or runtime.
-- `runtime` if the path to the debug adapter is not an executable but needs a runtime.
-- `configurationAttributes` is the schema for launch configuration arguments specific to this debugger.
-- `initialConfigurations` lists launch configurations that are used to populate an initial launch.json.
-- `configurationSnippets` lists launch configurations that are available through IntelliSense when editing a launch.json.
-- `variables` introduces substitution variables and binds them to commands implemented by the debugger extension.
-- `languages` those languages for which the debug extension could be considered the "default debugger".
-- `adapterExecutableCommand` the command ID where the debug adapters executable path and arguments are dynamically calculated. The command returns a structure with this format:
-  ```json
-  command: "<executable>",
-  args: [ "<argument1>", "<argument2>", ... ]
-  ```
-  The attribute `command` must be a either an absolute path to an executable or a name of executable looked up via the PATH environment variable. The special value `node` will be mapped to VS Code's built-in node runtime without being looked up on the PATH.
+-   `type` is a unique ID that is used to identify this debugger in a launch
+    configuration.
+-   `label` is the user visible name of this debugger in the UI.
+-   `program` the path to the debug adapter that implements the VS Code debug
+    protocol against the real debugger or runtime.
+-   `runtime` if the path to the debug adapter is not an executable but needs a
+    runtime.
+-   `configurationAttributes` is the schema for launch configuration arguments
+    specific to this debugger.
+-   `initialConfigurations` lists launch configurations that are used to
+    populate an initial launch.json.
+-   `configurationSnippets` lists launch configurations that are available
+    through IntelliSense when editing a launch.json.
+-   `variables` introduces substitution variables and binds them to commands
+    implemented by the debugger extension.
+-   `languages` those languages for which the debug extension could be
+    considered the "default debugger".
+-   `adapterExecutableCommand` the command ID where the debug adapters
+    executable path and arguments are dynamically calculated. The command
+    returns a structure with this format:
+    ```json
+    command: "<executable>",
+    args: [ "<argument1>", "<argument2>", ... ]
+    ```
+    The attribute `command` must be a either an absolute path to an executable
+    or a name of executable looked up via the PATH environment variable. The
+    special value `node` will be mapped to VS Code's built-in node runtime
+    without being looked up on the PATH.
 
 ### Example
 
@@ -342,11 +427,14 @@ Contribute a debugger to VS Code. A debugger contribution has the following prop
 }
 ```
 
-For a full walkthrough on how to integrate a `debugger`, go to [Debugger Extension](/api/extension-guides/debugger-extension).
+For a full walkthrough on how to integrate a `debugger`, go to
+[Debugger Extension](/api/extension-guides/debugger-extension).
 
 ## contributes.breakpoints
 
-Usually a debugger extension will also have a `contributes.breakpoints` entry where the extension lists the language file types for which setting breakpoints will be enabled.
+Usually a debugger extension will also have a `contributes.breakpoints` entry
+where the extension lists the language file types for which setting breakpoints
+will be enabled.
 
 ```json
 "contributes": {
@@ -363,9 +451,12 @@ Usually a debugger extension will also have a `contributes.breakpoints` entry wh
 
 ## contributes.grammars
 
-Contribute a TextMate grammar to a language. You must provide the `language` this grammar applies to, the TextMate `scopeName` for the grammar and the file path.
+Contribute a TextMate grammar to a language. You must provide the `language`
+this grammar applies to, the TextMate `scopeName` for the grammar and the file
+path.
 
-> **Note:** The file containing the grammar can be in JSON (filenames ending in .json) or in XML plist format (all other files).
+> **Note:** The file containing the grammar can be in JSON (filenames ending in
+> .json) or in XML plist format (all other files).
 
 ### Example
 
@@ -383,13 +474,18 @@ Contribute a TextMate grammar to a language. You must provide the `language` thi
 }
 ```
 
-See the [Syntax Highlight Guide](/api/language-extensions/syntax-highlight-guide) to learn more about how to register TextMate grammars associated with a language to receive syntax highlighting.
+See the
+[Syntax Highlight Guide](/api/language-extensions/syntax-highlight-guide) to
+learn more about how to register TextMate grammars associated with a language to
+receive syntax highlighting.
 
 ![grammars extension point example](images/contribution-points/grammars.png)
 
 ## contributes.themes
 
-Contribute a TextMate theme to VS Code. You must specify a label, whether the theme is a dark theme or a light theme (such that the rest of VS Code changes to match your theme) and the path to the file (XML plist format).
+Contribute a TextMate theme to VS Code. You must specify a label, whether the
+theme is a dark theme or a light theme (such that the rest of VS Code changes to
+match your theme) and the path to the file (XML plist format).
 
 ### Example
 
@@ -405,11 +501,15 @@ Contribute a TextMate theme to VS Code. You must specify a label, whether the th
 
 ![themes extension point example](images/contribution-points/themes.png)
 
-See the [Color Theme Guide](/api/extension-guides/color-theme) on how to create a Color Theme.
+See the [Color Theme Guide](/api/extension-guides/color-theme) on how to create
+a Color Theme.
 
 ## contributes.snippets
 
-Contribute snippets for a specific language. The `language` attribute is the [language identifier](/docs/languages/identifiers) and the `path` is the relative path to the snippet file, which defines snippets in the [VS Code snippet format](/docs/editor/userdefinedsnippets#_snippet-syntax).
+Contribute snippets for a specific language. The `language` attribute is the
+[language identifier](/docs/languages/identifiers) and the `path` is the
+relative path to the snippet file, which defines snippets in the
+[VS Code snippet format](/docs/editor/userdefinedsnippets#_snippet-syntax).
 
 The example below shows adding snippets for the Go language.
 
@@ -424,7 +524,9 @@ The example below shows adding snippets for the Go language.
 
 ## contributes.jsonValidation
 
-Contribute a validation schema for a specific type of `json` file. The `url` value can be either a local path to a schema file included in the extension or a remote server URL such as a [json schema store](http://schemastore.org/json).
+Contribute a validation schema for a specific type of `json` file. The `url`
+value can be either a local path to a schema file included in the extension or a
+remote server URL such as a [json schema store](http://schemastore.org/json).
 
 ```json
 "contributes": {
@@ -437,15 +539,20 @@ Contribute a validation schema for a specific type of `json` file. The `url` val
 
 ## contributes.views
 
-Contribute a view to VS Code. You must specify an identifier and name for the view. You can contribute to following view containers:
+Contribute a view to VS Code. You must specify an identifier and name for the
+view. You can contribute to following view containers:
 
-- `explorer`: Explorer view container in the Activity Bar
-- `scm`: Source Control Management (SCM) view container in the Activity Bar
-- `debug`: Debug view container in the Activity Bar
-- `test`: Test view container in the Activity Bar
-- [Custom view containers](#contributes.viewsContainers) contributed by Extensions.
+-   `explorer`: Explorer view container in the Activity Bar
+-   `scm`: Source Control Management (SCM) view container in the Activity Bar
+-   `debug`: Debug view container in the Activity Bar
+-   `test`: Test view container in the Activity Bar
+-   [Custom view containers](#contributes.viewsContainers) contributed by
+    Extensions.
 
-When the user opens the view, VS Code will then emit an activationEvent `onView:${viewId}` (e.g. `onView:nodeDependencies` for the example below). You can also control the visibility of the view by providing the `when` context value.
+When the user opens the view, VS Code will then emit an activationEvent
+`onView:${viewId}` (e.g. `onView:nodeDependencies` for the example below). You
+can also control the visibility of the view by providing the `when` context
+value.
 
 ```json
 "contributes": {
@@ -463,11 +570,22 @@ When the user opens the view, VS Code will then emit an activationEvent `onView:
 
 ![views extension point example](images/contribution-points/views.png)
 
-Extension writers should create a [TreeView](/api/references/vscode-api#TreeView) by providing a [data provider](/api/references/vscode-api#TreeDataProvider) through `createTreeView` API or register the [data provider](/api/references/vscode-api#TreeDataProvider) directly through `registerTreeDataProvider` API to populate data. Refer to examples [here](https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample).
+Extension writers should create a
+[TreeView](/api/references/vscode-api#TreeView) by providing a
+[data provider](/api/references/vscode-api#TreeDataProvider) through
+`createTreeView` API or register the
+[data provider](/api/references/vscode-api#TreeDataProvider) directly through
+`registerTreeDataProvider` API to populate data. Refer to examples
+[here](https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample).
 
 ## contributes.viewsContainers
 
-Contribute a view container into which [Custom views](#contributes.views) can be contributed. You must specify an identifier, title and an icon for the view container. At present, you can contribute them to the Activity Bar (`activitybar`) only. Below example shows how the `Package Explorer` view container is contributed to the Activity Bar and how views are contributed to it.
+Contribute a view container into which [Custom views](#contributes.views) can be
+contributed. You must specify an identifier, title and an icon for the view
+container. At present, you can contribute them to the Activity Bar
+(`activitybar`) only. Below example shows how the `Package Explorer` view
+container is contributed to the Activity Bar and how views are contributed to
+it.
 
 ```json
 "contributes": {
@@ -499,20 +617,23 @@ Contribute a view container into which [Custom views](#contributes.views) can be
 
 **Icon specifications**
 
-- `Size:` Icons are 28x28 centered on a 50x40 block.
-- `Color:` Icons should use a single monochrome color.
-- `Format:` It is recommended that icons be in SVG, though any image file type is accepted.
-- `States:` All icons inherit the following state styles:
+-   `Size:` Icons are 28x28 centered on a 50x40 block.
+-   `Color:` Icons should use a single monochrome color.
+-   `Format:` It is recommended that icons be in SVG, though any image file type
+    is accepted.
+-   `States:` All icons inherit the following state styles:
 
-  | State   | Opacity |
-  | ------- | ------- |
-  | Default | 60%     |
-  | Hover   | 100%    |
-  | Active  | 100%    |
+    | State   | Opacity |
+    | ------- | ------- |
+    | Default | 60%     |
+    | Hover   | 100%    |
+    | Active  | 100%    |
 
 ## contributes.problemMatchers
 
-Contribute problem matcher patterns. These contributions work in both the output panel runner and in the terminal runner. Below is an example to contribute a problem matcher for the gcc compiler in an extension:
+Contribute problem matcher patterns. These contributions work in both the output
+panel runner and in the terminal runner. Below is an example to contribute a
+problem matcher for the gcc compiler in an extension:
 
 ```json
 "contributes": {
@@ -534,31 +655,38 @@ Contribute problem matcher patterns. These contributions work in both the output
 }
 ```
 
-This problem matcher can now be used in a `tasks.json` file via a name reference `$gcc`. An example looks like this:
+This problem matcher can now be used in a `tasks.json` file via a name reference
+`$gcc`. An example looks like this:
 
 ```json
 {
-  "version": "2.0.0",
-  "tasks": [
-    {
-      "label": "build",
-      "command": "gcc",
-      "args": ["-Wall", "helloWorld.c", "-o", "helloWorld"],
-      "problemMatcher": "$gcc"
-    }
-  ]
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "build",
+			"command": "gcc",
+			"args": ["-Wall", "helloWorld.c", "-o", "helloWorld"],
+			"problemMatcher": "$gcc"
+		}
+	]
 }
 ```
 
-Also see: [Defining a Problem Matcher](/docs/editor/tasks#_defining-a-problem-matcher)
+Also see:
+[Defining a Problem Matcher](/docs/editor/tasks#_defining-a-problem-matcher)
 
 ## contributes.problemPatterns
 
-Contributes named problem patterns that can be used in problem matchers (see above).
+Contributes named problem patterns that can be used in problem matchers (see
+above).
 
 ## contributes.taskDefinitions
 
-Contributes and defines an object literal structures that allows to uniquely identify a contributed task in the system. A task definition has at minimum a `type` property but it usually defines additional properties. For example a task definition for a task representing a script in a package.json file looks like this:
+Contributes and defines an object literal structures that allows to uniquely
+identify a contributed task in the system. A task definition has at minimum a
+`type` property but it usually defines additional properties. For example a task
+definition for a task representing a script in a package.json file looks like
+this:
 
 ```json
 "taskDefinitions": [
@@ -581,13 +709,19 @@ Contributes and defines an object literal structures that allows to uniquely ide
 ]
 ```
 
-The task definition is defined using JSON schema syntax for the `required` and `properties` property. The `type` property defines the task type. If the above example:
+The task definition is defined using JSON schema syntax for the `required` and
+`properties` property. The `type` property defines the task type. If the above
+example:
 
-- `"type": "npm"` associates the task definition with the npm tasks
-- `"required": [ "script" ]` defines that `script` attributes as mandatory. The `path` property is optional.
-- `"properties"` : { ... }` defines the additional properties and their types.
+-   `"type": "npm"` associates the task definition with the npm tasks
+-   `"required": [ "script" ]` defines that `script` attributes as mandatory.
+    The `path` property is optional.
+-   `"properties"` : { ... }` defines the additional properties and their types.
 
-When the extension actually creates a Task, it needs to pass a `TaskDefinition` that conforms to the task definition contributed in the package.json file. For the `npm` example a task creation for the test script inside a package.json file looks like this:
+When the extension actually creates a Task, it needs to pass a `TaskDefinition`
+that conforms to the task definition contributed in the package.json file. For
+the `npm` example a task creation for the test script inside a package.json file
+looks like this:
 
 ```ts
 let task = new vscode.Task({ type: 'npm', script: 'test' }, ....);
@@ -595,7 +729,10 @@ let task = new vscode.Task({ type: 'npm', script: 'test' }, ....);
 
 ## contributes.colors
 
-Contributes new themable colors. These colors can be used by the extension in editor decorators and in the status bar. Once defined, users can customize the color in the `workspace.colorCustomization` setting and user themes can set the color value.
+Contributes new themable colors. These colors can be used by the extension in
+editor decorators and in the status bar. Once defined, users can customize the
+color in the `workspace.colorCustomization` setting and user themes can set the
+color value.
 
 ```json
 "contributes": {
@@ -611,11 +748,15 @@ Contributes new themable colors. These colors can be used by the extension in ed
 }
 ```
 
-Color default values can be defined for light, dark and high contrast theme and can either be a reference to an existing color or a [Color Hex Value](/api/references/theme-color#color-formats).
+Color default values can be defined for light, dark and high contrast theme and
+can either be a reference to an existing color or a
+[Color Hex Value](/api/references/theme-color#color-formats).
 
 ## contributes.typescriptServerPlugins
 
-Contributes [TypeScript server plugins](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin) that augment VS Code's JavaScript and TypeScript support:
+Contributes
+[TypeScript server plugins](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin)
+that augment VS Code's JavaScript and TypeScript support:
 
 ```json
 "contributes": {
@@ -627,21 +768,29 @@ Contributes [TypeScript server plugins](https://github.com/Microsoft/TypeScript/
 }
 ```
 
-The above example extension contributes the [`typescript-styled-plugin`](https://github.com/Microsoft/typescript-styled-plugin) which adds styled-component IntelliSense for JavaScript and TypeScript. This plugin will be loaded from the extension and must be installed as a normal NPM `dependency` in the extension:
+The above example extension contributes the
+[`typescript-styled-plugin`](https://github.com/Microsoft/typescript-styled-plugin)
+which adds styled-component IntelliSense for JavaScript and TypeScript. This
+plugin will be loaded from the extension and must be installed as a normal NPM
+`dependency` in the extension:
 
 ```json
 {
-  "dependencies": {
-    "typescript-styled-plugin": "*"
-  }
+	"dependencies": {
+		"typescript-styled-plugin": "*"
+	}
 }
 ```
 
-TypeScript server plugins are loaded for all JavaScript and TypeScript files when the user is using VS Code's version of TypeScript. They are not activated if the user is using a workspace version of TypeScript.
+TypeScript server plugins are loaded for all JavaScript and TypeScript files
+when the user is using VS Code's version of TypeScript. They are not activated
+if the user is using a workspace version of TypeScript.
 
 ## contributes.resourceLabelFormatters
 
-Contributes resource label formatters that specify how to display URIs everywhere in the workbench. For example here's how an extension could contribute a formatter for URIs with scheme `remotehub`:
+Contributes resource label formatters that specify how to display URIs
+everywhere in the workbench. For example here's how an extension could
+contribute a formatter for URIs with scheme `remotehub`:
 
 ```json
 "contributes": {
@@ -658,11 +807,15 @@ Contributes resource label formatters that specify how to display URIs everywher
 }
 ```
 
-This means that all URIs that have a scheme `remotehub` will get rendered by showing only the `path` segment of the URI and the separator will be `/`. Workspaces which have the `remotehub` URI will have the GitHub suffix in their label.
+This means that all URIs that have a scheme `remotehub` will get rendered by
+showing only the `path` segment of the URI and the separator will be `/`.
+Workspaces which have the `remotehub` URI will have the GitHub suffix in their
+label.
 
 ### Plugin configuration
 
-Extensions can send configuration data to contributed TypeScript plugins through an API provided by VS Code's built-in TypeScript extension:
+Extensions can send configuration data to contributed TypeScript plugins through
+an API provided by VS Code's built-in TypeScript extension:
 
 ```ts
 // In your VS Code extension
@@ -693,7 +846,8 @@ export async function activate(context: vscode.ExtensionContext) {
 }
 ```
 
-The TypeScript server plugin receives the configuration data through an `onConfigurationChanged` method:
+The TypeScript server plugin receives the configuration data through an
+`onConfigurationChanged` method:
 
 ```ts
 // In your TypeScript plugin
@@ -712,4 +866,10 @@ export = function init({ typescript }: { typescript: typeof ts_module }) {
 };
 ```
 
-This API allows VS Code extensions to synchronize VS Code settings with a TypeScript server plugin, or dynamically change the behavior of a plugin. Take a look at the [TypeScript TSLint plugin](https://github.com/Microsoft/vscode-typescript-tslint-plugin/blob/master/src/index.ts) and [lit-html](https://github.com/mjbvz/vscode-lit-html/blob/master/src/index.ts) extensions to see how this API is used in practice.
+This API allows VS Code extensions to synchronize VS Code settings with a
+TypeScript server plugin, or dynamically change the behavior of a plugin. Take a
+look at the
+[TypeScript TSLint plugin](https://github.com/Microsoft/vscode-typescript-tslint-plugin/blob/master/src/index.ts)
+and
+[lit-html](https://github.com/mjbvz/vscode-lit-html/blob/master/src/index.ts)
+extensions to see how this API is used in practice.
