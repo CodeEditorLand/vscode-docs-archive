@@ -9,31 +9,23 @@ MetaDescription: Learn from Visual Studio Code extension guides and code samples
 
 # Extension Guides
 
-Once you have learned the basics of Visual Studio Code Extension API in the
-[Hello World](/api/get-started/your-first-extension) sample, it's time to build
-some real-world extensions. While the
-[Extension Capabilities](/api/extension-capabilities/overview) section offers
-high-level overviews of what extension **can** do, this section contains a list
-of detailed code guides and samples that explains **how** to use a specific VS
-Code API.
+Once you have learned the basics of Visual Studio Code Extension API in the [Hello World](/api/get-started/your-first-extension) sample, it's time to build some real-world extensions. While the [Extension Capabilities](/api/extension-capabilities/overview) section offers high-level overviews of what extension **can** do, this section contains a list of detailed code guides and samples that explains **how** to use a specific VS Code API.
 
 In each guide-sample combo, you can expect to find:
 
--   Thoroughly commented source code.
--   A gif or image showing the usage of the sample extension.
--   Instructions for running the sample extension.
--   Listing of VS Code API being used.
--   Listing of Contribution Points being used.
--   Real-world extensions resembling the sample.
--   Explanation of API concepts.
+- Thoroughly commented source code.
+- A gif or image showing the usage of the sample extension.
+- Instructions for running the sample extension.
+- Listing of VS Code API being used.
+- Listing of Contribution Points being used.
+- Real-world extensions resembling the sample.
+- Explanation of API concepts.
 
 ## Guides & Samples
 
-Here is a list of guides and samples. While each guide comes with sample code,
-some samples do not have a matching guide yet.
+Here is a list of guides and samples. While each guide comes with sample code, some samples do not have a matching guide yet.
 
-Each sample illustrates one [VS Code API](/api/references/vscode-api) usage or a
-[Contribution Point](/api/references/contribution-points).
+Each sample illustrates one [VS Code API](/api/references/vscode-api) usage or a [Contribution Point](/api/references/contribution-points).
 
 | Sample                                                                                                             | Guide on VS Code Website                                                                                | API & Contribution                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
 | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -51,13 +43,12 @@ Each sample illustrates one [VS Code API](/api/references/vscode-api) usage or a
 
 ## Language Extension Samples
 
-These samples are [Language Extensions](/api/language-extensions/overview)
-samples:
+These samples are [Language Extensions](/api/language-extensions/overview) samples:
 
 | Sample                                                                                                                           | Guide on VS Code Website                                                                                                                          |
-| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------- |
-| [Snippet Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample)                               | [/api/language-extensions/snippet-guide](https://code.visualstudio.com/api/language-extensions/snippet-guide)                                     | [contributes.snippets](https://code.visualstudio.com/api/references/contribution-points#contributes.snippets)   |
+| -------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [Snippet Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample)                               | [/api/language-extensions/snippet-guide](https://code.visualstudio.com/api/language-extensions/snippet-guide)                                     | [contributes.snippets](https://code.visualstudio.com/api/references/contribution-points#contributes.snippets) |
 | [Language Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample) | [/api/language-extensions/language-configuration-guide](https://code.visualstudio.com/api/language-extensions/language-configuration-guide)       | [contributes.languages](https://code.visualstudio.com/api/references/contribution-points#contributes.languages) |
-| [LSP Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)                                       | [/api/language-extensions/language-server-extension-guide](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide) |                                                                                                                 |
-| [LSP Log Streaming Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-log-streaming-sample)           | N/A                                                                                                                                               |                                                                                                                 |
-| [LSP Multi Root Server Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)        | https://github.com/Microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs#language-client--language-server                                      |                                                                                                                 |
+| [LSP Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)                                       | [/api/language-extensions/language-server-extension-guide](https://code.visualstudio.com/api/language-extensions/language-server-extension-guide) |  |
+| [LSP Log Streaming Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-log-streaming-sample)           | N/A                                                                                                                                               |  |
+| [LSP Multi Root Server Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)        | https://github.com/Microsoft/vscode/wiki/Adopting-Multi-Root-Workspace-APIs#language-client--language-server                                      |  |

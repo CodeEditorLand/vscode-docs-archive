@@ -9,11 +9,7 @@ MetaDescription: Octicon reference that lists all octicons supported in VS Code
 
 # Icons in Labels
 
-You can use [Octicons](https://octicons.github.com/) in your extension using the
-[`StatusBarItem`](https://code.visualstudio.com/api/references/vscode-api#StatusBarItem)
-text and
-[`QuickPickItem`](https://code.visualstudio.com/api/references/vscode-api#QuickPickItem)
-label API. The syntax for adding an icon is:
+You can use [Octicons](https://octicons.github.com/) in your extension using the [`StatusBarItem`](https://code.visualstudio.com/api/references/vscode-api#StatusBarItem) text and [`QuickPickItem`](https://code.visualstudio.com/api/references/vscode-api#QuickPickItem) label API. The syntax for adding an icon is:
 
 ```ts
 $(alert);
