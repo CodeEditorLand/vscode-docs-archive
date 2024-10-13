@@ -26,7 +26,7 @@ customizing the styling of different scopes in the editor, see the
 
 ## TextMate grammars
 
-VS Code uses [TextMate grammars][tm-grammars] to break text into a list of
+VS Code uses [`TextMate grammars`][tm-grammars] to break text into a list of
 tokens. TextMate grammars are a structured collection of
 [Oniguruma regular expressions](https://macromates.com/manual/en/regular_expressions)
 and are typically written as a plist or JSON. You can find a good introduction
@@ -46,7 +46,7 @@ current token. The `+` operation in JavaScript for example has the scope
 `keyword.operator.arithmetic.js`.
 
 Themes map scopes to colors and styles to provide syntax highlighting. TextMate
-provides [list of common scopes][tm-grammars] that many themes target. In order
+provides [`list of common scopes`][tm-grammars] that many themes target. In order
 to have your grammar as broadly supported as possible, try to build on existing
 scopes rather than defining new ones.
 

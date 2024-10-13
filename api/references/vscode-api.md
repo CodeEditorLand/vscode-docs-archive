@@ -707,7 +707,7 @@ all extensions but <em>not yet</em> from the task framework.</p>
 
 <a name="languages.getDiagnostics"></a><span class="ts" id=2330 data-target="#details-2330" data-toggle="collapse"><span class="ident">getDiagnostics</span><span>(</span><span>)</span><span>:
 </span>[<a class="type-ref" href="#Uri">Uri</a>,
-<a class="type-ref" href="#Diagnostic">Diagnostic</a>[]][]</span>
+<a class="type-ref" href="#Diagnostic">Diagnostic</a>[`]`][]</span>
 
 <div class="details collapse" id="details-2330">
 <div class="comment"><p>Get all diagnostics. <em>Note</em> that this includes diagnostics from
@@ -716,7 +716,7 @@ all extensions but <em>not yet</em> from the task framework.</p>
 <div class="signature">
 <table class="table table-bordered">
 <tr><th>Returns</th><th>Description</th></tr>
-<tr><td><span class="ts">[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#Diagnostic">Diagnostic</a>[]][]</span></td><td><div class="comment"><p>An array of uri-diagnostics tuples or an empty array.</p>
+<tr><td><span class="ts">[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#Diagnostic">Diagnostic</a>[`]`][]</span></td><td><div class="comment"><p>An array of uri-diagnostics tuples or an empty array.</p>
 </div></td></tr>
 </table>
 </div>
@@ -5452,7 +5452,7 @@ to the debug console.</p>
 ### <a name="Declaration"></a><span class="code-item" id=1994>Declaration</span>
 
 <div class="comment"><p>The declaration of a symbol representation as one or many <a href="#Location">locations</a>
-or [location links][#LocationLink].</p>
+or [`location links`][#LocationLink].</p>
 </div>
 
 <a name="Declaration"></a><span class="ts" id=1994 data-target="#details-1994" data-toggle="collapse"><span class="ident">Declaration</span><span>:
@@ -6198,7 +6198,7 @@ all previous but not subsequent diagnostics are removed.</p>
 <div class="signature">
 <table class="table table-bordered">
 <tr><th>Parameter</th><th>Description</th></tr>
-<tr><td><a name="entries"></a><span class="ts" id=1205 data-target="#details-1205" data-toggle="collapse"><span class="ident">entries</span><span>: </span>[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#Diagnostic">Diagnostic</a>[] &#124; <a class="type-intrinsic">undefined</a>][]</span></td><td><div class="comment"><p>An array of tuples, like <code>[[file1, [d1, d2]], [file2, [d3, d4, d5]]]</code>, or <code>undefined</code>.</p>
+<tr><td><a name="entries"></a><span class="ts" id=1205 data-target="#details-1205" data-toggle="collapse"><span class="ident">entries</span><span>: </span>[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#Diagnostic">Diagnostic</a>[`] &#124; <a class="type-intrinsic">undefined</a>`][]</span></td><td><div class="comment"><p>An array of tuples, like <code>[[file1, [d1, d2]], [file2, [d3, d4, d5]]]</code>, or <code>undefined</code>.</p>
 </div></td></tr>
 <tr><th>Returns</th><th>Description</th></tr>
 <tr><td><span class="ts"><a class="type-intrinsic">void</a></span></td><td><div class="comment"></div></td></tr>
@@ -7640,7 +7640,7 @@ class="type-ref" href="#FileType">FileType</a>][]&gt;</span>
 <tr><td><a name="uri"></a><span class="ts" id=1524 data-target="#details-1524" data-toggle="collapse"><span class="ident">uri</span><span>: </span><a class="type-ref" href="#Uri">Uri</a></span></td><td><div class="comment"><p>The uri of the folder.</p>
 </div></td></tr>
 <tr><th>Returns</th><th>Description</th></tr>
-<tr><td><span class="ts">[<a class="type-intrinsic">string</a>, <a class="type-ref" href="#FileType">FileType</a>][] &#124; <a class="type-ref" href="#Thenable">Thenable</a>&lt;[<a class="type-intrinsic">string</a>, <a class="type-ref" href="#FileType">FileType</a>][]&gt;</span></td><td><div class="comment"><p>An array of name/type-tuples or a thenable that resolves to such.</p>
+<tr><td><span class="ts">[<a class="type-intrinsic">string</a>, <a class="type-ref" href="#FileType">FileType</a>][] &#124; <a class="type-ref" href="#Thenable">Thenable</a>&lt;[`<a class="type-intrinsic">string</a>, <a class="type-ref" href="#FileType">FileType</a>`][]&gt;</span></td><td><div class="comment"><p>An array of name/type-tuples or a thenable that resolves to such.</p>
 </div></td></tr>
 </table>
 </div>
@@ -16695,7 +16695,7 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.</p>
 
 <a name="WorkspaceEdit.entries"></a><span class="ts" id=833 data-target="#details-833" data-toggle="collapse"><span class="ident">entries</span><span>(</span><span>)</span><span>:
 </span>[<a class="type-ref" href="#Uri">Uri</a>,
-<a class="type-ref" href="#TextEdit">TextEdit</a>[]][]</span>
+<a class="type-ref" href="#TextEdit">TextEdit</a>[`]`][]</span>
 
 <div class="details collapse" id="details-833">
 <div class="comment"><p>Get all text edits grouped by resource.</p>
@@ -16703,7 +16703,7 @@ ignored. When overwrite and ignoreIfExists are both set overwrite wins.</p>
 <div class="signature">
 <table class="table table-bordered">
 <tr><th>Returns</th><th>Description</th></tr>
-<tr><td><span class="ts">[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#TextEdit">TextEdit</a>[]][]</span></td><td><div class="comment"><p>A shallow copy of <code>[Uri, TextEdit[]]</code>-tuples.</p>
+<tr><td><span class="ts">[<a class="type-ref" href="#Uri">Uri</a>, <a class="type-ref" href="#TextEdit">TextEdit</a>[`]`][]</span></td><td><div class="comment"><p>A shallow copy of <code>[Uri, TextEdit[]]</code>-tuples.</p>
 </div></td></tr>
 </table>
 </div>
