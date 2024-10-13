@@ -10,13 +10,13 @@ DateApproved: 6/27/2018
 # Deploy a static website to Azure
 
 This tutorial walks you through deploying a static website, such as an Angular
-or React [SPA](https://en.wikipedia.org/wiki/Single-page_application) or simple
+or React [`SPA`](https://en.wikipedia.org/wiki/Single-page_application) or simple
 HTML/CSS/JavaScript site, to Azure using
-[Azure Storage](https://docs.microsoft.com/en-us/azure/storage).
+[`Azure Storage`](https://docs.microsoft.com/en-us/azure/storage).
 
 > **Note**: If you have your own server code, such as a Node.js/Express server,
 > see the
-> [App Service tutorial](/tutorials/app-service-extension/getting-started.md)
+> [`App Service tutorial`](/tutorials/app-service-extension/getting-started.md)
 > instead.
 
 ## Overview
@@ -37,11 +37,11 @@ following:
 ## Prerequisites
 
 **Azure Account** - If you don't have an Azure account,
-[sign up today](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website)
+[`sign up today`](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-static-website&mktingSource=vscode-tutorial-static-website)
 for a free 30-day account with $200 in Azure credits to try out any combination
 of services.
 
-**Node.js** - Download [Node.js and npm](https://nodejs.org/en/download), we
+**Node.js** - Download [`Node.js and npm`](https://nodejs.org/en/download), we
 recommend the LTS (long term support) version.
 
 > **Note**: If you already have application code, you don't need to install
@@ -50,7 +50,7 @@ recommend the LTS (long term support) version.
 ## Install the extension
 
 The
-[Azure Storage](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
+[`Azure Storage`](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurestorage)
 extension is used to deploy your website to Azure.
 
 > <a class="tutorial-install-extension-btn" href="vscode:extension/ms-azuretools.vscode-azurestorage">Install
@@ -62,14 +62,14 @@ Once the extension is installed, log into your Azure account - in the Activity
 Bar, click on the Azure logo to show the **AZURE STORAGE** explorer. Click
 **Sign in to Azure...** and follow the instructions.
 
-![sign in to Azure](images/static-website/sign-in.png)
+![`sign in to Azure`](images/static-website/sign-in.png)
 
 ## Prerequisite check
 
 Before we continue, ensure that you have all the prerequisites installed and
 configured.
 
--   Log in to [Azure Portal](https://portal.azure.com) to make sure your Azure
+-   Log in to [`Azure Portal`](https://portal.azure.com) to make sure your Azure
     Account is working.
 -   From a terminal, execute:
 

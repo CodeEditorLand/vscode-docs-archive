@@ -13,60 +13,60 @@ With this release, we mark our official Beta milestone and the big news is that
 VS Code now supports extensions (plug-ins) and is open source!
 
 Downloads:
-[Windows](https://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe) |
-[OS X](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-darwin.zip) |
-[Linux 32-bit](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux32.zip)
+[`Windows`](https://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe) |
+[`OS X`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-darwin.zip) |
+[`Linux 32-bit`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux32.zip)
 |
-[Linux 64-bit](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux64.zip)
+[`Linux 64-bit`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux64.zip)
 
 ## VS Code Supports Extensions!
 
 VS Code has great features out of the box but now you and the community can
 extend VS Code to add new features and languages.
 
-![marketplace](images/0_10_0/marketplace.png)
+![`marketplace`](images/0_10_0/marketplace.png)
 
 ## Extension Gallery
 
 Find and install cool extensions by searching VS Code's public
-[extension gallery](/docs/editor/extension-gallery.md). There you'll find new
+[`extension gallery`](/docs/editor/extension-gallery.md). There you'll find new
 themes, snippets, languages and tools.
 
-![extension language](images/0_10_0/extension-language.png)
+![`extension language`](images/0_10_0/extension-language.png)
 
 VS Code has two new `Extensions` commands (`kb(workbench.action.showCommands)`
 then `'ext inst'`) to let you find and install new extensions and manage
 (update, uninstall) your currently installed extensions.
 
-![extension commands](images/0_10_0/extension-commands.png)
+![`extension commands`](images/0_10_0/extension-commands.png)
 
 The VS Code also has a
-[Marketplace](https://marketplace.visualstudio.com/VSCode) where you can browse
+[`Marketplace`](https://marketplace.visualstudio.com/VSCode) where you can browse
 and learn more about extensions.
 
 ## Extensibility SDK
 
 If you don't find an existing extension that meets your development needs, you
 can create your own. We've added extensive documentation on
-[how to extend VS Code](/docs/extensions/overview.md) and a full
-[extensibility API reference](/docs/extensionAPI/overview.md). In addition, we
+[`how to extend VS Code`](/docs/extensions/overview.md) and a full
+[`extensibility API reference`](/docs/extensionAPI/overview.md). In addition, we
 provide the tools to you need to create and publish extensions.
 
 If you'd like to dive right in, you can start with our
-["Hello World"](/docs/extensions/example-hello-world.md) walkthrough where
+[`"Hello World"`](/docs/extensions/example-hello-world.md) walkthrough where
 you'll have a VS Code extension up and running in a matter of minutes.
 
 ### Yo Code Extension Scaffolding
 
-We've updated the [`yo code` generator](/docs/extensions/yocode.md) to create a
+We've updated the [`yo code` generator`](/docs/extensions/yocode.md) to create a
 basic extension project (TypeScript or JavaScript) which has all the metadata
 and source files necessary for a working extension.
 
-![yo code](images/0_10_0/yo-code.png)
+![`yo code`](images/0_10_0/yo-code.png)
 
 ### Extension Publishing
 
-The [`vsce` publishing tool](/docs/extensions/publish-extension.md) lets you
+The [`vsce` publishing tool`](/docs/extensions/publish-extension.md) lets you
 easily package and publish your extension. You can share your extension with
 colleagues by distributing a VS Code extension package or publish your extension
 for the community on the public gallery.
@@ -74,25 +74,25 @@ for the community on the public gallery.
 ## Extension samples
 
 If you'd rather start your extension by modifying a working example, you can
-find [extension samples](/docs/extensions/samples/.md) as well as the source
+find [`extension samples`](/docs/extensions/samples/.md) as well as the source
 code for many extensions on GitHub
-([Go Language Support](https://github.com/microsoft/vscode-go)).
+([`Go Language Support`](https://github.com/microsoft/vscode-go)).
 
 ## VS Code is Open Source!
 
 You spoke and we listened. With this release, VS Code development is now open
-source on [GitHub](https://github.com/microsoft/vscode).
+source on [`GitHub`](https://github.com/microsoft/vscode).
 
-![hello code](images/0_10_0/hello-code.png)
+![`hello code`](images/0_10_0/hello-code.png)
 
 You can now contribute to VS Code:
 
--   Submit [bugs](https://github.com/microsoft/vscode/issues) and help us verify
+-   Submit [`bugs`](https://github.com/microsoft/vscode/issues) and help us verify
     fixes as they are checked in.
 -   Review the source code changes.
 -   Contribute bug fixes through pull requests.
 -   Update and add to the
-    [documentation](https://github.com/microsoft/vscode-docs).
+    [`documentation`](https://github.com/microsoft/vscode-docs).
 
 ## Add TextMate Snippets
 
@@ -109,7 +109,7 @@ use or to share on the gallery. The generator also supports Sublime snippets
 -   Support file path links with line and column information for quick source
     code navigation.
 
-![Colored Output](images/0_10_0/colored-output.png)
+![`Colored Output`](images/0_10_0/colored-output.png)
 
 ## Debugging - Easy Variable Selection
 
@@ -119,7 +119,7 @@ editor commands:
 -   `Debug: Evaluate` - add the text selection to the Debug Console
 -   `Debug: Add to Watch` - add the text selection to the Debug Watch window
 
-![add to watch](images/0_10_0/add-to-watch.png)
+![`add to watch`](images/0_10_0/add-to-watch.png)
 
 ## Debugging - Debug environment configuration
 
@@ -128,7 +128,7 @@ asks for your specific debug environment (Node.js, Mono) and creates a
 `launch.json` specific to that environment. VS Code also detects the type of
 request ('launch' or 'attach').
 
-![select debug env](images/0_10_0/select-debug-env.png)
+![`select debug env`](images/0_10_0/select-debug-env.png)
 
 ## Debugging - Hover
 
@@ -153,11 +153,11 @@ and CSS.
 
 ColorSublime Batman Theme in 0.9.1:
 
-![theme-0-9-0](images/0_10_0/theme-0-9-0.png)
+![`theme-0-9-0`](images/0_10_0/theme-0-9-0.png)
 
 ColorSublime Batman Theme in 0.10.0:
 
-![theme-0-10-0](images/0_10_0/theme-0-10-0.png)
+![`theme-0-10-0`](images/0_10_0/theme-0-10-0.png)
 
 ## Environment Variable Substitution
 
@@ -193,7 +193,7 @@ You can now set your diff view preferences with two new settings:
 -   `diffEditor.ignoreTrimWhitespace` - Ignore leading and trailing (trim)
     whitespace when showing differences.
 
-![inline-diff-view](images/0_10_0/inline-diff-view.png)
+![`inline-diff-view`](images/0_10_0/inline-diff-view.png)
 
 Previously these options where available in the editor's title bar.
 
