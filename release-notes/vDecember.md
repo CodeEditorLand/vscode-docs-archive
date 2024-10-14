@@ -111,7 +111,7 @@ VS Code dispatches key bindings based on
 In `keybindings.json` and in all the UI, we used to render the key codes with
 the produced characters under the US standard keyboard layout. We received
 feedback that this was very confusing, therefore, we created a new Node.js
-module [`native-keymap``](https://www.npmjs.com/package/native-keymap) that is
+module [`native-keymap`](https://www.npmjs.com/package/native-keymap) that is
 used in VS Code to render the key bindings using the system's current keyboard
 layout.
 
