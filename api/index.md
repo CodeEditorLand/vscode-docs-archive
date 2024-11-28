@@ -14,7 +14,7 @@ MetaDescription:
 Visual Studio Code is built with extensibility in mind. From the UI to the
 editing experience, almost every part of VS Code can be customized and enhanced
 through the Extension API. In fact, many core features of VS Code are built as
-[extensions](https://github.com/Microsoft/vscode/tree/master/extensions) and use
+[extensions](HTTPS://github.com/Microsoft/vscode/tree/master/extensions) and use
 the same Extension API.
 
 This documentation describes:
@@ -24,7 +24,7 @@ This documentation describes:
 -   Where to find guides and code samples to help get you started
 
 If you are looking for published extensions, head to the
-[VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode).
+[VS Code Extension Marketplace](HTTPS://marketplace.visualstudio.com/vscode).
 
 ## What can extensions do?
 
@@ -53,7 +53,7 @@ the API doc can help you with:
 
 -   **Get Started** teaches fundamental concepts for building extensions with
     the
-    [Hello World](https://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample)
+    [Hello World](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample)
     sample.
 -   **Working with Extensions** includes in-depth guides on various extension
     development topics, such as
@@ -77,19 +77,19 @@ the API doc can help you with:
 
 If you have questions for extension development, try asking on:
 
--   [Stack Overflow](https://stackoverflow.com/questions/tagged/visual-studio-code):
+-   [Stack Overflow](HTTPS://stackoverflow.com/questions/tagged/visual-studio-code):
     There are
-    [12k questions](https://stackoverflow.com/questions/tagged/visual-studio-code)
+    [12k questions](HTTPS://stackoverflow.com/questions/tagged/visual-studio-code)
     tagged `visual-studio-code`, and over half of them already have answers.
     Search for your issue, ask questions, or help your fellow developers by
     answering VS Code extension development questions!
--   [Gitter Channel](https://gitter.im/Microsoft/vscode) and
-    [VS Code Dev Slack](https://join.slack.com/t/vscode-dev-community/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY):
+-   [Gitter Channel](HTTPS://gitter.im/Microsoft/vscode) and
+    [VS Code Dev Slack](HTTPS://join.slack.com/t/vscode-dev-community/shared_invite/enQtMjIxOTgxNDE3NzM0LWU5M2ZiZDU1YjBlMzdlZjA2YjBjYzRhYTM5NTgzMTAxMjdiNWU0ZmQzYWI3MWU5N2Q1YjBiYmQ4MzY0NDE1MzY):
     Public chatroom for extension developers. Some VS Code team members chime in
     conversations.
 
 To provide feedback on the documentation, create new issues at
-[Microsoft/vscode-docs](https://github.com/Microsoft/vscode-docs/issues). If you
+[Microsoft/vscode-docs](HTTPS://github.com/Microsoft/vscode-docs/issues). If you
 have extension questions that you cannot find an answer for, or issues with VS
 Code Extension API, please open new issues at
-[Microsoft/vscode](https://github.com/Microsoft/vscode/issues).
+[Microsoft/vscode](HTTPS://github.com/Microsoft/vscode/issues).

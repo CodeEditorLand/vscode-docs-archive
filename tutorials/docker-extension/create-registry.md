@@ -16,13 +16,13 @@ from that registry.
 
 ## Using Azure Container Registry
 
-[Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/)
+[Azure Container Registry](HTTPS://azure.microsoft.com/en-us/services/container-registry/)
 (ACR) is a private, secure, hosted registry for your images. ACR is used in this
 tutorial, however ACR uses all the same tools and processes as other registry
 options so the steps are consistent regardless.
 
 Create an Azure Container Registry by signing in to the
-[Azure portal](https://portal.azure.com) then selecting **Create a resource** >
+[Azure portal](HTTPS://portal.azure.com) then selecting **Create a resource** >
 **Containers** > **Container Registry**.
 
 ![Dashboard](images/docker-extension/qs-portal-01.png)
@@ -52,7 +52,7 @@ Login Succeeded
 ## Using Docker Hub
 
 Docker Hub is Docker's own hosted registry that provides a free way of sharing
-images. Sign up for a Docker ID on [Docker Hub](https://hub.docker.com/) then
+images. Sign up for a Docker ID on [Docker Hub](HTTPS://hub.docker.com/) then
 login to the Docker CLI using your Docker ID credentials.
 
 ## Prerequisite Check

@@ -29,5 +29,5 @@ These are the steps for testing Proposed API in local extension development:
 -   Use [Insiders](/insiders) release of VS Code.
 -   Add `"enableProposedApi": true` to your `package.json`.
 -   Copy the latest version of the
-    [`vscode.proposed.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)
+    [`vscode.proposed.d.ts`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/vscode.proposed.d.ts)
     into your project.

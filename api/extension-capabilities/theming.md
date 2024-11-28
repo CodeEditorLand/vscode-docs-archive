@@ -31,7 +31,7 @@ As you can see in the illustration, Color Theme defines two mappings:
     [grammar](/api/language-extensions/syntax-highlight-guide)).
 
 We have a [Color Theme Guide](/api/extension-guides/color-theme) and a
-[Color Theme Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/theme-sample)
+[Color Theme Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/theme-sample)
 that illustrates how to create a theme.
 
 ## Icon Theme

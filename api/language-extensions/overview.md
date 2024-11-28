@@ -15,11 +15,11 @@ Visual Studio Code provides smart editing features for different programming
 languages through Language Extensions. VS Code doesn't provide built-in language
 support but offers a set of APIs that enable rich language features. For
 example, it is a bundled
-[HTML](https://github.com/Microsoft/vscode/tree/master/extensions/html)
+[HTML](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/html)
 extension that allows VS Code to show syntax highlighting for HTML files.
 Similarly, when you type `console.` and `log` shows up in IntelliSense, it is
 the
-[Typescript Language Features](https://github.com/Microsoft/vscode/tree/master/extensions/typescript-language-features)
+[Typescript Language Features](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/typescript-language-features)
 extension at work.
 
 Language features can be roughly put into two categories:
@@ -27,9 +27,9 @@ Language features can be roughly put into two categories:
 ## Declarative language features
 
 Declarative language features are defined in configuration files. Examples
-include [html](https://github.com/Microsoft/vscode/tree/master/extensions/html),
-[css](https://github.com/Microsoft/vscode/tree/master/extensions/css) and
-[typescript-basic](https://github.com/Microsoft/vscode/tree/master/extensions/typescript-basics)
+include [html](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/html),
+[css](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/css) and
+[typescript-basic](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/typescript-basics)
 extensions bundled with VS Code, which offer a subset of the following
 Declarative Language Features:
 
@@ -61,9 +61,9 @@ Language Features.
 Programmatic Language Features include auto completion, error checking, and jump
 to definition. These features are often powered by a Language Server, a program
 that analyzes your project to provide the dynamic features. One example is the
-[`typescript-language-features`](https://github.com/Microsoft/vscode/tree/master/extensions/typescript-language-features)
+[`typescript-language-features`](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/typescript-language-features)
 extension bundled in VS Code. It utilizes the
-[TypeScript Language Service](https://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API)
+[TypeScript Language Service](HTTPS://github.com/Microsoft/TypeScript/wiki/Using-the-Language-Service-API)
 to offer Programmatic Language Features such as:
 
 -   Hover information
@@ -86,7 +86,7 @@ Here is a complete list of
 
 By standardizing the communication between a Language Server (a static code
 analysis tool) and a Language Client (usually a source code editor), the
-[Language Server Protocol](https://microsoft.github.io/language-server-protocol/)
+[Language Server Protocol](HTTPS://microsoft.github.io/language-server-protocol/)
 allows extension authors to write one code analysis program and reuse it in
 multiple editors.
 
@@ -94,7 +94,7 @@ In the
 [Programmatic Language Features](/api/language-extensions/programmatic-language-features)
 listing, you can find a listing of all VS Code language features and how they
 map to the
-[Language Server Protocol Specification](https://microsoft.github.io/language-server-protocol/specification).
+[Language Server Protocol Specification](HTTPS://microsoft.github.io/language-server-protocol/specification).
 
 We offer an in-depth guide that explains how to implement a Language Server
 extension in VS Code:

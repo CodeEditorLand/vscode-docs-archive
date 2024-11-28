@@ -14,7 +14,7 @@ ShortDescription:
 In this step, you will use the Azure CLI to create a website on Azure.
 
 > **Tip**: The
-> [Azure CLI extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+> [Azure CLI extension](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
 > for VS Code provides syntax colorization, IntelliSense (completions) and
 > snippets when writing Azure CLI scripts
 >
@@ -59,7 +59,7 @@ $ az appservice plan create --name myPlan --sku F1
 ## Create the website
 
 Now create the website. Make sure to give it a **unique name** as it will be
-referenced as http://**unique-name**.azurewebsites.net. In this example, we'll
+referenced as HTTP://**unique-name**.azurewebsites.net. In this example, we'll
 call it `myExpressApp-chrisdias`.
 
 ```bash

@@ -15,12 +15,12 @@ These tests will run inside a special instance of VS Code named the
 to these tests as integration tests, because they go beyond unit tests that can
 run without a VS Code instance. This documentation focuses on VS Code
 integration tests. For unit testing, you can use any popular testing framework,
-like [Mocha](https://mochajs.org/) or [Jasmine](https://jasmine.github.io/).
+like [Mocha](HTTPS://mochajs.org/) or [Jasmine](HTTPS://jasmine.github.io/).
 
 ## Yo Code test scaffolding
 
 If you are using the
-[yo code generator](https://github.com/Microsoft/vscode-generator-code), the
+[yo code generator](HTTPS://github.com/Microsoft/vscode-generator-code), the
 generated projects include a sample test and instructions for running the tests.
 
 **Note**: The documentation below assumes that you created a TypeScript
@@ -40,7 +40,7 @@ the Debug Console where you can see the test results.
 
 ![test output](images/testing-extension/test-output.png)
 
-The generated test uses the [Mocha test framework](https://mochajs.org/) for its
+The generated test uses the [Mocha test framework](HTTPS://mochajs.org/) for its
 test runner and library.
 
 The extension project comes with a `src/test` folder that includes an `index.ts`

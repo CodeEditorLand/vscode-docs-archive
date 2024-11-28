@@ -34,13 +34,13 @@ to customize the build:
 
 ## Azure Pipelines
 
-<a href="https://azure.microsoft.com/services/devops/"><img alt="Azure Pipelines" src="/assets/api/working-with-extensions/continuous-integration/pipelines-logo.png" width="318" /></a>
+<a href="HTTPS://azure.microsoft.com/services/devops/"><img alt="Azure Pipelines" src="/assets/api/working-with-extensions/continuous-integration/pipelines-logo.png" width="318" /></a>
 
 You can create free projects on
-[Azure DevOps](https://azure.microsoft.com/services/devops/). This gives you
+[Azure DevOps](HTTPS://azure.microsoft.com/services/devops/). This gives you
 source code hosting, planning boards, building and testing infrastructure, and
 more. On top of that, you get
-[10 free parallel jobs](https://azure.microsoft.com/services/devops/pipelines/)
+[10 free parallel jobs](HTTPS://azure.microsoft.com/services/devops/pipelines/)
 for building your projects across all 3 major platforms: Windows, macOS and
 Linux.
 
@@ -122,7 +122,7 @@ jobs:
 ```
 
 Next
-[create a new Pipeline](https://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=vsts#get-your-first-build)
+[create a new Pipeline](HTTPS://docs.microsoft.com/azure/devops/pipelines/get-started-yaml?view=vsts#get-your-first-build)
 in your DevOps project and point it to the `build.yml` file. Trigger a build and
 voilà:
 
@@ -130,5 +130,5 @@ voilà:
 
 You can enable the build to run continuously when pushing to a branch and even
 on pull requests.
-[Click here](https://docs.microsoft.com/azure/devops/pipelines/build/triggers)
+[Click here](HTTPS://docs.microsoft.com/azure/devops/pipelines/build/triggers)
 to learn more.

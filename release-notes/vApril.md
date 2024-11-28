@@ -30,24 +30,24 @@ Extension authors will be especially happy with these updates:
 -   New APIs for working with folders and JSON files
 
 Downloads:
-[`Windows`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCodeSetup-stable.exe)
+[`Windows`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCodeSetup-stable.exe)
 |
-[`OS X`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-darwin-stable.zip)
+[`OS X`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-darwin-stable.zip)
 | Linux 64-bit
-[`.zip`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-linux-x64-stable.zip)
-[`.deb`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-amd64.deb)
-[`.rpm`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-x86_64.rpm)
+[`.zip`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-linux-x64-stable.zip)
+[`.deb`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-amd64.deb)
+[`.rpm`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-x86_64.rpm)
 | Linux 32-bit
-[`.zip`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-linux-ia32-stable.zip)
-[`.deb`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-i386.deb)
-[`.rpm`](https://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-i386.rpm)
+[`.zip`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/VSCode-linux-ia32-stable.zip)
+[`.deb`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-i386.deb)
+[`.rpm`](HTTPS://az764295.vo.msecnd.net/stable/def9e32467ad6e4f48787d38caf190acbfee5880/vscode-i386.rpm)
 
 ## Editor
 
 ### Visual design for editor tabs
 
 We have a
-[`visual design`](https://github.com/Microsoft/vscode/issues/224#issuecomment-213015687)
+[`visual design`](HTTPS://github.com/Microsoft/vscode/issues/224#issuecomment-213015687)
 for how editor tabs might look in VS Code. We will start to implement the design
 in the next milestone.
 
@@ -86,7 +86,7 @@ binding for this command is `kb(workbench.action.reopenClosedEditor)`.
 > **Note:** Previously `kb(workbench.action.reopenClosedEditor)` had been bound
 > to the **Run: Run Test Task** command. **Run: Run Test Task** is now not bound
 > to any default key binding. You can
-> [`customize`](https://code.visualstudio.com/docs/getstarted/keybindings#_customizing-shortcuts)
+> [`customize`](HTTPS://code.visualstudio.com/docs/getstarted/keybindings#_customizing-shortcuts)
 > the key bindings and change the behavior back to the previous one if desired.
 
 ### Disable Emmet abbreviation expansion on Tab
@@ -196,7 +196,7 @@ on Linux, use:
 ```
 
 OS X support has not been implemented yet
-([`#5462`](https://github.com/Microsoft/vscode/issues/5462)).
+([`#5462`](HTTPS://github.com/Microsoft/vscode/issues/5462)).
 
 ## Extension Authoring
 
@@ -230,21 +230,21 @@ can associate JSON schemas to your files. The schemas associations will be
 picked up by the JSON language support that ships with VS Code and you will get
 validations, completions and hovers for free. The schema association can be done
 either
-[`by a user configuration`](https://code.visualstudio.com/docs/languages/json#_json-schemas-settings)
+[`by a user configuration`](HTTPS://code.visualstudio.com/docs/languages/json#_json-schemas-settings)
 or
-[`by an extension point`](https://code.visualstudio.com/docs/extensionAPI/extension-points#_contributesjsonvalidation).
+[`by an extension point`](HTTPS://code.visualstudio.com/docs/extensionAPI/extension-points#_contributesjsonvalidation).
 
 In some cases, you want more control, for example, you may want to provide
 completion support that requires a database lookup, or you want validation that
 cannot be expressed by a regular expression. To implement your own completion,
 validation, and hover support, you can use the regular VS Code APIs. To make
 this easier, we moved our JSON scanner and parsers to a node-module,
-[`jsonc-parser`](https://www.npmjs.com/package/jsonc-parser), that you can reuse.
+[`jsonc-parser`](HTTPS://www.npmjs.com/package/jsonc-parser), that you can reuse.
 You can see this module in action with the dependency completion support for
 `package.json` and `bower.json` that is now part of the
-[`JavaScript extension`](https://github.com/Microsoft/vscode/tree/master/extensions/javascript)
+[`JavaScript extension`](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/javascript)
 and for `project.json` soon to be part of the
-[`C# extension`](https://github.com/OmniSharp/omnisharp-vscode/).
+[`C# extension`](HTTPS://github.com/OmniSharp/omnisharp-vscode/).
 
 ### 'onDebug' Activation Event
 
@@ -256,16 +256,16 @@ this activation event.
 
 For Node.js based debug adapter development, we've made the debug adapter test
 support available as an npm module
-[`vscode-debugadapter-testsupport`](https://www.npmjs.com/package/vscode-debugadapter-testsupport).
+[`vscode-debugadapter-testsupport`](HTTPS://www.npmjs.com/package/vscode-debugadapter-testsupport).
 
 The source for this module lives in the GitHub repository
-[`vscode-debugadapter-node`](https://github.com/Microsoft/vscode-debugadapter-node).
+[`vscode-debugadapter-node`](HTTPS://github.com/Microsoft/vscode-debugadapter-node).
 
 You can find examples of how to use the module here:
 
--   [`Node Debug`](https://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts)
--   [`Mono Debug`](https://github.com/Microsoft/vscode-mono-debug/blob/master/tests/adapter.test.ts)
--   [`Mock Debug`](https://github.com/Microsoft/vscode-mock-debug/blob/master/src/tests/adapter.test.ts)
+-   [`Node Debug`](HTTPS://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts)
+-   [`Mono Debug`](HTTPS://github.com/Microsoft/vscode-mono-debug/blob/master/tests/adapter.test.ts)
+-   [`Mock Debug`](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/master/src/tests/adapter.test.ts)
 
 ## Electron Shell
 
@@ -274,11 +274,11 @@ We updated the Electron shell to 0.37.6.
 ## Language Server Protocol
 
 Version 2.x of the
-[`language server protocol`](https://microsoft.github.io/language-server-protocol)
+[`language server protocol`](HTTPS://microsoft.github.io/language-server-protocol)
 was released together with a corresponding
-[`client library`](https://github.com/Microsoft/vscode-languageserver-node) to be
+[`client library`](HTTPS://github.com/Microsoft/vscode-languageserver-node) to be
 used in extensions and a
-[`server library`](https://github.com/Microsoft/vscode-languageserver-node) for
+[`server library`](HTTPS://github.com/Microsoft/vscode-languageserver-node) for
 Node.js.
 
 The major changes are:
@@ -294,31 +294,31 @@ The major changes are:
 
 This release has a number of notable bug fixes.
 
--   [`3928`](https://github.com/Microsoft/vscode/issues/3928): VS Code corrupts
+-   [`3928`](HTTPS://github.com/Microsoft/vscode/issues/3928): VS Code corrupts
     multiline environment variables
--   [`4426`](https://github.com/Microsoft/vscode/issues/4426): Include CLI in
+-   [`4426`](HTTPS://github.com/Microsoft/vscode/issues/4426): Include CLI in
     Linux zip archive and support custom install locations
--   [`4478`](https://github.com/Microsoft/vscode/issues/4478): "Open in Terminal"
+-   [`4478`](HTTPS://github.com/Microsoft/vscode/issues/4478): "Open in Terminal"
     not working on Fedora
--   [`4691`](https://github.com/Microsoft/vscode/issues/4691): Command palette's
+-   [`4691`](HTTPS://github.com/Microsoft/vscode/issues/4691): Command palette's
     camel case matching does not work for non ASCII characters
--   [`4679`](https://github.com/Microsoft/vscode/issues/4679): Don't localize
+-   [`4679`](HTTPS://github.com/Microsoft/vscode/issues/4679): Don't localize
     command names on the command palette
--   [`5260`](https://github.com/Microsoft/vscode/issues/5260): Use proper font
+-   [`5260`](HTTPS://github.com/Microsoft/vscode/issues/5260): Use proper font
     family for East Asian languages (CJK)
--   [`4400`](https://github.com/Microsoft/vscode/issues/4400): Add update
+-   [`4400`](HTTPS://github.com/Microsoft/vscode/issues/4400): Add update
     notifications for Linux
--   [`1796`](https://github.com/Microsoft/vscode/issues/1796): HTTPS
+-   [`1796`](HTTPS://github.com/Microsoft/vscode/issues/1796): HTTPS
     Authentication not working on Linux
--   [`6281`](https://github.com/Microsoft/vscode/issues/6281): Edits fail to
+-   [`6281`](HTTPS://github.com/Microsoft/vscode/issues/6281): Edits fail to
     validate ranges correctly before applying
--   [`6304`](https://github.com/Microsoft/vscode/issues/6304): Debug: continue
+-   [`6304`](HTTPS://github.com/Microsoft/vscode/issues/6304): Debug: continue
     action is broken when target app has multiple threads
 
 These are the
-[`closed bugs`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22April+2016%22+is%3Aclosed)
+[`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22April+2016%22+is%3Aclosed)
 and these are the
-[`closed feature requests`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22April+2016%22+is%3Aclosed+label%3Afeature-request)
+[`closed feature requests`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22April+2016%22+is%3Aclosed+label%3Afeature-request)
 for the 1.1.0 update.
 
 ## Thank You
@@ -326,35 +326,35 @@ for the 1.1.0 update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`Maxime Quandalle (@mquandalle)](https://github.com/mquandalle): Implement
+-   [`Maxime Quandalle (@mquandalle)](HTTPS://github.com/mquandalle): Implement
     double-click on sashes for optimal resizing.
-    [`PR #4702`](https://github.com/Microsoft/vscode/pull/4702)
--   [`Christian Oetterli (@krizzdewizz)](https://github.com/krizzdewizz): Honor
+    [`PR #4702`](HTTPS://github.com/Microsoft/vscode/pull/4702)
+-   [`Christian Oetterli (@krizzdewizz)](HTTPS://github.com/krizzdewizz): Honor
     the %COMSPEC% environment variable on Windows when spawning a shell.
-    [`PR #743`](https://github.com/Microsoft/vscode/issues/743)
--   [`Peter Flannery (@pflannery)](https://github.com/pflannery): Add custom
+    [`PR #743`](HTTPS://github.com/Microsoft/vscode/issues/743)
+-   [`Peter Flannery (@pflannery)](HTTPS://github.com/pflannery): Add custom
     terminal launch settings.
-    [`PR #3495`](https://github.com/Microsoft/vscode/pull/3495)
--   [`Xaver Hellauer (@xaverh)](https://github.com/xaverh): Add "new window"
+    [`PR #3495`](HTTPS://github.com/Microsoft/vscode/pull/3495)
+-   [`Xaver Hellauer (@xaverh)](HTTPS://github.com/xaverh): Add "new window"
     action to code.desktop.
-    [`PR #4916`](https://github.com/Microsoft/vscode/pull/4916)
--   [`Sam Verschueren (@SamVerschueren)](https://github.com/SamVerschueren):
+    [`PR #4916`](HTTPS://github.com/Microsoft/vscode/pull/4916)
+-   [`Sam Verschueren (@SamVerschueren)](HTTPS://github.com/SamVerschueren):
     -   Show move file to trash key binding in context menu - resolves #5603.
-        [`PR #5622`](https://github.com/Microsoft/vscode/pull/5622)
+        [`PR #5622`](HTTPS://github.com/Microsoft/vscode/pull/5622)
     -   Add a global action to add a new file in the explorer - resolves #5547.
-        [`PR #5597`](https://github.com/Microsoft/vscode/pull/5597)
--   [`Denis Gladkikh (@outcoldman)](https://github.com/outcoldman): Create new
+        [`PR #5597`](HTTPS://github.com/Microsoft/vscode/pull/5597)
+-   [`Denis Gladkikh (@outcoldman)](HTTPS://github.com/outcoldman): Create new
     conf files with right indent settings (fixes #5550).
-    [`PR #5527`](https://github.com/Microsoft/vscode/pull/5527)
--   [`Peng Lv (@rebornix)](https://github.com/rebornix): uninstall outdated
+    [`PR #5527`](HTTPS://github.com/Microsoft/vscode/pull/5527)
+-   [`Peng Lv (@rebornix)](HTTPS://github.com/rebornix): uninstall outdated
     extension with correct version #5502.
-    [`PR #5502`](https://github.com/Microsoft/vscode/pull/5502)
--   [`xzper (@f111fei)](https://github.com/f111fei): Context menu is positioned
+    [`PR #5502`](HTTPS://github.com/Microsoft/vscode/pull/5502)
+-   [`xzper (@f111fei)](HTTPS://github.com/f111fei): Context menu is positioned
     wrongly when zoomed in.
-    [`PR #5158`](https://github.com/Microsoft/vscode/pull/5158)
--   [`Belleve Invis (@be5invis)](https://github.com/be5invis): Add CJK-aware line
+    [`PR #5158`](HTTPS://github.com/Microsoft/vscode/pull/5158)
+-   [`Belleve Invis (@be5invis)](HTTPS://github.com/be5invis): Add CJK-aware line
     wrapping, and basic Kinsoku Shori (禁則処理) to Visual Studio Code.
-    [`PR #4825`](https://github.com/Microsoft/vscode/pull/4825)
--   [`Jonathan Edwards (@JonathanMEdwards)](https://github.com/JonathanMEdwards):
+    [`PR #4825`](HTTPS://github.com/Microsoft/vscode/pull/4825)
+-   [`Jonathan Edwards (@JonathanMEdwards)](HTTPS://github.com/JonathanMEdwards):
     Make mouse cursor visible in dark themes. Fixes #754.
-    [`PR #4654`](https://github.com/Microsoft/vscode/pull/4654)
+    [`PR #4654`](HTTPS://github.com/Microsoft/vscode/pull/4654)

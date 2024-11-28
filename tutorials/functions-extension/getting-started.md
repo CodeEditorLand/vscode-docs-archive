@@ -11,34 +11,34 @@ DateApproved: 2/9/2018
 
 This tutorial walks you through creating and deploying a JavaScript Azure
 Functions application using the
-[Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+[Azure Functions](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
 extension. Create a new app, add functions and deploy in a matter of minutes
 from Visual Studio Code.
 
 ## Prerequisites
 
-You need [Visual Studio Code](https://code.visualstudio.com/) installed along
-with [Node.js and npm](https://nodejs.org/en/download), the Node.js package
+You need [Visual Studio Code](HTTPS://code.visualstudio.com/) installed along
+with [Node.js and npm](HTTPS://nodejs.org/en/download), the Node.js package
 manager.
 
 To enable local debugging, you need to install the
-[Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools#installing).
+[Azure Functions Core Tools](HTTPS://github.com/Azure/azure-functions-core-tools#installing).
 
-**On macOS**, install using [Homebrew](https://brew.sh/).
+**On macOS**, install using [Homebrew](HTTPS://brew.sh/).
 
 ```bash
 $ brew tap azure/functions
 $ brew install azure-functions-core-tools
 ```
 
-**On Windows**, install using [npm](https://npmjs.com).
+**On Windows**, install using [npm](HTTPS://npmjs.com).
 
 ```bash
 $ npm install -g azure-functions-core-tools@2
 ```
 
 **On Linux**, follow the instructions in the Azure Functions Core Tools
-[GitHub repository](https://github.com/Azure/azure-functions-core-tools#linux).
+[GitHub repository](HTTPS://github.com/Azure/azure-functions-core-tools#linux).
 
 ## Install the extension
 

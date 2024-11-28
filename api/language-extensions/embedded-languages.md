@@ -5,4 +5,4 @@ MetaDescription:
 
 # Embedded Languages
 
-https://github.com/Microsoft/vscode/issues/47288
+HTTPS://github.com/Microsoft/vscode/issues/47288

@@ -28,7 +28,7 @@ In the **AZURE STORAGE** explorer, right-click on your subscription and choose
 
 2. Create a new Resource Group and accept the default name.
 
-3. Choose a location in a [region](https://azure.microsoft.com/en-us/regions/)
+3. Choose a location in a [region](HTTPS://azure.microsoft.com/en-us/regions/)
    near you or near other services you may need to access.
 
 Right-click the Storage Account that was just created and click **Configure

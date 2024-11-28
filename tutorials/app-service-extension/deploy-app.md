@@ -30,7 +30,7 @@ your app to Azure.
 2. Type a globally unique name for your Web App and press `kbstyle(Enter)`.
    Valid characters for an app name are 'a-z', '0-9', and '-'.
 
-3. Choose a location in a [region](https://azure.microsoft.com/en-us/regions/)
+3. Choose a location in a [region](HTTPS://azure.microsoft.com/en-us/regions/)
    near you or near other services you may need to access.
 
 4. Choose your **Node.js version**, LTS is recommended.

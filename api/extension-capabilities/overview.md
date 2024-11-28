@@ -79,7 +79,7 @@ diagnostic errors, IntelliSense and CodeLens. These language features are
 exposed through the [`vscode.languages.*`](/api/references/vscode-api#languages)
 API. An extension can either use these API directly, or write a Language Server
 and adapt it to VS Code using the VS Code
-[Language Server library](https://github.com/Microsoft/vscode-languageserver-node).
+[Language Server library](HTTPS://github.com/Microsoft/vscode-languageserver-node).
 
 Although we provide a listing of
 [language features](/api/language-extensions/programmatic-language-features) and
@@ -124,7 +124,7 @@ Code's debugging UI to a specific debugger or runtime.
 **Extension Ideas**
 
 -   Connect VS Code's debugging UI to a debugger or runtime by contributing a
-    [Debug Adapter implementation](https://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
+    [Debug Adapter implementation](HTTPS://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
 -   Specify the languages supported by a debugger extension.
 -   Provide rich IntelliSense and hover information for the debug configuration
     attributes used by the debugger.

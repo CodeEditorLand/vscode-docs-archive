@@ -31,7 +31,7 @@ output correctly.
 Now that your Function is running locally, make some changes and set a
 breakpoint to see how Functions works. Learn more about the bindings that are
 available on
-[docs](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings#supported-bindings)
+[docs](HTTPS://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings#supported-bindings)
 and keep in mind that all available bindings will run within the Azure Functions
 extension. This includes triggers from other services such as Azure Storage as
 seen below.

@@ -10,21 +10,21 @@ MetaDescription: Bundling Visual Studio Code extensions (plug-ins) with webpack.
 # Bundling Extension
 
 Visual Studio Code extensions often grow quickly in size. They are authored in
-multiple source files and depend on modules from [npm](https://www.npmjs.com).
+multiple source files and depend on modules from [npm](HTTPS://www.npmjs.com).
 Decomposition and reuse are development best practices but they come at a cost
 when installing and running extensions. Loading 100 small files is much slower
 than loading one large file. That's why we recommend bundling. Bundling is the
 process of combining multiple small source files into a single file.
 
 For JavaScript, different bundlers are available. Popular ones are
-[rollup.js](https://rollupjs.org), [Parcel](https://parceljs.org), and
-[webpack](https://webpack.js.org/). This tutorial will focus on **webpack**,
+[rollup.js](HTTPS://rollupjs.org), [Parcel](HTTPS://parceljs.org), and
+[webpack](HTTPS://webpack.js.org/). This tutorial will focus on **webpack**,
 however, concepts and benefits of all bundlers are similar.
 
 ## Using webpack
 
 Webpack is a development tool that's available from
-[npm](https://www.npmjs.com). To acquire webpack and its command-line interface,
+[npm](HTTPS://www.npmjs.com). To acquire webpack and its command-line interface,
 open the terminal and type:
 
 ```bash
@@ -57,11 +57,11 @@ const path = require("path");
 
 /**@type {import('webpack').Configuration}*/
 const config = {
-	target: "node", // vscode extensions run in a Node.js-context 📖 -> https://webpack.js.org/configuration/node/
+	target: "node", // vscode extensions run in a Node.js-context 📖 -> HTTPS://webpack.js.org/configuration/node/
 
-	entry: "./src/extension.ts", // the entry point of this extension, 📖 -> https://webpack.js.org/configuration/entry-context/
+	entry: "./src/extension.ts", // the entry point of this extension, 📖 -> HTTPS://webpack.js.org/configuration/entry-context/
 	output: {
-		// the bundle is stored in the 'dist' folder (check package.json), 📖 -> https://webpack.js.org/configuration/output/
+		// the bundle is stored in the 'dist' folder (check package.json), 📖 -> HTTPS://webpack.js.org/configuration/output/
 		path: path.resolve(__dirname, "dist"),
 		filename: "extension.js",
 		libraryTarget: "commonjs2",
@@ -69,10 +69,10 @@ const config = {
 	},
 	devtool: "source-map",
 	externals: {
-		vscode: "commonjs vscode", // the vscode-module is created on-the-fly and must be excluded. Add other modules that cannot be webpack'ed, 📖 -> https://webpack.js.org/configuration/externals/
+		vscode: "commonjs vscode", // the vscode-module is created on-the-fly and must be excluded. Add other modules that cannot be webpack'ed, 📖 -> HTTPS://webpack.js.org/configuration/externals/
 	},
 	resolve: {
-		// support reading TypeScript and JavaScript files, 📖 -> https://github.com/TypeStrong/ts-loader
+		// support reading TypeScript and JavaScript files, 📖 -> HTTPS://github.com/TypeStrong/ts-loader
 		extensions: [".ts", ".js"],
 	},
 	module: {
@@ -93,9 +93,9 @@ module.exports = config;
 ```
 
 The file is
-[available](https://github.com/Microsoft/vscode-extension-samples/blob/master/webpack-sample/webpack.config.js)
+[available](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webpack-sample/webpack.config.js)
 as part of the
-[webpack-extension](https://github.com/Microsoft/vscode-extension-samples/blob/master/webpack-sample)
+[webpack-extension](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webpack-sample)
 sample. Webpack configuration files are normal JavaScript modules that must
 export a configuration object.
 
@@ -137,7 +137,7 @@ Merge these entries into the `scripts` section in `package.json`:
 The `compile` and `watch` scripts are for development and they produce the
 bundle file. The `vscode:prepublish` is used by `vsce`, the VS Code packaging
 and publishing tool, and run before publishing an extension. The difference is
-in the [mode](https://webpack.js.org/concepts/mode/) and that controls the level
+in the [mode](HTTPS://webpack.js.org/concepts/mode/) and that controls the level
 of optimization. Using `production` yields the smallest bundle but also takes
 longer, so `none` is used for development. To run above scripts, open a terminal
 and type `npm run compile` or select **Tasks: Run Task** from the Command
@@ -147,7 +147,7 @@ Palette (`kb(workbench.action.showCommands)`).
 
 Before you can run the extension, the `main` property in `package.json` must
 point to the bundle, which for the configuration above is
-[`"./dist/extension"`](https://github.com/Microsoft/vscode-references-view/blob/d649d01d369e338bbe70c86e03f28269cbf87027/package.json#L26).
+[`"./dist/extension"`](HTTPS://github.com/Microsoft/vscode-references-view/blob/d649d01d369e338bbe70c86e03f28269cbf87027/package.json#L26).
 With that change, the extension can now be executed and tested. For debugging
 configuration, make sure to update the `outFiles` property in the `launch.json`
 file.
@@ -204,7 +204,7 @@ webpack.config.json
 Migrating an existing extension to use webpack is easy and similar to the
 getting started guide above. A real world sample that adopted webpack is the VS
 Code's References view through this
-[pull request](https://github.com/Microsoft/vscode-references-view/pull/50).
+[pull request](HTTPS://github.com/Microsoft/vscode-references-view/pull/50).
 
 There you can see:
 

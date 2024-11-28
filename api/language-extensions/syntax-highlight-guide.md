@@ -28,10 +28,10 @@ customizing the styling of different scopes in the editor, see the
 
 VS Code uses [`TextMate grammars`][tm-grammars] to break text into a list of
 tokens. TextMate grammars are a structured collection of
-[Oniguruma regular expressions](https://macromates.com/manual/en/regular_expressions)
+[Oniguruma regular expressions](HTTPS://macromates.com/manual/en/regular_expressions)
 and are typically written as a plist or JSON. You can find a good introduction
 to TextMate grammars
-[here](https://www.apeth.com/nonblog/stories/textmatebundle.html), and you can
+[here](HTTPS://www.apeth.com/nonblog/stories/textmatebundle.html), and you can
 take a look at existing TextMate grammars to learn more about how they work.
 
 ### Tokens and scopes
@@ -259,7 +259,7 @@ strings and comments.
 ![A yaml grammar using multiline strings and comments](images/syntax-highlighting/yaml-grammar.png)
 
 VS Code can only load json grammars, so yaml based grammars must be converted to
-json. The [`js-yaml` package](https://www.npmjs.com/package/js-yaml) and command
+json. The [`js-yaml` package](HTTPS://www.npmjs.com/package/js-yaml) and command
 line tool makes this easy.
 
 ```bash
@@ -432,4 +432,4 @@ content in the `my.sql.template.string` scope is treated as source code:
 }
 ```
 
-[tm-grammars]: https://macromates.com/manual/en/language_grammars
+[tm-grammars]: HTTPS://macromates.com/manual/en/language_grammars

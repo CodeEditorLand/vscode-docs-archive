@@ -12,17 +12,17 @@ DateApproved: 10/5/2017
 
 In this walkthrough, you will deploy a Node.js application to the Azure cloud
 using the
-[Azure Command Line Interface (CLI)](https://docs.microsoft.com/en-us/cli/azure/overview?view=azure-cli-latest).
+[Azure Command Line Interface (CLI)](HTTPS://docs.microsoft.com/en-us/cli/azure/overview?view=azure-cli-latest).
 
 ## Prerequisites
 
 If you don't have an Azure account,
-[sign up today](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-node-git&mktingSource=vscode-tutorial-node-git)
+[sign up today](HTTPS://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-node-git&mktingSource=vscode-tutorial-node-git)
 for a free 30 day account with $200 in Azure credits to try out any combination
 of services.
 
-You'll need [Node.js and npm](https://nodejs.org/en/download/) and
-[Git](https://git-scm.com/downloads) installed locally.
+You'll need [Node.js and npm](HTTPS://nodejs.org/en/download/) and
+[Git](HTTPS://git-scm.com/downloads) installed locally.
 
 Install the Azure Command Line Interface (CLI) which you will use the CLI to do
 the following:
@@ -33,9 +33,9 @@ the following:
 -   View your application's logs (`console.log` output).
 
 > **Tip:** If you prefer, you can use Azure
-> [Cloud Shell](https://docs.microsoft.com/en-us/azure/cloud-shell/overview)
+> [Cloud Shell](HTTPS://docs.microsoft.com/en-us/azure/cloud-shell/overview)
 > from within VS Code for this tutorial. Install the
-> [Azure Account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
+> [Azure Account](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account)
 > extension which adds Cloud Shell support in the Integrated Terminal.
 
 ## Install the Azure CLI
@@ -43,20 +43,20 @@ the following:
 The Azure CLI is cross platform and runs on Windows, macOS, as well as many
 different Linux distributions.
 
-> [Install the Azure CLI](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
+> [Install the Azure CLI](HTTPS://docs.microsoft.com/en-us/cli/azure/install-azure-cli)
 
 ### Log In
 
 Once installed, you can use the `az` command from your favorite terminal.
 
 Following the instructions, browse to
-[https://aka.ms/devicelogin](https://aka.ms/devicelogin) and paste in the 9
+[HTTPS://aka.ms/devicelogin](HTTPS://aka.ms/devicelogin) and paste in the 9
 character code. When prompted, use the email address and password you used when
 creating your Azure account.
 
 ```bash
 $ az login
-To sign in, go to https://aka.ms/devicelogin and enter the code BF9BUDLGR to authenticate.
+To sign in, go to HTTPS://aka.ms/devicelogin and enter the code BF9BUDLGR to authenticate.
 ```
 
 ## Prerequisite Check
@@ -64,7 +64,7 @@ To sign in, go to https://aka.ms/devicelogin and enter the code BF9BUDLGR to aut
 Before we continue, ensure that you have all of the prerequisites properly
 installed. Type each command and ensure it displays the version you have
 installed. If your Node.js version is less than 6, please
-[upgrade](https://nodejs.org/en/download/) to the most current LTS ("Long Term
+[upgrade](HTTPS://nodejs.org/en/download/) to the most current LTS ("Long Term
 Support") release.
 
 ```bash
@@ -73,7 +73,7 @@ $ node -v
 ```
 
 Now check that you have `git` installed. If not,
-[install](https://git-scm.com/downloads) it and test again.
+[install](HTTPS://git-scm.com/downloads) it and test again.
 
 ```bash
 $ git --version

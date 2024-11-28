@@ -17,7 +17,7 @@ Contribution Point allows you to bundle snippets into a Visual Studio Code
 extension for sharing.
 
 The
-[Creating snippets](https://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets)
+[Creating snippets](HTTPS://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets)
 topic contains all information for creating snippets. This guide / sample just
 shows how you can turn your own snippets into an extension for sharing. The
 suggested workflow is:
@@ -42,7 +42,7 @@ suggested workflow is:
 ```
 
 You can find the complete source code at:
-https://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample
+HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/snippet-sample
 
 **Tip**: Tag your extension as a snippet extension with the following config in
 your `package.json`:

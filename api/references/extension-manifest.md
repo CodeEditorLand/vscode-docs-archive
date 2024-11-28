@@ -20,10 +20,10 @@ root of the extension directory structure.
 | Name                                                    | Required | Type                                       | Details                                                                                                                                                                                                                                                                                                                |
 | ------------------------------------------------------- | :------: | ------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `name`                                                  |    Y     | `string`                                   | The name of the extension - should be all lowercase with no spaces.                                                                                                                                                                                                                                                    |
-| `version`                                               |    Y     | `string`                                   | [SemVer](https://semver.org/) compatible version.                                                                                                                                                                                                                                                                      |
+| `version`                                               |    Y     | `string`                                   | [SemVer](HTTPS://semver.org/) compatible version.                                                                                                                                                                                                                                                                      |
 | `publisher`                                             |    Y     | `string`                                   | The [publisher name](/api/working-with-extensions/publishing-extension#publishers-and-personal-access-tokens)                                                                                                                                                                                                          |
 | `engines`                                               |    Y     | `object`                                   | An object containing at least the `vscode` key matching the versions of VS Code that the extension is [compatible](/api/working-with-extensions/publishing-extension#visual-studio-code-compatibility) with. Cannot be `*`. For example: `^0.10.5` indicates compatibility with a minimum VS Code version of `0.10.5`. |
-| `license`                                               |          | `string`                                   | Refer to [npm's documentation](https://docs.npmjs.com/files/package.json#license). If you do have a `LICENSE` file in the root of your extension, the value for `license` should be `"SEE LICENSE IN <filename>"`.                                                                                                     |
+| `license`                                               |          | `string`                                   | Refer to [npm's documentation](HTTPS://docs.npmjs.com/files/package.json#license). If you do have a `LICENSE` file in the root of your extension, the value for `license` should be `"SEE LICENSE IN <filename>"`.                                                                                                     |
 | `displayName`                                           |          | `string`                                   | The display name for the extension used in the Marketplace.                                                                                                                                                                                                                                                            |
 | `description`                                           |          | `string`                                   | A short description of what your extension is and does.                                                                                                                                                                                                                                                                |
 | `categories`                                            |          | `string[]`                                 | the categories you want to use for the extensions allowed values: `[Programming Languages, Snippets, Linters, Themes, Debuggers, Formatters, Keymaps, SCM Providers, Other, Extension Packs, Language Packs]`                                                                                                          |
@@ -36,15 +36,15 @@ root of the extension directory structure.
 | `badges`                                                |          | `array`                                    | Array of [approved](/api/references/extension-manifest#approved-badges) badges to display in the sidebar of the Marketplace's extension page. Each badge is an object containing 3 properties: `url` for the badge's image URL, `href` for the link users will follow when clicking the badge and `description`.       |
 | `markdown`                                              |          | `string`                                   | Controls the Markdown rendering engine used in the Marketplace. Either `github` (default) or `standard`.                                                                                                                                                                                                               |
 | `qna`                                                   |          | `marketplace` (default), `string`, `false` | Controls the **Q & A** link in the Marketplace. Set to `marketplace` to enable the default Marketplace Q & A site. Set to a string to provide the URL of a custom Q & A site. Set to `false` to disable Q & A altogether.                                                                                              |
-| `dependencies`                                          |          | `object`                                   | Any runtime Node.js dependencies your extensions needs. Exactly the same as [npm's `dependencies`](https://docs.npmjs.com/files/package.json#dependencies).                                                                                                                                                            |
-| `devDependencies`                                       |          | `object`                                   | Any development Node.js dependencies your extension needs. Exactly the same as [npm's `devDependencies`](https://docs.npmjs.com/files/package.json#devdependencies).                                                                                                                                                   |
+| `dependencies`                                          |          | `object`                                   | Any runtime Node.js dependencies your extensions needs. Exactly the same as [npm's `dependencies`](HTTPS://docs.npmjs.com/files/package.json#dependencies).                                                                                                                                                            |
+| `devDependencies`                                       |          | `object`                                   | Any development Node.js dependencies your extension needs. Exactly the same as [npm's `devDependencies`](HTTPS://docs.npmjs.com/files/package.json#devdependencies).                                                                                                                                                   |
 | `extensionPack`                                         |          | `array`                                    | An array with the ids of extensions bundled with this extension. These other extensions will be installed when the primary extension is installed. The id of an extension is always `${publisher}.${name}`. For example: `vscode.csharp`.                                                                              |
 | `extensionDependencies`                                 |          | `array`                                    | An array with the ids of extensions that this extension depends on. These other extensions will be installed when the primary extension is installed. The id of an extension is always `${publisher}.${name}`. For example: `vscode.csharp`.                                                                           |
-| `scripts`                                               |          | `object`                                   | Exactly the same as [npm's `scripts`](https://docs.npmjs.com/misc/scripts) but with extra VS Code specific fields such as [vscode:prepublish](/api/working-with-extensions/publishing-extension#prepublish-step) or [vscode:uninstall](/api/references/extension-manifest#extension-uninstall-hook).                   |
+| `scripts`                                               |          | `object`                                   | Exactly the same as [npm's `scripts`](HTTPS://docs.npmjs.com/misc/scripts) but with extra VS Code specific fields such as [vscode:prepublish](/api/working-with-extensions/publishing-extension#prepublish-step) or [vscode:uninstall](/api/references/extension-manifest#extension-uninstall-hook).                   |
 | `icon`                                                  |          | `string`                                   | The path to the icon of at least 128x128 pixels (256x256 for Retina screens).                                                                                                                                                                                                                                          |
 
 Also check
-[npm's `package.json` reference](https://docs.npmjs.com/files/package.json).
+[npm's `package.json` reference](HTTPS://docs.npmjs.com/files/package.json).
 
 ## Example
 
@@ -81,14 +81,14 @@ Here is a complete `package.json`
 	},
 	"license": "SEE LICENSE IN LICENSE.txt",
 	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-wordcount/issues",
+		"url": "HTTPS://github.com/Microsoft/vscode-wordcount/issues",
 		"email": "smcbreen@microsoft.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-wordcount.git"
+		"url": "HTTPS://github.com/Microsoft/vscode-wordcount.git"
 	},
-	"homepage": "https://github.com/Microsoft/vscode-wordcount/blob/master/README.md"
+	"homepage": "HTTPS://github.com/Microsoft/vscode-wordcount/blob/master/README.md"
 }
 ```
 
@@ -96,7 +96,7 @@ Here is a complete `package.json`
 
 Here are some tips and recommendations to make your extension look great when
 displayed on the
-[VS Code Marketplace](https://marketplace.visualstudio.com/VSCode).
+[VS Code Marketplace](HTTPS://marketplace.visualstudio.com/VSCode).
 
 Always use the latest `vsce` so `npm install -g vsce` to make sure you have it.
 
@@ -106,8 +106,8 @@ You can provide relative path image links in the `README.md`.
 
 Here are a few examples:
 
-1. [Word Count](https://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount)
-2. [MD Tools](https://marketplace.visualstudio.com/items/seanmcbreen.MDTools)
+1. [Word Count](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.wordcount)
+2. [MD Tools](HTTPS://marketplace.visualstudio.com/items/seanmcbreen.MDTools)
 
 Provide a good display name and description. This is important for the
 Marketplace and in product displays. These strings are also used for text search
@@ -138,14 +138,14 @@ and these are displayed under the **Resources** section of the Marketplace.
 ```json
 {
 	"license": "SEE LICENSE IN LICENSE.txt",
-	"homepage": "https://github.com/Microsoft/vscode-wordcount/blob/master/README.md",
+	"homepage": "HTTPS://github.com/Microsoft/vscode-wordcount/blob/master/README.md",
 	"bugs": {
-		"url": "https://github.com/Microsoft/vscode-wordcount/issues",
+		"url": "HTTPS://github.com/Microsoft/vscode-wordcount/issues",
 		"email": "smcbreen@microsoft.com"
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/Microsoft/vscode-wordcount.git"
+		"url": "HTTPS://github.com/Microsoft/vscode-wordcount.git"
 	}
 }
 ```
@@ -174,7 +174,7 @@ grouped together on the Marketplace which improves filtering and discovery.
 ```
 
 > **Tip:** The
-> [Extension Manifest Editor](https://marketplace.visualstudio.com/items?itemName=ms-devlabs.extension-manifest-editor)
+> [Extension Manifest Editor](HTTPS://marketplace.visualstudio.com/items?itemName=ms-devlabs.extension-manifest-editor)
 > extension lets you preview how your extension `README.md` and `package.json`
 > metadata will look when published to the Marketplace.
 
@@ -222,7 +222,7 @@ We allow badges from the following URL prefixes:
 -   www.versioneye.com
 
 If you have other badges you would like to use, please open a Github
-[issue](https://github.com/Microsoft/vscode/issues) and we're happy to take a
+[issue](HTTPS://github.com/Microsoft/vscode/issues) and we're happy to take a
 look.
 
 ## Combining Extension Contributions
@@ -360,19 +360,19 @@ There are several Node.js modules available on npmjs to help with writing VS
 Code extensions. You can include these in your extension's `dependencies`
 section.
 
--   [vscode-nls](https://www.npmjs.com/package/vscode-nls) - Support for
+-   [vscode-nls](HTTPS://www.npmjs.com/package/vscode-nls) - Support for
     externalization and localization.
--   [vscode-uri](https://www.npmjs.com/package/vscode-uri) - The URI
+-   [vscode-uri](HTTPS://www.npmjs.com/package/vscode-uri) - The URI
     implementation used by VS Code and its extensions.
--   [jsonc-parser](https://www.npmjs.com/package/jsonc-parser) - A scanner and
+-   [jsonc-parser](HTTPS://www.npmjs.com/package/jsonc-parser) - A scanner and
     fault tolerant parser to process JSON with or without comments.
--   [request-light](https://www.npmjs.com/package/request-light) - A light
+-   [request-light](HTTPS://www.npmjs.com/package/request-light) - A light
     weight Node.js request library with proxy support
--   [vscode-extension-telemetry](https://www.npmjs.com/package/vscode-extension-telemetry) -
+-   [vscode-extension-telemetry](HTTPS://www.npmjs.com/package/vscode-extension-telemetry) -
     Consistent telemetry reporting for VS Code extensions.
--   [vscode-languageclient](https://www.npmjs.com/package/vscode-languageclient) -
+-   [vscode-languageclient](HTTPS://www.npmjs.com/package/vscode-languageclient) -
     Easily integrate language servers adhering to the
-    [language server protocol](https://microsoft.github.io/language-server-protocol).
+    [language server protocol](HTTPS://microsoft.github.io/language-server-protocol).
 
 ## Next steps
 

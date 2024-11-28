@@ -25,7 +25,7 @@ extension. For example, you can learn
     [integration tests](/api/working-with-extensions/testing-extension) for your
     extension
 -   How to publish your extension to the
-    [VS Code Marketplace](https://marketplace.visualstudio.com/)
+    [VS Code Marketplace](HTTPS://marketplace.visualstudio.com/)
 -   How to set up
     [Continuous Integration](/api/working-with-extensions/continuous-integration)
     for your extension
@@ -44,5 +44,5 @@ We have a great collection of sample extensions that you can adapt from, and
 some of them include a detailed guide that explains the source code. You can
 find all Samples & Guides in the
 [Extension Guide Listing](/api/extension-guides/overview) or the
-[vscode-extension-samples](https://github.com/Microsoft/vscode-extension-samples)
+[vscode-extension-samples](HTTPS://github.com/Microsoft/vscode-extension-samples)
 repository.

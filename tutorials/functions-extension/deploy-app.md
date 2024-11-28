@@ -10,7 +10,7 @@ DateApproved: 2/9/2018
 # Deploy your App using Azure Functions
 
 If you don't have an Azure account,
-[sign up today](https://azure.microsoft.com/en-us/free/serverless?utm_source=campaign&utm_campaign=vscode-tutorial-functions-extension&mktingSource=vscode-tutorial-functions-extension)
+[sign up today](HTTPS://azure.microsoft.com/en-us/free/serverless?utm_source=campaign&utm_campaign=vscode-tutorial-functions-extension&mktingSource=vscode-tutorial-functions-extension)
 for a free 30-day account with $200 in Azure credits to try out any combination
 of services.
 
@@ -38,7 +38,7 @@ select your Azure subscription, and then choose **Create New Function App**.
 2. Choose **Create New Resource Group**, type a Resource Group name, like
    'myResourceGroup' and press `kbstyle(Enter)`.
 
-3. Choose a location in a [region](https://azure.microsoft.com/en-us/regions/)
+3. Choose a location in a [region](HTTPS://azure.microsoft.com/en-us/regions/)
    near you or near other services you may need to access.
 
 4. Choose **Create New Storage Account**, type a globally unique name of the new
@@ -83,14 +83,14 @@ Congratulations, you've successfully completed this walkthrough!
 
 Next, check out the other Azure extensions.
 
--   [Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
--   [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
--   [Docker Tools](https://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
--   [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
--   [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+-   [Azure App Service](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+-   [Cosmos DB](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+-   [Docker Tools](HTTPS://marketplace.visualstudio.com/items?itemName=PeterJausovec.vscode-docker)
+-   [Azure CLI Tools](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+-   [Azure Resource Manager (ARM) Tools](HTTPS://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
 Or get them all by installing the
-[Node Pack for Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+[Node Pack for Azure](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 extension pack.
 
 ---

@@ -21,9 +21,9 @@ This topic:
 
 -   Explains the benefits of Language Server Extension.
 -   Walks you through building a Language Server using the
-    [`Microsoft/vscode-languageserver-node`](https://github.com/Microsoft/vscode-languageserver-node)
+    [`Microsoft/vscode-languageserver-node`](HTTPS://github.com/Microsoft/vscode-languageserver-node)
     library. You can also jump directly to the code in
-    [lsp-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample).
+    [lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample).
 
 ## Why Language Server?
 
@@ -54,7 +54,7 @@ cannot expect any uniform API from language toolings. This makes implementing
 language support for `M` languages in `N` code editors the work of `M * N`.
 
 To solve those problems, Microsoft specified
-[Language Server Protocol](https://microsoft.github.io/language-server-protocol)
+[Language Server Protocol](HTTPS://microsoft.github.io/language-server-protocol)
 which standardizes the communication between language tooling and code editor.
 This way, Language Servers can be implemented in any language and run in its own
 process to avoid performance cost, as they communicate with the code editor
@@ -70,7 +70,7 @@ In this guide, we will:
 
 -   Explain how to build a Language Server extension in VS Code using the
     provided
-    [Node SDK](https://github.com/Microsoft/vscode-languageserver-node).
+    [Node SDK](HTTPS://github.com/Microsoft/vscode-languageserver-node).
 -   Explain how to run, debug, log and test the Language Server extension.
 -   Point you to some advanced topics on Language Servers.
 
@@ -103,7 +103,7 @@ LSP.
 ![LSP Illustration](images/language-server-extension-guide/lsp-illustration.png)
 
 This guide will teach you how to build a Language Client / Server using our
-[Node SDK](https://github.com/Microsoft/vscode-languageserver-node). The
+[Node SDK](HTTPS://github.com/Microsoft/vscode-languageserver-node). The
 remaining document assumes that you are familiar with VS Code
 [Extension API](/api).
 
@@ -115,20 +115,20 @@ configurations between Client / Server.
 
 If you prefer to jump right into the code:
 
--   **[lsp-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**:
+-   **[lsp-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-sample)**:
     Heavily documented source code for this guide.
--   **[lsp-multi-server-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**:
+-   **[lsp-multi-server-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/lsp-multi-server-sample)**:
     A heavily documented, advanced version of **lsp-sample** that starts a
     different server instance per workspace folder to support the
     [multi-root workspace](/docs/editor/multi-root-workspaces) feature in VS
     Code.
 
 Clone the repository
-[Microsoft/vscode-extension-samples](https://github.com/Microsoft/vscode-extension-samples)
+[Microsoft/vscode-extension-samples](HTTPS://github.com/Microsoft/vscode-extension-samples)
 and open the sample:
 
 ```bash
-clone > git https://github.com/Microsoft/vscode-extension-samples.git
+clone > git HTTPS://github.com/Microsoft/vscode-extension-samples.git
 vscode-extension-samples/lsp-sample > cd
 install > npm
 run > npm compile
@@ -648,9 +648,9 @@ As Language Servers can be chatty (5 seconds of real-world usage can produce
 5000 lines of log), we also provide a tool to visualize and filter the
 communication between Language Client / Server. You can save all logs from the
 channel into a file, and load that file with the
-[Language Server Protocol Inspector](https://github.com/Microsoft/language-server-protocol-inspector)
+[Language Server Protocol Inspector](HTTPS://github.com/Microsoft/language-server-protocol-inspector)
 at
-[https://microsoft.github.io/language-server-protocol/inspector](https://microsoft.github.io/language-server-protocol/inspector).
+[HTTPS://microsoft.github.io/language-server-protocol/inspector](HTTPS://microsoft.github.io/language-server-protocol/inspector).
 
 ![LSP Inspector](images/language-server-extension-guide/lsp-inspector.png)
 
@@ -762,8 +762,8 @@ results in the following validation:
 The first interesting feature a language server usually implements is validation
 of documents. In that sense, even a linter counts as a language server and in VS
 Code linters are usually implemented as language servers (see
-[eslint](https://github.com/Microsoft/vscode-eslint) and
-[jshint](https://github.com/Microsoft/vscode-jshint) for examples). But there is
+[eslint](HTTPS://github.com/Microsoft/vscode-eslint) and
+[jshint](HTTPS://github.com/Microsoft/vscode-jshint) for examples). But there is
 more to language servers. They can provide code completion, Find All References
 or Go To Definition. The example code below adds code completion to the server.
 It proposes the two words 'TypeScript' and 'JavaScript'.
@@ -841,12 +841,12 @@ Servers:
 
 -   Unit Test: This is useful if you want to test specific functionalities in
     Language Servers by mocking up all the information being sent to it. VS
-    Code's [HTML](https://github.com/Microsoft/vscode-html-languageservice) /
-    [CSS](https://github.com/Microsoft/vscode-css-languageservice) /
-    [JSON](https://github.com/Microsoft/vscode-json-languageservice) Language
+    Code's [HTML](HTTPS://github.com/Microsoft/vscode-html-languageservice) /
+    [CSS](HTTPS://github.com/Microsoft/vscode-css-languageservice) /
+    [JSON](HTTPS://github.com/Microsoft/vscode-json-languageservice) Language
     Servers take this approach to testing. The LSP npm modules itself use the
     approach. See
-    [here](https://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/test/connection.test.ts)
+    [here](HTTPS://github.com/Microsoft/vscode-languageserver-node/blob/master/protocol/src/test/connection.test.ts)
     for some unit test written using the npm protocol module.
 -   End-to-End Test: This is similar to
     [VS Code extension test](/api/working-with-extensions/testing-extension).
@@ -855,7 +855,7 @@ Servers:
     Client / Server and running [VS Code commands](/api/references/commands).
     This approach is superior if you have files, settings or dependencies (such
     as `node_modules`) which are hard or impossible to mock. The popular
-    [Python](https://github.com/Microsoft/vscode-python) extension takes this
+    [Python](HTTPS://github.com/Microsoft/vscode-python) extension takes this
     approach to testing.
 
 It is possible to do Unit Test in any testing framework of your choice. Here we
@@ -1097,12 +1097,12 @@ some simple language features for a type of document, consider using
 `vscode.languages.register[LANGUAGE_FEATURE]Provider` as an option.
 
 Here is a
-[`completions-sample`](https://github.com/Microsoft/vscode-extension-samples/tree/master/completions-sample)
+[`completions-sample`](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/completions-sample)
 using `vscode.languages.registerCompletionItemProvider` to add a few snippets as
 completions for plain text files.
 
 More samples illustrating the usage of VS Code API can be found at
-[https://github.com/Microsoft/vscode-extension-samples](https://github.com/Microsoft/vscode-extension-samples).
+[HTTPS://github.com/Microsoft/vscode-extension-samples](HTTPS://github.com/Microsoft/vscode-extension-samples).
 
 ### Error Tolerant Parser for Language Server
 
@@ -1115,9 +1115,9 @@ code, and the Language Server provides language features based on the AST.
 When we were improving PHP support in VS Code, we realized the official PHP
 parser is not error tolerant and cannot be reused directly in the Language
 Server. Therefore, we worked on
-[Microsoft/tolerant-php-parser](https://github.com/Microsoft/tolerant-php-parser)
+[Microsoft/tolerant-php-parser](HTTPS://github.com/Microsoft/tolerant-php-parser)
 and left detailed
-[notes](https://github.com/Microsoft/tolerant-php-parser/blob/master/docs/HowItWorks.md)
+[notes](HTTPS://github.com/Microsoft/tolerant-php-parser/blob/master/docs/HowItWorks.md)
 that might help Language Server authors who need to implement an error tolerant
 parser.
 
@@ -1131,6 +1131,6 @@ started the client in order to have a running server. You may also need to
 disable your client breakpoints if they are interfering with starting the
 server.
 
-### I have read through this guide and the [LSP Specification](https://microsoft.github.io/language-server-protocol/), but I still have unresolved questions. Where can I get help?
+### I have read through this guide and the [LSP Specification](HTTPS://microsoft.github.io/language-server-protocol/), but I still have unresolved questions. Where can I get help?
 
-Please open an issue at https://github.com/Microsoft/language-server-protocol.
+Please open an issue at HTTPS://github.com/Microsoft/language-server-protocol.

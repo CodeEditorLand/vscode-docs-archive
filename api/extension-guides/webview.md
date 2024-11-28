@@ -23,7 +23,7 @@ powerful, and opens up a whole new range of extension possibilities.
 
 ## Links
 
--   [Webview Sample](https://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md)
+-   [Webview Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md)
 
 ### VS Code API Usage
 
@@ -62,7 +62,7 @@ the user when the cat introduces a bug.
 
 Here's the `package.json` for the first version of the **Cat Coding** extension.
 You can find the complete code for the example app
-[here](https://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md).
+[here](HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/webview-sample/README.md).
 The first version of our extension
 [contributes a command](/api/references/contribution-points#contributes.commands)
 called `catCoding.start`. When a user invokes this command, we will show a
@@ -165,7 +165,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
 </body>
 </html>`;
 }
@@ -190,8 +190,8 @@ cats:
 import * as vscode from 'vscode';
 
 const cats = {
-  'Coding Cat': 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
+  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
+  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
 };
 
 export function activate(context: vscode.ExtensionContext) {
@@ -268,8 +268,8 @@ event to cancel further updates and clean up the webview's resources:
 import * as vscode from 'vscode';
 
 const cats = {
-  'Coding Cat': 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
+  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
+  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif'
 };
 
 export function activate(context: vscode.ExtensionContext) {
@@ -408,9 +408,9 @@ event to change cats based on which column the webview is showing in:
 
 ```ts
 const cats = {
-  'Coding Cat': 'https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
-  'Compiling Cat': 'https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif',
-  'Testing Cat': 'https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif'
+  'Coding Cat': 'HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif',
+  'Compiling Cat': 'HTTPS://media.giphy.com/media/mlvseq9yvZhba/giphy.gif',
+  'Testing Cat': 'HTTPS://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif'
 };
 
 export function activate(context: vscode.ExtensionContext) {
@@ -619,7 +619,7 @@ types of themes. And always test your webview in high-contrast mode to make sure
 it will be usable by people with visual disabilities.
 
 Webviews can also access VS Code theme colors using
-[CSS variables](https://developer.mozilla.org/docs/Web/CSS/Using_CSS_variables).
+[CSS variables](HTTPS://developer.mozilla.org/docs/Web/CSS/Using_CSS_variables).
 These variable names are prefixed with `vscode` and replace the `.` with `-`.
 For example `editor.foreground` becomes `var(--vscode-editor-foreground)`:
 
@@ -684,7 +684,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -775,7 +775,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -858,7 +858,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -906,7 +906,7 @@ access to all local resources.
 
 ### Content security policy
 
-[Content security policies](https://developers.google.com/web/fundamentals/security/csp/)
+[Content security policies](HTTPS://developers.google.com/web/fundamentals/security/csp/)
 further restrict the content that can be loaded and executed in webviews. For
 example, a content security policy can make sure that only a whitelist of
 scripts can be run in the webview, or even tell the webview to only load images
@@ -1112,7 +1112,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>

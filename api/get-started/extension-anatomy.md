@@ -67,7 +67,7 @@ You can read more about the configuration files:
 -   `launch.json` used to configure VS Code [Debugging](/docs/editor/debugging)
 -   `tasks.json` for defining VS Code [Tasks](/docs/editor/tasks)
 -   `tsconfig.json` consult the TypeScript
-    [Handbook](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
+    [Handbook](HTTPS://www.typescriptlang.org/docs/handbook/tsconfig-json.html)
 
 However, let's focus on `package.json` and `extensions.ts`, which are essential
 to understanding the `Hello World` extension.
@@ -104,7 +104,7 @@ some most important fields:
 	"description": "HelloWorld example for VS Code",
 	"version": "0.0.1",
 	"publisher": "vscode-samples",
-	"repository": "https://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
+	"repository": "HTTPS://github.com/Microsoft/vscode-extension-samples/helloworld-sample",
 	"engines": {
 		"vscode": "^1.31.0"
 	},
@@ -143,7 +143,7 @@ The extension entry file exports two functions, `activate` and `deactivate`.
 `deactivate` gives you a chance to clean up before your extension becomes
 deactivated.
 
-The [`vscode`](https://www.npmjs.com/package/vscode) module contains a script
+The [`vscode`](HTTPS://www.npmjs.com/package/vscode) module contains a script
 located at `node ./node_modules/vscode/bin/install`. The script pulls the VS
 Code API definition file depending on the `engines.vscode` field in
 `package.json`. After running the script, you would get IntelliSense, jump to

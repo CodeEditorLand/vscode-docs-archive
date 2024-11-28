@@ -16,7 +16,7 @@ integrate existing debuggers into VS Code, while having a common user interface
 with all of them.
 
 VS Code ships with one built-in debugger extension, the
-[Node.js](https://nodejs.org) debugger extension, which is an excellent showcase
+[Node.js](HTTPS://nodejs.org) debugger extension, which is an excellent showcase
 for the many debugger features supported by VS Code:
 
 ![VS Code Debug Features](images/debugger-extension/debug-features.png)
@@ -49,18 +49,18 @@ We call this intermediary the **Debug Adapter** (or **DA** for short) and the
 abstract protocol that is used between the DA and VS Code is the **Debug Adapter
 Protocol** (**DAP** for short). Since the Debug Adapter Protocol is independent
 from VS Code, it has its own
-[web site](https://microsoft.github.io/debug-adapter-protocol/) where you can
+[web site](HTTPS://microsoft.github.io/debug-adapter-protocol/) where you can
 find an
-[introduction and overview](https://microsoft.github.io/debug-adapter-protocol/overview),
+[introduction and overview](HTTPS://microsoft.github.io/debug-adapter-protocol/overview),
 the detailed
-[specification](https://microsoft.github.io/debug-adapter-protocol/specification),
+[specification](HTTPS://microsoft.github.io/debug-adapter-protocol/specification),
 and some lists with
-[known implementations and supporting tools](https://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
+[known implementations and supporting tools](HTTPS://microsoft.github.io/debug-adapter-protocol/implementors/adapters/).
 The history of and motivation behind DAP is explained in this
-[blog post](https://code.visualstudio.com/blogs/2018/08/07/debug-adapter-protocol-website#_why-the-need-for-decoupling-with-protocols).
+[blog post](HTTPS://code.visualstudio.com/blogs/2018/08/07/debug-adapter-protocol-website#_why-the-need-for-decoupling-with-protocols).
 
 Since debug adapters are independent from VS Code and can be used in
-[other developments tools](https://microsoft.github.io/debug-adapter-protocol/implementors/tools/),
+[other developments tools](HTTPS://microsoft.github.io/debug-adapter-protocol/implementors/tools/),
 they do not match VS Code's extensibility architecture which is based on
 extensions and contribution points.
 
@@ -116,7 +116,7 @@ continue, breakpoints, exceptions, and variable access, but it is not connected
 to any real debugger.
 
 Before delving into the development setup for mock-debug, let's first install a
-[pre-built version](https://marketplace.visualstudio.com/items/andreweinand.mock-debug)
+[pre-built version](HTTPS://marketplace.visualstudio.com/items/andreweinand.mock-debug)
 from the VS Code Marketplace and play with it:
 
 -   Switch to the Extensions viewlet and type "mock" to search for the Mock
@@ -152,7 +152,7 @@ Now let's get the source for Mock Debug and start development on it within VS
 Code:
 
 ```bash
-git clone https://github.com/Microsoft/vscode-mock-debug.git
+git clone HTTPS://github.com/Microsoft/vscode-mock-debug.git
 cd vscode-mock-debug
 npm install
 ```
@@ -248,7 +248,7 @@ But now the real work begins: you will have to replace the mock implementation
 of the debug adapter in `src/mockDebug.ts` and `src/mockRuntime.ts` by some code
 that talks to a "real" debugger or runtime. This involves understanding and
 implementing the Debug Adapter Protocol. More details about this can be found
-[here](https://microsoft.github.io/debug-adapter-protocol/overview#How_it_works).
+[here](HTTPS://microsoft.github.io/debug-adapter-protocol/overview#How_it_works).
 
 ## Anatomy of the package.json of a Debugger Extension
 
@@ -441,7 +441,7 @@ The implementation of a command lives in the extension and it can range from a
 simple expression with no UI, to sophisticated functionality based on the UI
 features available in the extension API. Mock Debug binds a variable
 `AskForProgramName` to the command `extension.mock-debug.getProgramName`. The
-[implementation](https://github.com/Microsoft/vscode-mock-debug/blob/606454ff3bd669867a38d9b2dc7b348d324a3f6b/src/extension.ts#L21-L26)
+[implementation](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/606454ff3bd669867a38d9b2dc7b348d324a3f6b/src/extension.ts#L21-L26)
 of this command in `src/extension.ts` uses the `showInputBox` to let the user
 enter a program name:
 
@@ -537,11 +537,11 @@ as a server inside the extension host and to make VS Code to connect to it
 instead of launching a new debug adapter per session.
 
 Mock Debug shows how a
-[DebugAdapterDescriptorFactory](https://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L74-L98)
+[DebugAdapterDescriptorFactory](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L74-L98)
 can be used to create and
-[register](https://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L32-L36)
+[register](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L32-L36)
 a server-based debug adapter. The feature is enabled by setting the compile time
 flag
-[`EMBED_DEBUG_ADAPTER`](https://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L17)
+[`EMBED_DEBUG_ADAPTER`](HTTPS://github.com/Microsoft/vscode-mock-debug/blob/6a2ef01b95bb22cdf55683f4d616cad501051510/src/extension.ts#L17)
 to true. If you now start debugging the extension with **F5** you will hit
 breakpoints not only in the extension host but in the debug adapter as well.

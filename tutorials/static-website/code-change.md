@@ -33,7 +33,7 @@ that you want to deploy your changes.
 ## Test your changes
 
 Once your deployment is complete, revisit your storage endpoint
-(`https://<storage-account-name>.z4.web.core.windows.net/`) and you should see
+(`HTTPS://<storage-account-name>.z4.web.core.windows.net/`) and you should see
 the following:
 
 ![Import build](images/static-website/updated-azure-app.png)

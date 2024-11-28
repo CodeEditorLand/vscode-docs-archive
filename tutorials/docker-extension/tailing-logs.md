@@ -51,20 +51,20 @@ Congratulations, you've successfully completed this walkthrough!
 
 Next, check out the other Azure extensions.
 
--   [Cosmos DB](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
--   [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
--   [Azure CLI Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
--   [Azure Resource Manager (ARM) Tools](https://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
+-   [Cosmos DB](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-cosmosdb)
+-   [Azure Functions](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions)
+-   [Azure CLI Tools](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.azurecli)
+-   [Azure Resource Manager (ARM) Tools](HTTPS://marketplace.visualstudio.com/items?itemName=msazurermtools.azurerm-vscode-tools)
 
 Or get them all by installing the
-[Node Pack for Azure](https://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
+[Node Pack for Azure](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.vscode-node-azure-pack)
 extension pack.
 
 ## Learn more at docs.microsoft.com
 
 The
-[Azure for Node.js](https://docs.microsoft.com/en-us/nodejs/azure/?view=azure-node-2.0.0)
-developer center on [docs.microsoft.com](https://docs.microsoft.com) has a
+[Azure for Node.js](HTTPS://docs.microsoft.com/en-us/nodejs/azure/?view=azure-node-2.0.0)
+developer center on [docs.microsoft.com](HTTPS://docs.microsoft.com) has a
 number of great articles on how to build and deploy Node.js based functions and
 applications to Azure.
 

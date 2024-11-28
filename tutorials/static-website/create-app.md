@@ -11,7 +11,7 @@ DateApproved: 6/27/2018
 
 In this section, you will create a simple static website that can be deployed to
 the cloud. This tutorial uses
-[create-react-app](https://github.com/facebook/create-react-app), a React
+[create-react-app](HTTPS://github.com/facebook/create-react-app), a React
 utility CLI, to quickly scaffold out a simple React app from the terminal.
 However, if you want to use Angular, Vue, any other framework, or just a folder
 with a few HTML files, those will all work too.
@@ -22,10 +22,10 @@ with a few HTML files, those will all work too.
 
 ## Install create-react-app tool
 
-[React](https://reactjs.org/) is a popular framework for building web
+[React](HTTPS://reactjs.org/) is a popular framework for building web
 applications, so we will use it as an example. You can scaffold (create) a new
 React application using the
-[create-react-app](https://github.com/facebook/create-react-app) tool. The
+[create-react-app](HTTPS://github.com/facebook/create-react-app) tool. The
 `create-react-app` tool is shipped as an npm module and can be installed by
 using `npm`.
 
@@ -65,7 +65,7 @@ npm start
 ```
 
 Now, open your browser and navigate to
-[http://localhost:3000](http://localhost:3000), where you should see something
+[HTTP://localhost:3000](HTTP://localhost:3000), where you should see something
 like this:
 
 ![Running React App](images/static-website/local-app.png)

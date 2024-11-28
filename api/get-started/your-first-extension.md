@@ -12,9 +12,9 @@ MetaDescription:
 # Your First Extension
 
 In this topic, we'll teach you the fundamental concepts for building extensions.
-Make sure you have [Node.js](https://nodejs.org/en/) and
-[Git](https://git-scm.com/) installed, then install [Yeoman](http://yeoman.io/)
-and [VS Code Extension Generator](https://www.npmjs.com/package/generator-code)
+Make sure you have [Node.js](HTTPS://nodejs.org/en/) and
+[Git](HTTPS://git-scm.com/) installed, then install [Yeoman](HTTP://yeoman.io/)
+and [VS Code Extension Generator](HTTPS://www.npmjs.com/package/generator-code)
 with:
 
 ```bash
@@ -97,7 +97,7 @@ we'll take a closer look at the source code of the `Hello World` sample and
 explain key concepts.
 
 You can find the source code of this tutorial at:
-https://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample.
+HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-sample.
 The [Extension Guides](/api/extension-guides/overview) topic contains other
 samples, each illustrating a different VS Code API or Contribution Point.
 
@@ -107,4 +107,4 @@ In this guide, we mainly describe how to develop VS Code extension with
 TypeScript because we believe TypeScript offers the best experience for
 developing VS Code extensions. However, if you prefer JavaScript, you can still
 follow along using
-[helloworld-minimal-sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-minimal-sample).
+[helloworld-minimal-sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/helloworld-minimal-sample).

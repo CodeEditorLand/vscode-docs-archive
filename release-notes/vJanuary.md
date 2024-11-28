@@ -11,27 +11,27 @@ MetaDescription:
 Hi,
 
 We are back from the holidays and are rolling again, looking forward to the
-[`Build 2016 conference`](https://build.microsoft.com/). For //build, we're
+[`Build 2016 conference`](HTTPS://build.microsoft.com/). For //build, we're
 focused on making VS Code accessible, available in additional languages, and
 stabilizing on a 1.0 API. Outside of these fundamentals, perhaps the most
 impactful work item in the January release is enabling the
-[`Salsa`](https://github.com/Microsoft/TypeScript/issues/4789) preview in VS Code.
+[`Salsa`](HTTPS://github.com/Microsoft/TypeScript/issues/4789) preview in VS Code.
 Read more below, give it a try, and let us know what you think.
 
 Downloads:
-[`Windows`](https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCodeSetup-stable.exe)
+[`Windows`](HTTPS://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCodeSetup-stable.exe)
 |
-[`OS X`](https://az764295.vo.msecnd.net/stable/45d69357c9eb068dd8e624f5b0fe461cd2078d88/VSCode-darwin.zip)
+[`OS X`](HTTPS://az764295.vo.msecnd.net/stable/45d69357c9eb068dd8e624f5b0fe461cd2078d88/VSCode-darwin.zip)
 |
-[`Linux 32-bit`](https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-linux-ia32-stable.zip)
+[`Linux 32-bit`](HTTPS://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-linux-ia32-stable.zip)
 |
-[`Linux 64-bit`](https://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-linux-x64-stable.zip)
+[`Linux 64-bit`](HTTPS://az764295.vo.msecnd.net/stable/db71ac615ddf9f33b133ff2536f5d33a77d4774e/VSCode-linux-x64-stable.zip)
 
 ## JavaScript - Salsa Preview
 
 The JavaScript language service in VS Code has always been powered by
 TypeScript. We are migrating to a new JavaScript language service implementation
-called [`Salsa`](https://github.com/Microsoft/TypeScript/issues/4789). Salsa will
+called [`Salsa`](HTTPS://github.com/Microsoft/TypeScript/issues/4789). Salsa will
 become available with TypeScript 1.8 but for the January update, we are
 providing way to preview Salsa in VS Code.
 
@@ -60,7 +60,7 @@ The `commonjs` support has been improved as well:
 
 > **Tip:** When using `commonjs`, exclude the `node_modules` folder using the
 > `exclude` property in `jsconfig.json`. This is due to
-> [`issue 6673`](https://github.com/Microsoft/TypeScript/issues/6673) which is
+> [`issue 6673`](HTTPS://github.com/Microsoft/TypeScript/issues/6673) which is
 > fixed but not yet in `typescript@next`.
 
 There is now support for JSX:
@@ -73,7 +73,7 @@ There is now support for JSX:
 Salsa also understands JSX constructs inside JavaScript (`.js`) files to support
 React Native development. We haven't updated the grammar for `.js` files yet but
 you can enable JSX syntax coloring for JS using the
-[`js-is-jsx` extension`](https://marketplace.visualstudio.com/items?itemName=eg2.js-is-jsx).
+[`js-is-jsx` extension`](HTTPS://marketplace.visualstudio.com/items?itemName=eg2.js-is-jsx).
 This extension tell VS Code to treat `.js` files as `.jsx` files so that the JSX
 syntax coloring is used.
 
@@ -109,9 +109,9 @@ features previously available with our custom JavaScript language service.
     `javascript.validate.lint.*` defined in the user settings are no longer
     supported. To get these linting options back, we recommend that you use a
     linter combined with a VS Code linter extension like
-    [`ESLint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+    [`ESLint`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
     or
-    [`JSHint`](https://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint).
+    [`JSHint`](HTTPS://marketplace.visualstudio.com/items?itemName=dbaeumer.jshint).
 -   Salsa doesn't support the `AMD` module system.
 
 ### Enabling Salsa
@@ -160,8 +160,8 @@ the newly added colors again to stay compatible with the classic Visual Studio
 Light and Dark themes.
 
 From the feedback in GitHub issues
-[`1270`](https://github.com/Microsoft/vscode/issues/1270),
-[`1470`](https://github.com/Microsoft/vscode/issues/1470), and others, we learned
+[`1270`](HTTPS://github.com/Microsoft/vscode/issues/1270),
+[`1470`](HTTPS://github.com/Microsoft/vscode/issues/1470), and others, we learned
 that there are fans of both the classic Visual Studio Light and Dark themes as
 well as the more colorful versions. So for the January release, we decided to
 bring the colors back with two new built-in themes: 'Light+' and 'Dark+'. If you
@@ -211,7 +211,7 @@ We have added an experimental mode that can be enabled with the
 `editor.experimentalScreenReader` key in settings or for the current session
 with `kbstyle(Ctrl+Shift+R)`. This causes the editor to place all the current
 text in the opened file inside the `<textarea>` we use for user input. We have
-done our initial testing with the [`NVDA screen reader`](https://www.nvaccess.org)
+done our initial testing with the [`NVDA screen reader`](HTTPS://www.nvaccess.org)
 on Windows and have uncovered some serious performance issues and glitches
 caused by Chromium which we continue to work on. We have also added
 `kbstyle(Alt+F1)` that presents a tooltip explaining how to toggle this mode on
@@ -234,12 +234,12 @@ English.
 ### Ligatures for VS Code
 
 VS Code now supports fonts with programming ligatures, like
-[`Hasklig`](https://github.com/i-tu/Hasklig) and
-[`Fira Code`](https://github.com/tonsky/FiraCode). Those fonts provide
+[`Hasklig`](HTTPS://github.com/i-tu/Hasklig) and
+[`Fira Code`](HTTPS://github.com/tonsky/FiraCode). Those fonts provide
 compositions for character sequences commonly used in programming, as `=>`,
 `>=`, `!=` etc. Enable ligatures with new `editor.fontLigatures` setting and
 pick a font with programming ligatures. Special thanks to
-[`@mattblagden`](https://github.com/mattblagden) for initiating this.
+[`@mattblagden`](HTTPS://github.com/mattblagden) for initiating this.
 
 ![`Ligatures for Code`](images/January/editor-ligatures.png)
 
@@ -258,7 +258,7 @@ We also added two new actions, "Find Next Selection"
 (`kb(editor.action.nextSelectionMatchFindAction)`) and "Find Previous Selection"
 (`kb(editor.action.previousSelectionMatchFindAction)`), that allow you to jump
 to the next or previous matches without losing editor focus. Thanks to
-[`@ajkerrigan`](https://github.com/ajkerrigan), there are now key bindings for the
+[`@ajkerrigan`](HTTPS://github.com/ajkerrigan), there are now key bindings for the
 "Replace" and "Replace all" actions.
 
 ![`Find widget counters`](images/January/find-widget-counts.png)
@@ -266,14 +266,14 @@ to the next or previous matches without losing editor focus. Thanks to
 ### Input Handling
 
 We changed input handling in the editor to allow software such as
-[`UniKey`](https://www.unikey.org) (used for Vietnamese input) or
-[`AutoHotKey`](https://www.autohotkey.com) (used for keyboard automation) to work
+[`UniKey`](HTTPS://www.unikey.org) (used for Vietnamese input) or
+[`AutoHotKey`](HTTPS://www.autohotkey.com) (used for keyboard automation) to work
 with VS Code.
 
 ### Configurable Cursor Style
 
 We added a new editor option `editor.cursorStyle` that can be set to `"block"`.
-Special thanks to [`@markrendle`](https://github.com/markrendle) for his pull
+Special thanks to [`@markrendle`](HTTPS://github.com/markrendle) for his pull
 request.
 
 ### Auto Save
@@ -444,7 +444,7 @@ built-in Debug Console does not support keyboard input for your application.
 When you write an extension for VS Code, you are developing it against a set of
 APIs that we define through a file called `vscode.d.ts`. You can see this file
 in our repository
-[`here`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts). This
+[`here`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts). This
 file is picked up from our TypeScript and JavaScript language service to provide
 you with rich validation and IntelliSense while you develop your extension.
 
@@ -511,7 +511,7 @@ We added a few new APIs to enable writing even more awesome extensions.
 
 You can now validate user input, get called when an item is focused in Quick
 Pick, and Quick Pick now has room for additional details. Also Quick Pick now
-supports [`GitHub Octicons`](https://octicons.github.com) like the Status Bar.
+supports [`GitHub Octicons`](HTTPS://octicons.github.com) like the Status Bar.
 
 #### Virtual Documents
 
@@ -593,14 +593,14 @@ test('should set a breakpoint and stop on it', () => {
 
 More examples can be found in these debug adapter projects on GitHub:
 
--   [`Microsoft/vscode-node-debug`](https://github.com/Microsoft/vscode-node-debug)
--   [`Microsoft/vscode-mock-debug`](https://github.com/Microsoft/vscode-mock-debug)
--   [`Microsoft/vscode-mono-debug`](https://github.com/Microsoft/vscode-mono-debug)
+-   [`Microsoft/vscode-node-debug`](HTTPS://github.com/Microsoft/vscode-node-debug)
+-   [`Microsoft/vscode-mock-debug`](HTTPS://github.com/Microsoft/vscode-mock-debug)
+-   [`Microsoft/vscode-mono-debug`](HTTPS://github.com/Microsoft/vscode-mono-debug)
 
 You can see the Promise-based API in
-[`DebugClient.ts`](https://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/DebugClient.ts)
+[`DebugClient.ts`](HTTPS://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/DebugClient.ts)
 and an initial set of tests in
-[`adapter.test.ts`](https://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts).
+[`adapter.test.ts`](HTTPS://github.com/Microsoft/vscode-node-debug/blob/master/src/tests/adapter.test.ts).
 We plan to make this API available as an npm module in February.
 
 ### JSON mode is now an extension
@@ -612,28 +612,28 @@ schemes to code completion and formatting. JSON is now a regular extension,
 using the same [`VS Code extension APIs`](/docs/extensionAPI/overview.md) as
 everyone else. The implementation is based on the language server
 infrastructure, which makes it easy to run in a separate process. Read
-[`here`](https://code.visualstudio.com/docs/extensions/example-language-server)
+[`here`](HTTPS://code.visualstudio.com/docs/extensions/example-language-server)
 for more on the language server.
 
 ## Notable Bug Fixes
 
--   [`69`](https://github.com/Microsoft/vscode/issues/69): Proxy support for
+-   [`69`](HTTPS://github.com/Microsoft/vscode/issues/69): Proxy support for
     extension gallery
--   [`1032`](https://github.com/Microsoft/vscode/issues/1032): Please don't lock
+-   [`1032`](HTTPS://github.com/Microsoft/vscode/issues/1032): Please don't lock
     the tsconfig.json file
--   [`1485`](https://github.com/Microsoft/vscode/issues/1485): Windows 7: Deleting
+-   [`1485`](HTTPS://github.com/Microsoft/vscode/issues/1485): Windows 7: Deleting
     always fails with error message
--   [`1687`](https://github.com/Microsoft/vscode/issues/1687): VSC 10.6 does not
+-   [`1687`](HTTPS://github.com/Microsoft/vscode/issues/1687): VSC 10.6 does not
     allow to attach debugger to running Electron app
--   [`1923`](https://github.com/Microsoft/vscode/issues/1923): IntelliSense
+-   [`1923`](HTTPS://github.com/Microsoft/vscode/issues/1923): IntelliSense
     filtering has become slow again in huge lists
--   [`1962`](https://github.com/Microsoft/vscode/issues/1962): Debugger fails when
+-   [`1962`](HTTPS://github.com/Microsoft/vscode/issues/1962): Debugger fails when
     offline
 
 These are the
-[`closed bugs`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22Jan+2016%22+is%3Aclosed)
+[`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+label%3Abug+milestone%3A%22Jan+2016%22+is%3Aclosed)
 and these are the
-[`closed feature requests`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22Jan+2016%22+is%3Aclosed+label%3Afeature-request)
+[`closed feature requests`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22Jan+2016%22+is%3Aclosed+label%3Afeature-request)
 for the January update.
 
 ## Thank You!!
@@ -641,40 +641,40 @@ for the January update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`mattblagden`](https://github.com/mattblagden): Render ligatures
-    [`1510`](https://github.com/Microsoft/vscode/pull/1510).
--   [`ivanixgames`](https://github.com/ivanixgames):
+-   [`mattblagden`](HTTPS://github.com/mattblagden): Render ligatures
+    [`1510`](HTTPS://github.com/Microsoft/vscode/pull/1510).
+-   [`ivanixgames`](HTTPS://github.com/ivanixgames):
     `kb(editor.action.toggleWordWrap)` for toggling word wrapping
-    [`1653`](https://github.com/Microsoft/vscode/pull/1653).
--   [`krizzdewizz`](https://github.com/krizzdewizz): Windows - honor comspec env
+    [`1653`](HTTPS://github.com/Microsoft/vscode/pull/1653).
+-   [`krizzdewizz`](HTTPS://github.com/krizzdewizz): Windows - honor comspec env
     variable when spawning a shell
-    [`743`](https://github.com/Microsoft/vscode/pull/743).
--   [`EgorMatirov`](https://github.com/EgorMatirov): Support Building binary on
-    Linux ARM [`1072`](https://github.com/Microsoft/vscode/pull/1072).
--   [`mohsen1`](https://github.com/mohsen1): Implement
+    [`743`](HTTPS://github.com/Microsoft/vscode/pull/743).
+-   [`EgorMatirov`](HTTPS://github.com/EgorMatirov): Support Building binary on
+    Linux ARM [`1072`](HTTPS://github.com/Microsoft/vscode/pull/1072).
+-   [`mohsen1`](HTTPS://github.com/mohsen1): Implement
     AddSelectionToAllFindMatchAction command class
-    [`1202`](https://github.com/Microsoft/vscode/pull/1202).
--   [`dstorey`](https://github.com/dstorey): Update css intellisense and css.plist
-    [`1217`](https://github.com/Microsoft/vscode/pull/1217).
--   [`takumif`](https://github.com/takumif): Add a keyboard shortcut to focus on
+    [`1202`](HTTPS://github.com/Microsoft/vscode/pull/1202).
+-   [`dstorey`](HTTPS://github.com/dstorey): Update css intellisense and css.plist
+    [`1217`](HTTPS://github.com/Microsoft/vscode/pull/1217).
+-   [`takumif`](HTTPS://github.com/takumif): Add a keyboard shortcut to focus on
     the working files pane in the
-    sidebar[`1433`](https://github.com/Microsoft/vscode/pull/1433).
--   [`xaverh`](https://github.com/xaverh): [c++] keyword "noexcept" added
-    [`1457`](https://github.com/Microsoft/vscode/pull/1457).
--   [`Bigous`](https://github.com/Bigous): Add
+    sidebar[`1433`](HTTPS://github.com/Microsoft/vscode/pull/1433).
+-   [`xaverh`](HTTPS://github.com/xaverh): [c++] keyword "noexcept" added
+    [`1457`](HTTPS://github.com/Microsoft/vscode/pull/1457).
+-   [`Bigous`](HTTPS://github.com/Bigous): Add
     `kb(editor.action.insertCursorAtEndOfEachLineSelected)` for adding a cursor
     at the end of each selected line
-    [`1479`](https://github.com/Microsoft/vscode/pull/1479).
--   [`bgse`](https://github.com/bgse): [html] typos of angularjs
+    [`1479`](HTTPS://github.com/Microsoft/vscode/pull/1479).
+-   [`bgse`](HTTPS://github.com/bgse): [html] typos of angularjs
     attributes(directives)
-    [`1543`](https://github.com/Microsoft/vscode/pull/1543).
--   [`markrendle`](https://github.com/markrendle) and
-    [`glen-84`](https://github.com/glen-84) Implement configurable cursor style
-    [`1586`](https://github.com/Microsoft/vscode/pull/1586).
--   [`dpodder`](https://github.com/dpodder): [bat] Fix batch tmGrammar
-    [`1678`](https://github.com/Microsoft/vscode/pull/1678).
--   [`f111fei`](https://github.com/f111fei) Fix 'scripts\npm install' bugs in
-    windows7 [`2118`](https://github.com/Microsoft/vscode/pull/2118).
--   [`jkrems`](https://github.com/jkrems) fixed navigation around non-basic
+    [`1543`](HTTPS://github.com/Microsoft/vscode/pull/1543).
+-   [`markrendle`](HTTPS://github.com/markrendle) and
+    [`glen-84`](HTTPS://github.com/glen-84) Implement configurable cursor style
+    [`1586`](HTTPS://github.com/Microsoft/vscode/pull/1586).
+-   [`dpodder`](HTTPS://github.com/dpodder): [bat] Fix batch tmGrammar
+    [`1678`](HTTPS://github.com/Microsoft/vscode/pull/1678).
+-   [`f111fei`](HTTPS://github.com/f111fei) Fix 'scripts\npm install' bugs in
+    windows7 [`2118`](HTTPS://github.com/Microsoft/vscode/pull/2118).
+-   [`jkrems`](HTTPS://github.com/jkrems) fixed navigation around non-basic
     multilingual plain characters
-    [`2071`](https://github.com/Microsoft/vscode/pull/2071)
+    [`2071`](HTTPS://github.com/Microsoft/vscode/pull/2071)

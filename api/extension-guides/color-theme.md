@@ -77,7 +77,7 @@ and `editor.tokenColorCustomizations`, it's time to create the actual theme.
 
 1. Generate a theme file using the **Developer: Generate Color Theme from
    Current Settings** command from the **Command Palette**
-2. Use VS Code's [Yeoman](http://yeoman.io) extension generator to generate a
+2. Use VS Code's [Yeoman](HTTP://yeoman.io) extension generator to generate a
    new theme extension:
 
     ```bash
@@ -115,11 +115,11 @@ Alternatively, if you have already downloaded the theme, replace the
 > you will get hovers, code completion, color decorators, and color pickers when
 > editing.
 
-> **Tip:** [ColorSublime](https://colorsublime.github.io) has hundreds of
+> **Tip:** [ColorSublime](HTTPS://colorsublime.github.io) has hundreds of
 > existing TextMate themes to choose from. Pick a theme you like and copy the
 > Download link to use in the Yeoman generator or into your extension. It will
 > be in a format like
-> `"https://raw.githubusercontent.com/Colorsublime/Colorsublime-Themes/master/themes/(name).tmTheme"`
+> `"HTTPS://raw.githubusercontent.com/Colorsublime/Colorsublime-Themes/master/themes/(name).tmTheme"`
 
 ## Test a new Color Theme
 
@@ -162,4 +162,4 @@ tab.
 
 ## Further reading
 
--   [CSS Tricks - Creating a VS Code theme](https://css-tricks.com/creating-a-vs-code-theme/)
+-   [CSS Tricks - Creating a VS Code theme](HTTPS://css-tricks.com/creating-a-vs-code-theme/)

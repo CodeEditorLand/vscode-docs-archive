@@ -25,7 +25,7 @@ the following Declarative Language Features:
 -   Indentation Rules
 
 Here is a
-[Language Configuration Sample](https://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample)
+[Language Configuration Sample](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/language-configuration-sample)
 that configures the editing experience for JavaScript files. This guide explains
 the content of `language-configuration.json`:
 
@@ -211,7 +211,7 @@ In VS Code, there are three kinds of folding:
 ```
 
 -   Language server folding: The Language Server responds to the
-    [`textDocument/foldingRange`](https://microsoft.github.io/language-server-protocol/specification#textDocument_foldingRange)
+    [`textDocument/foldingRange`](HTTPS://microsoft.github.io/language-server-protocol/specification#textDocument_foldingRange)
     request with a list of folding ranges, and VS Code would render the ranges
     as folding markers. Learn more about the folding support in Language Server
     Protocol at the

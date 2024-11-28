@@ -23,13 +23,13 @@ These are some of the common patterns we use in the VS Code API.
 ### Promises
 
 The VS Code API represents asynchronous operations with
-[promises](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise).
+[promises](HTTPS://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise).
 From extensions, **any** type of promise can be returned, like ES6, WinJS, A+,
 etc.
 
 Being independent of a specific promise library is expressed in the API by the
 `Thenable`-type. `Thenable` represents the common denominator which is the
-[then](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
+[then](HTTPS://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Promise/then)
 method.
 
 In most cases the use of promises is optional and when VS Code calls into an
@@ -55,7 +55,7 @@ usually the last parameter of a function call and optional.
 ### Disposables
 
 The VS Code API uses the
-[dispose pattern](https://en.wikipedia.org/wiki/Dispose_pattern) for resources
+[dispose pattern](HTTPS://en.wikipedia.org/wiki/Dispose_pattern) for resources
 that are obtained from VS Code. This applies to event listening, commands,
 interacting with the UI, and various language contributions.
 
@@ -93,12 +93,12 @@ an event fired when the active text editor _(noun)_ has been (_onDid_) changed
 
 The VS Code API uses the `undefined` and `null` TypeScript types where
 appropriate to support
-[strict null checking](https://github.com/Microsoft/TypeScript/pull/7140).
+[strict null checking](HTTPS://github.com/Microsoft/TypeScript/pull/7140).
 
 ## API Listing
 
 This listing is compiled from the
-[`vscode.d.ts`](https://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts)
+[`vscode.d.ts`](HTTPS://github.com/Microsoft/vscode/blob/master/src/vs/vscode.d.ts)
 file from the VS Code repository.
 
 ## commands
@@ -110,9 +110,9 @@ and <a href="#commands.registerTextEditorCommand">registerTextEditorCommand</a> 
 can be executed <a href="#commands.executeCommand">manually</a> or from a UI gesture. Those are:</p>
 <ul>
 <li>palette - Use the <code>commands</code>-section in <code>package.json</code> to make a command show in
-the <a href="https://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command palette</a>.</li>
+the <a href="HTTPS://code.visualstudio.com/docs/getstarted/userinterface#_command-palette">command palette</a>.</li>
 <li>keybinding - Use the <code>keybindings</code>-section in <code>package.json</code> to enable
-<a href="https://code.visualstudio.com/docs/getstarted/keybindings#_customizing-shortcuts">keybindings</a>
+<a href="HTTPS://code.visualstudio.com/docs/getstarted/keybindings#_customizing-shortcuts">keybindings</a>
 for your extension.</li>
 </ul>
 <p>Commands from other extensions and from the editor itself are accessible to an extension. However,
@@ -629,7 +629,7 @@ console.log(importedApi.mul(42, 1));
 
 ## languages
 
-<div class="comment"><p>Namespace for participating in language-specific editor <a href="https://code.visualstudio.com/docs/editor/editingevolved">features</a>,
+<div class="comment"><p>Namespace for participating in language-specific editor <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved">features</a>,
 like IntelliSense, code actions, diagnostics etc.</p>
 <p>Many programming languages exist and there is huge variety in syntaxes, semantics, and paradigms. Despite that, features
 like automatic word-completion, code navigation, or code checking have become popular across different tools for different
@@ -3860,7 +3860,7 @@ CodeActionKind</span><span>(</span><span class="ident">value</span><span>:
 ### <a name="CodeActionProvider"></a><span class="code-item" id=582>CodeActionProvider</span>
 
 <div class="comment"><p>The code action interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_code-action">light bulb</a> feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_code-action">light bulb</a> feature.</p>
 <p>A code action can be any command that is <a href="#commands.getCommands">known</a> to the system.</p>
 </div>
 
@@ -4679,7 +4679,7 @@ line completions were <a href="#CompletionItemProvider.provideCompletionItems">r
 ### <a name="CompletionItemProvider"></a><span class="code-item" id=996>CompletionItemProvider</span>
 
 <div class="comment"><p>The completion item provider interface defines the contract between extensions and
-<a href="https://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a>.</p>
+<a href="HTTPS://code.visualstudio.com/docs/editor/intellisense">IntelliSense</a>.</p>
 <p>Providers can delay the computation of the <a href="#CompletionItem.detail"><code>detail</code></a>
 and <a href="#CompletionItem.documentation"><code>documentation</code></a> properties by implementing the
 <a href="#CompletionItemProvider.resolveCompletionItem"><code>resolveCompletionItem</code></a>-function. However, properties that
@@ -5741,7 +5741,7 @@ Better use &#39;border&#39; for setting one or more of the individual border pro
 <div class="details collapse" id="details-319">
 <div class="comment"><p>Specifies the size of the gutter icon.
 Available values are &#39;auto&#39;, &#39;contain&#39;, &#39;cover&#39; and any percentage value.
-For further information: <a href="https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx</a></p>
+For further information: <a href="HTTPS://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx">HTTPS://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx</a></p>
 </div>
 </div>
 
@@ -5872,7 +5872,7 @@ the defining symbol</p>
 ### <a name="DefinitionProvider"></a><span class="code-item" id=609>DefinitionProvider</span>
 
 <div class="comment"><p>The definition provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition">go to definition</a>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_go-to-definition">go to definition</a>
 and peek definition features.</p>
 </div>
 
@@ -6037,7 +6037,7 @@ diagnostics collection and a resource.</p>
 <div class="details collapse" id="details-1199">
 <div class="comment"><p>The name of this diagnostic collection, for instance <code>typescript</code>. Every diagnostic
 from this collection will be associated with this name. Also, the task framework uses this
-name when defining <a href="https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher">problem matchers</a>.</p>
+name when defining <a href="HTTPS://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher">problem matchers</a>.</p>
 </div>
 </div>
 
@@ -6885,7 +6885,7 @@ Must be contained by the <a href="#DocumentSymbol.range"><code>range</code></a>.
 ### <a name="DocumentSymbolProvider"></a><span class="code-item" id=737>DocumentSymbolProvider</span>
 
 <div class="comment"><p>The document symbol provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_go-to-symbol">go to symbol</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_go-to-symbol">go to symbol</a>-feature.</p>
 </div>
 
 #### Methods
@@ -8063,7 +8063,7 @@ If the kind is not set on the range, the range originated from a syntax element 
 ### <a name="FoldingRangeProvider"></a><span class="code-item" id=1075>FoldingRangeProvider</span>
 
 <div class="comment"><p>The folding range provider interface defines the contract between extensions and
-<a href="https://code.visualstudio.com/docs/editor/codebasics#_folding">Folding</a> in the editor.</p>
+<a href="HTTPS://code.visualstudio.com/docs/editor/codebasics#_folding">Folding</a> in the editor.</p>
 </div>
 
 #### Methods
@@ -8279,7 +8279,7 @@ current position itself.</p>
 ### <a name="HoverProvider"></a><span class="code-item" id=656>HoverProvider</span>
 
 <div class="comment"><p>The hover provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/intellisense">hover</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/intellisense">hover</a>-feature.</p>
 </div>
 
 #### Methods
@@ -10837,7 +10837,7 @@ requesting references.</p>
 ### <a name="ReferenceProvider"></a><span class="code-item" id=755>ReferenceProvider</span>
 
 <div class="comment"><p>The reference provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_peek">find references</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_peek">find references</a>-feature.</p>
 </div>
 
 #### Methods
@@ -10931,7 +10931,7 @@ the file glob pattern will match on <code>index.js</code>.</p>
 ### <a name="RenameProvider"></a><span class="code-item" id=859>RenameProvider</span>
 
 <div class="comment"><p>The rename provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol">rename</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_rename-symbol">rename</a>-feature.</p>
 </div>
 
 #### Methods
@@ -11610,7 +11610,7 @@ signature help or when moving the cursor.</p>
 ### <a name="SignatureHelpProvider"></a><span class="code-item" id=927>SignatureHelpProvider</span>
 
 <div class="comment"><p>The signature help provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/intellisense">parameter hints</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/intellisense">parameter hints</a>-feature.</p>
 </div>
 
 #### Methods
@@ -11767,7 +11767,7 @@ and to control the editor cursor when insertion happens.</p>
 and <code>${3:foo}</code>. <code>$0</code> defines the final tab stop, it defaults to
 the end of the snippet. Variables are defined with <code>$name</code> and
 <code>${name:default value}</code>. The full snippet syntax is documented
-<a href="http://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets">here</a>.</p>
+<a href="HTTP://code.visualstudio.com/docs/editor/userdefinedsnippets#_creating-your-own-snippets">here</a>.</p>
 </div>
 
 #### Constructors
@@ -12373,7 +12373,7 @@ be shown more to the left.</p>
 <div class="details collapse" id="details-1266">
 <div class="comment"><p>The text to show for the entry. You can embed icons in the text by leveraging the syntax:</p>
 <p><code>My text $(icon-name) contains icons like $(icon-name) this one.</code></p>
-<p>Where the icon-name is taken from the <a href="https://octicons.github.com">octicon</a> icon set, e.g.
+<p>Where the icon-name is taken from the <a href="HTTPS://octicons.github.com">octicon</a> icon set, e.g.
 <code>light-bulb</code>, <code>thumbsup</code>, <code>zap</code> etc.</p>
 </div>
 </div>
@@ -15077,7 +15077,7 @@ Better use &#39;border&#39; for setting one or more of the individual border pro
 <div class="details collapse" id="details-277">
 <div class="comment"><p>Specifies the size of the gutter icon.
 Available values are &#39;auto&#39;, &#39;contain&#39;, &#39;cover&#39; and any percentage value.
-For further information: <a href="https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx">https://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx</a></p>
+For further information: <a href="HTTPS://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx">HTTPS://msdn.microsoft.com/en-us/library/jj127316(v=vs.85).aspx</a></p>
 </div>
 </div>
 
@@ -15152,7 +15152,7 @@ Better use &#39;outline&#39; for setting one or more of the individual outline p
 
 ### <a name="ThemeColor"></a><span class="code-item" id=247>ThemeColor</span>
 
-<div class="comment"><p>A reference to one of the workbench colors as defined in <a href="https://code.visualstudio.com/docs/getstarted/theme-color-reference">https://code.visualstudio.com/docs/getstarted/theme-color-reference</a>.
+<div class="comment"><p>A reference to one of the workbench colors as defined in <a href="HTTPS://code.visualstudio.com/docs/getstarted/theme-color-reference">HTTPS://code.visualstudio.com/docs/getstarted/theme-color-reference</a>.
 Using a theme color is preferred over a custom color as it gives theme authors and users the possibility to change the color.</p>
 </div>
 
@@ -15169,7 +15169,7 @@ ThemeColor</span><span>(</span><span class="ident">id</span><span>:
 <div class="signature">
 <table class="table table-bordered">
 <tr><th>Parameter</th><th>Description</th></tr>
-<tr><td><a name="id"></a><span class="ts" id=250 data-target="#details-250" data-toggle="collapse"><span class="ident">id</span><span>: </span><a class="type-intrinsic">string</a></span></td><td><div class="comment"><p>of the color. The available colors are listed in <a href="https://code.visualstudio.com/docs/getstarted/theme-color-reference">https://code.visualstudio.com/docs/getstarted/theme-color-reference</a>.</p>
+<tr><td><a name="id"></a><span class="ts" id=250 data-target="#details-250" data-toggle="collapse"><span class="ident">id</span><span>: </span><a class="type-intrinsic">string</a></span></td><td><div class="comment"><p>of the color. The available colors are listed in <a href="HTTPS://code.visualstudio.com/docs/getstarted/theme-color-reference">HTTPS://code.visualstudio.com/docs/getstarted/theme-color-reference</a>.</p>
 </div></td></tr>
 <tr><th>Returns</th><th>Description</th></tr>
 <tr><td><span class="ts"><a class="type-ref" href="#ThemeColor">ThemeColor</a></span></td><td><div class="comment"></div></td></tr>
@@ -15782,7 +15782,7 @@ bad.fragment === &#39;/project1&#39;;
 </span><a class="type-ref" href="#Uri">Uri</a></span>
 
 <div class="details collapse" id="details-393">
-<div class="comment"><p>Create an URI from a string, e.g. <code>http://www.msft.com/some/path</code>,
+<div class="comment"><p>Create an URI from a string, e.g. <code>HTTP://www.msft.com/some/path</code>,
 <code>file:///usr/home</code>, or <code>scheme:with/path</code>.</p>
 <ul>
 <li><em>see</em> - <a href="#Uri.toString">Uri.toString</a></li>
@@ -15838,7 +15838,7 @@ Uri</span><span>(</span><span class="ident">scheme</span><span>:
 </span><a class="type-intrinsic">string</a></span>
 
 <div class="details collapse" id="details-406">
-<div class="comment"><p>Authority is the <code>www.msft.com</code> part of <code>http://www.msft.com/some/path?query#fragment</code>.
+<div class="comment"><p>Authority is the <code>www.msft.com</code> part of <code>HTTP://www.msft.com/some/path?query#fragment</code>.
 The part between the first double slashes and the next slash.</p>
 </div>
 </div>
@@ -15847,7 +15847,7 @@ The part between the first double slashes and the next slash.</p>
 </span><a class="type-intrinsic">string</a></span>
 
 <div class="details collapse" id="details-409">
-<div class="comment"><p>Fragment is the <code>fragment</code> part of <code>http://www.msft.com/some/path?query#fragment</code>.</p>
+<div class="comment"><p>Fragment is the <code>fragment</code> part of <code>HTTP://www.msft.com/some/path?query#fragment</code>.</p>
 </div>
 </div>
 
@@ -15879,7 +15879,7 @@ u.fsPath === &#39;\\server\c$\folder\file.txt&#39;
 </span><a class="type-intrinsic">string</a></span>
 
 <div class="details collapse" id="details-407">
-<div class="comment"><p>Path is the <code>/some/path</code> part of <code>http://www.msft.com/some/path?query#fragment</code>.</p>
+<div class="comment"><p>Path is the <code>/some/path</code> part of <code>HTTP://www.msft.com/some/path?query#fragment</code>.</p>
 </div>
 </div>
 
@@ -15887,7 +15887,7 @@ u.fsPath === &#39;\\server\c$\folder\file.txt&#39;
 </span><a class="type-intrinsic">string</a></span>
 
 <div class="details collapse" id="details-408">
-<div class="comment"><p>Query is the <code>query</code> part of <code>http://www.msft.com/some/path?query#fragment</code>.</p>
+<div class="comment"><p>Query is the <code>query</code> part of <code>HTTP://www.msft.com/some/path?query#fragment</code>.</p>
 </div>
 </div>
 
@@ -15895,7 +15895,7 @@ u.fsPath === &#39;\\server\c$\folder\file.txt&#39;
 </span><a class="type-intrinsic">string</a></span>
 
 <div class="details collapse" id="details-405">
-<div class="comment"><p>Scheme is the <code>http</code> part of <code>http://www.msft.com/some/path?query#fragment</code>.
+<div class="comment"><p>Scheme is the <code>http</code> part of <code>HTTP://www.msft.com/some/path?query#fragment</code>.
 The part before the first colon.</p>
 </div>
 </div>
@@ -16453,7 +16453,7 @@ const config = workspace.getConfiguration(&#39;launch&#39;, vscode.window.active
 // retrieve values
 const values = config.get(&#39;configurations&#39;);
 </code></pre>
-<p>Refer to <a href="https://code.visualstudio.com/docs/getstarted/settings">Settings</a> for more information.</p>
+<p>Refer to <a href="HTTPS://code.visualstudio.com/docs/getstarted/settings">Settings</a> for more information.</p>
 </div>
 
 #### Methods
@@ -16535,7 +16535,7 @@ a workspace-specific value and a folder-specific value.</p>
 <p>The <em>effective</em> value (returned by <a href="#WorkspaceConfiguration.get"><code>get</code></a>)
 is computed like this: <code>defaultValue</code> overwritten by <code>globalValue</code>,
 <code>globalValue</code> overwritten by <code>workspaceValue</code>. <code>workspaceValue</code> overwritten by <code>workspaceFolderValue</code>.
-Refer to <a href="https://code.visualstudio.com/docs/getstarted/settings">Settings Inheritance</a>
+Refer to <a href="HTTPS://code.visualstudio.com/docs/getstarted/settings">Settings Inheritance</a>
 for more information.</p>
 <p><em>Note:</em> The configuration name must denote a leaf in the configuration tree
 (<code>editor.fontSize</code> vs <code>editor</code>) otherwise no result is returned.</p>
@@ -16574,7 +16574,7 @@ for more information.</p>
 has no observable effect in that workspace, but in others. Setting a workspace value
 in the presence of a more specific folder value has no observable effect for the resources
 under respective <a href="#workspace.workspaceFolders">folder</a>, but in others. Refer to
-<a href="https://code.visualstudio.com/docs/getstarted/settings">Settings Inheritance</a> for more information.</p>
+<a href="HTTPS://code.visualstudio.com/docs/getstarted/settings">Settings Inheritance</a> for more information.</p>
 <p><em>Note 2:</em> To remove a configuration value use <code>undefined</code>, like so: <code>config.update(&#39;somekey&#39;, undefined)</code></p>
 <p>Will throw error when</p>
 <ul>
@@ -16933,7 +16933,7 @@ workspace folders that are not stored on the local disk, e.g. <code>ftp://server
 ### <a name="WorkspaceSymbolProvider"></a><span class="code-item" id=744>WorkspaceSymbolProvider</span>
 
 <div class="comment"><p>The workspace symbol provider interface defines the contract between extensions and
-the <a href="https://code.visualstudio.com/docs/editor/editingevolved#_open-symbol-by-name">symbol search</a>-feature.</p>
+the <a href="HTTPS://code.visualstudio.com/docs/editor/editingevolved#_open-symbol-by-name">symbol search</a>-feature.</p>
 </div>
 
 #### Methods

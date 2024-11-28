@@ -12,19 +12,19 @@ DateApproved: 12/18/2017
 
 This tutorial walks you through deploying a Node.js application to Azure using
 the
-[Azure App Service](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
+[Azure App Service](HTTPS://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azureappservice)
 extension. You'll be able to deploy to Azure on Linux in a matter of minutes
 from Visual Studio Code.
 
 ## Prerequisites
 
 If you don't have an Azure account,
-[sign up today](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension)
+[sign up today](HTTPS://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-app-service-extension&mktingSource=vscode-tutorial-app-service-extension)
 for a free 30-day account with $200 in Azure credits to try out any combination
 of services.
 
-You need [Visual Studio Code](https://code.visualstudio.com/) installed along
-with [Node.js and npm](https://nodejs.org/en/download), the Node.js package
+You need [Visual Studio Code](HTTPS://code.visualstudio.com/) installed along
+with [Node.js and npm](HTTPS://nodejs.org/en/download), the Node.js package
 manager.
 
 ## Install the extension
@@ -51,8 +51,8 @@ API. Configure `HTTP_PROXY` and `HTTPS_PROXY` environment variables with your pr
 information in your terminal using `export`.
 
 ```sh
-export HTTPS_PROXY=https://username:password@proxy:8080
-export HTTP_PROXY=http://username:password@proxy:8080
+export HTTPS_PROXY=HTTPS://username:password@proxy:8080
+export HTTP_PROXY=HTTP://username:password@proxy:8080
 ```
 
 If setting the environment variables doesn't correct the issue, contact us by

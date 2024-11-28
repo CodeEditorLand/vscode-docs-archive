@@ -17,7 +17,7 @@ build applications that run on Azure.
 ## The Marketplace
 
 VS Code has a rich ecosystem of extensions found in the
-[Extension Marketplace](https://marketplace.visualstudio.com/vscode). There you
+[Extension Marketplace](HTTPS://marketplace.visualstudio.com/vscode). There you
 can find 1000s of extensions to enhance your VS Code development experience
 ranging from new Themes, Icons, and Keymaps all the way to support for new
 languages, including debugging.
@@ -55,10 +55,10 @@ Server, run queries, and more!
 
 ![SQL Commands](images/nodejs-deployment/sqlcommands.png)
 
-## Learn More at [docs.microsoft.com](https://docs.microsoft.com)
+## Learn More at [docs.microsoft.com](HTTPS://docs.microsoft.com)
 
 The
-[Azure for Node.js](https://docs.microsoft.com/en-us/nodejs/azure/?view=azure-node-2.0.0)
+[Azure for Node.js](HTTPS://docs.microsoft.com/en-us/nodejs/azure/?view=azure-node-2.0.0)
 developer center has a number of great articles on how to build and deploy
 Node.js based functions and applications to Azure.
 

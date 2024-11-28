@@ -17,9 +17,9 @@ that can be automatically detected by VS Code. This topic describes how
 extensions can auto-detect and provide tasks to end-users.
 
 This guide teachs you how to build a Task Provider that auto-detects tasks
-defined in [Rakefiles](https://ruby.github.io/rake/). The complete source code
+defined in [Rakefiles](HTTPS://ruby.github.io/rake/). The complete source code
 is at:
-https://github.com/Microsoft/vscode-extension-samples/tree/master/task-provider-sample.
+HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/task-provider-sample.
 
 ## Task Definition
 

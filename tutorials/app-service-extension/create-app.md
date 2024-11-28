@@ -20,10 +20,10 @@ application from a terminal.
 
 ## Install the Express generator
 
-[Express](https://www.expressjs.com) is an extremely popular framework for
+[Express](HTTPS://www.expressjs.com) is an extremely popular framework for
 building and running Node.js applications. You can scaffold (create) a new
 Express application using the
-[Express Generator](https://expressjs.com/en/starter/generator.html) tool. The
+[Express Generator](HTTPS://expressjs.com/en/starter/generator.html) tool. The
 Express Generator is shipped as an npm module and installed by using the npm
 command line tool `npm`.
 
@@ -43,7 +43,7 @@ $ express myExpressApp --view pug --git
 ```
 
 The `--view pug --git` parameters tell the generator to use the
-[pug](https://pugjs.org/api/getting-started.html) template engine (formerly
+[pug](HTTPS://pugjs.org/api/getting-started.html) template engine (formerly
 known as `jade`) and to create a `.gitignore` file.
 
 To install all of the application's dependencies, go to the new folder and run
@@ -64,7 +64,7 @@ $ npm start
 ```
 
 Now, open your browser and navigate to
-[http://localhost:3000](http://localhost:3000), where you should see something
+[HTTP://localhost:3000](HTTP://localhost:3000), where you should see something
 like this:
 
 ![Running Express Application](images/nodejs-deployment/express.png)

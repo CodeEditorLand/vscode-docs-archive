@@ -44,14 +44,14 @@ This command will return the Git endpoint to push to, which includes the
 ```bash
 $ az webapp deployment source config-local-git --name myExpressApp-chrisdias
 {
-	"url": "https://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net/myExpressApp-chrisdias.git"
+	"url": "HTTPS://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net/myExpressApp-chrisdias.git"
 }
 ```
 
 With the endpoint in hand, set up a new Remote in Git named `azure`.
 
 ```bash
-$ git remote add azure https://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net/myExpressApp-chrisdias.git
+$ git remote add azure HTTPS://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net/myExpressApp-chrisdias.git
 ```
 
 ## Deploy to Azure
@@ -60,7 +60,7 @@ Finally, you can deploy the application to Azure!
 
 ```bash
 $ git push azure master
-Password for 'https://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net':
+Password for 'HTTPS://chrisdias@myexpressapp-chrisdias.scm.azurewebsites.net':
 Counting objects: 17, done.
 Delta compression using up to 8 threads.
 Compressing objects: 100% (14/14), done.

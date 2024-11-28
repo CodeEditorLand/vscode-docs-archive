@@ -14,7 +14,7 @@ MetaDescription:
 The text document content provider API allows you to create readonly documents
 in Visual Studio Code from arbitrary sources. You can find a sample extension
 with source code at:
-https://github.com/Microsoft/vscode-extension-samples/blob/master/virtual-document-sample/README.md
+HTTPS://github.com/Microsoft/vscode-extension-samples/blob/master/virtual-document-sample/README.md
 
 ## TextDocumentContentProvider
 

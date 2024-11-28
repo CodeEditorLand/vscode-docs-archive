@@ -13,7 +13,7 @@ MetaDescription:
 This guide teaches you how to write an extension that contributes view
 containers and tree views to Visual Studio Code. You can find a sample extension
 with source code at:
-https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample.
+HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample.
 
 ## View Container
 
@@ -189,7 +189,7 @@ vscode.window.registerTreeDataProvider('nodeDependencies', new DepNodeProvider()
 ```
 
 See
-[nodeDependencies.ts](https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample/src/nodeDependencies.ts)
+[nodeDependencies.ts](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample/src/nodeDependencies.ts)
 for the implementation.
 
 ## TreeView
@@ -206,5 +206,5 @@ vscode.window.createTreeView('ftpExplorer', {
 ```
 
 See
-[ftpExplorer.ts](https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample/src/ftpExplorer.ts)
+[ftpExplorer.ts](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample/src/ftpExplorer.ts)
 for the implementation.

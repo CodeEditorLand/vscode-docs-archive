@@ -11,21 +11,21 @@ DateApproved: 1/11/2018
 # Deploy to Azure using Docker
 
 This tutorial walks you through containerizing an existing Node.js application
-using [Docker](https://www.docker.com/), pushing the app image to a Docker
+using [Docker](HTTPS://www.docker.com/), pushing the app image to a Docker
 registry, then deploying the image to
-[Azure Web App for Containers](https://azure.microsoft.com/en-us/services/app-service/containers/)
+[Azure Web App for Containers](HTTPS://azure.microsoft.com/en-us/services/app-service/containers/)
 directly from Visual Studio Code.
 
 ## Prerequisites
 
 If you don't have an Azure account,
-[sign up today](https://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-docker-extension&mktingSource=vscode-tutorial-docker-extension)
+[sign up today](HTTPS://azure.microsoft.com/en-us/free/?utm_source=campaign&utm_campaign=vscode-tutorial-docker-extension&mktingSource=vscode-tutorial-docker-extension)
 for a free 30-day account with $200 in Azure credits to try out any combination
 of services.
 
-You need [Visual Studio Code](https://code.visualstudio.com/) installed along
-with [Node.js and npm](https://nodejs.org/en/download) and
-[Docker](https://www.docker.com/community-edition).
+You need [Visual Studio Code](HTTPS://code.visualstudio.com/) installed along
+with [Node.js and npm](HTTPS://nodejs.org/en/download) and
+[Docker](HTTPS://www.docker.com/community-edition).
 
 ## Install the Docker and Azure App Service extensions
 

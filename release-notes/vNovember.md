@@ -13,11 +13,11 @@ With this release, we mark our official Beta milestone and the big news is that
 VS Code now supports extensions (plug-ins) and is open source!
 
 Downloads:
-[`Windows`](https://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe) |
-[`OS X`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-darwin.zip) |
-[`Linux 32-bit`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux32.zip)
+[`Windows`](HTTPS://az764295.vo.msecnd.net/public/0.10.3/VSCodeSetup.exe) |
+[`OS X`](HTTPS://az764295.vo.msecnd.net/public/0.10.3/VSCode-darwin.zip) |
+[`Linux 32-bit`](HTTPS://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux32.zip)
 |
-[`Linux 64-bit`](https://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux64.zip)
+[`Linux 64-bit`](HTTPS://az764295.vo.msecnd.net/public/0.10.3/VSCode-linux64.zip)
 
 ## VS Code Supports Extensions!
 
@@ -41,7 +41,7 @@ then `'ext inst'`) to let you find and install new extensions and manage
 ![`extension commands`](images/0_10_0/extension-commands.png)
 
 The VS Code also has a
-[`Marketplace`](https://marketplace.visualstudio.com/VSCode) where you can browse
+[`Marketplace`](HTTPS://marketplace.visualstudio.com/VSCode) where you can browse
 and learn more about extensions.
 
 ## Extensibility SDK
@@ -76,23 +76,23 @@ for the community on the public gallery.
 If you'd rather start your extension by modifying a working example, you can
 find [`extension samples`](/docs/extensions/samples/.md) as well as the source
 code for many extensions on GitHub
-([`Go Language Support`](https://github.com/microsoft/vscode-go)).
+([`Go Language Support`](HTTPS://github.com/microsoft/vscode-go)).
 
 ## VS Code is Open Source!
 
 You spoke and we listened. With this release, VS Code development is now open
-source on [`GitHub`](https://github.com/microsoft/vscode).
+source on [`GitHub`](HTTPS://github.com/microsoft/vscode).
 
 ![`hello code`](images/0_10_0/hello-code.png)
 
 You can now contribute to VS Code:
 
--   Submit [`bugs`](https://github.com/microsoft/vscode/issues) and help us verify
+-   Submit [`bugs`](HTTPS://github.com/microsoft/vscode/issues) and help us verify
     fixes as they are checked in.
 -   Review the source code changes.
 -   Contribute bug fixes through pull requests.
 -   Update and add to the
-    [`documentation`](https://github.com/microsoft/vscode-docs).
+    [`documentation`](HTTPS://github.com/microsoft/vscode-docs).
 
 ## Add TextMate Snippets
 

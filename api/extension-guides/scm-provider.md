@@ -18,10 +18,10 @@ having a common user interface with all of them.
 
 VS Code itself ships with one Source Control provider, the Git extension, which
 is the best reference for this API and is
-[a great starting point](https://github.com/Microsoft/vscode/blob/master/extensions/git/src/repository.ts)
+[a great starting point](HTTPS://github.com/Microsoft/vscode/blob/master/extensions/git/src/repository.ts)
 if you'd like to contribute your very own SCM provider. There are other great
 examples in the Marketplace such as the
-[SVN extension](https://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm).
+[SVN extension](HTTPS://marketplace.visualstudio.com/items?itemName=johnstoncode.svn-scm).
 
 This documentation will help you build an extension which can make any SCM
 system work with VS Code.
@@ -41,7 +41,7 @@ You can create a new SourceControl with `vscode.scm.createSourceControl`.
 
 In order to better understand how these three entities correlate with each
 other, let's take
-[Git](https://github.com/Microsoft/vscode/tree/master/extensions/git) as an
+[Git](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/git) as an
 example. Consider the following output of `git status`:
 
 ```bash
@@ -247,7 +247,7 @@ To learn more about VS Code extensibility model, try these topics:
 
 -   [SCM API Reference](/api/references/vscode-api#scm) - Read the full SCM API
     documentation
--   [Git Extension](https://github.com/Microsoft/vscode/tree/master/extensions/git) -
+-   [Git Extension](HTTPS://github.com/Microsoft/vscode/tree/master/extensions/git) -
     Learn by reading the Git extension implementation
 -   [Extension API Overview](/api) - Learn about the full VS Code extensibility
     model.

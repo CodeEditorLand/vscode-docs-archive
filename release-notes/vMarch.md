@@ -26,24 +26,24 @@ Here are a few highlights in this release:
 -   Implemented editor column text selection.
 
 Downloads:
-[`Windows`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCodeSetup-stable.exe)
+[`Windows`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCodeSetup-stable.exe)
 |
-[`OS X`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-darwin-stable.zip)
+[`OS X`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-darwin-stable.zip)
 | Linux 64-bit
-[`.zip`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-linux-x64-stable.zip)
-[`.deb`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-amd64.deb)
-[`.rpm`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-x86_64.rpm)
+[`.zip`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-linux-x64-stable.zip)
+[`.deb`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-amd64.deb)
+[`.rpm`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-x86_64.rpm)
 | Linux 32-bit
-[`.zip`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-linux-ia32-stable.zip)
-[`.deb`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-i386.deb)
-[`.rpm`](https://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-i386.rpm)
+[`.zip`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/VSCode-linux-ia32-stable.zip)
+[`.deb`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-i386.deb)
+[`.rpm`](HTTPS://az764295.vo.msecnd.net/stable/fa6d0f03813dfb9df4589c30121e9fcffa8a8ec8/vscode-i386.rpm)
 
 Read on to get into the details...
 
 ## Languages - JavaScript
 
 **Please note**: If you have tested the
-[`Salsa`](https://github.com/Microsoft/TypeScript/issues/4789) preview in the past
+[`Salsa`](HTTPS://github.com/Microsoft/TypeScript/issues/4789) preview in the past
 and have configured the `typescript.tsdk` setting, then please make sure to
 remove it. Otherwise you might be using an older version of TypeScript. When you
 have `typescript.tsdk` set, then the TypeScript version is shown in the bottom
@@ -89,7 +89,7 @@ list.
 ### Go To Symbol is back
 
 During the transition to Salsa, the support for **Go to Symbol** was lost
-([`TypeScript #7134`](https://github.com/Microsoft/TypeScript/issues/7134)) for
+([`TypeScript #7134`](HTTPS://github.com/Microsoft/TypeScript/issues/7134)) for
 some JavaScript coding patterns. Thanks to the TypeScript team this feature is
 now back.
 
@@ -112,7 +112,7 @@ now prefixed with `[js]`.
 
 Previously you did not get IntelliSense when using ES6 style import statements
 in **React Native** as used in the
-[`getting started guide`](https://facebook.github.io/react-native/docs/getting-started.html#quick-start).
+[`getting started guide`](HTTPS://facebook.github.io/react-native/docs/getting-started.html#quick-start).
 
 In the snippet, below you get no IntelliSense for `React`:
 
@@ -122,7 +122,7 @@ import React from "react-native";
 
 The issue is that the `react-native` typings do not define a `default` export.
 By adding the new
-[`compiler option`](https://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#allow-captured-letconst-in-loops)
+[`compiler option`](HTTPS://github.com/Microsoft/TypeScript/wiki/What%27s-new-in-TypeScript#allow-captured-letconst-in-loops)
 `allowSyntheticDefaultImports` to the `jsconfig.json`, you tell the compiler to
 create synthetic default members and you get IntelliSense.
 
@@ -142,7 +142,7 @@ with default members.
 ### Support for mix & match of ES6 and CommonJS import/export
 
 Thanks to fix
-[`microsoft/TypeScript#7249`](https://github.com/Microsoft/TypeScript/pull/7249)
+[`microsoft/TypeScript#7249`](HTTPS://github.com/Microsoft/TypeScript/pull/7249)
 mixing & matching of ES6 and **CommonJS** import/export syntax across files is
 now supported.
 
@@ -184,7 +184,7 @@ The following formatter settings are now available for JavaScript:
 ### TypeScript Update
 
 VS Code now ships with TypeScript 1.8.9, which includes some fixes over
-[`TypeScript 1.8.2`](https://devblogs.microsoft.com/typescript/announcing-typescript-1-8-2/).
+[`TypeScript 1.8.2`](HTTPS://devblogs.microsoft.com/typescript/announcing-typescript-1-8-2/).
 
 ### Formatting options
 
@@ -275,7 +275,7 @@ example associates all files in a folder `somefolder` to PHP:
 ```
 
 Note that the pattern is a
-[`glob pattern`](https://en.wikipedia.org/wiki/Glob_%28programming%29) that will
+[`glob pattern`](HTTPS://en.wikipedia.org/wiki/Glob_%28programming%29) that will
 match on the full path of the file if it contains a `/` and will match on the
 file name otherwise.
 
@@ -441,12 +441,12 @@ the program.
 Please note: The **Run** action is always available, but a debugger extension
 has to 'opt-in' in order to support 'Run'. If a debugger extension has not been
 updated, 'Run' will fall back to 'Debug' (the built-in Node Debug and
-[`Mono Debug`](https://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug)
+[`Mono Debug`](HTTPS://marketplace.visualstudio.com/items?itemName=ms-vscode.mono-debug)
 already support 'Run').
 
 ### Improved thread handling
 
-Thanks to this [`pull request`](https://github.com/Microsoft/vscode/pull/3990), VS
+Thanks to this [`pull request`](HTTPS://github.com/Microsoft/vscode/pull/3990), VS
 Code debugger UI now supports multiple stopped threads and the call stack for
 each thread is now requested lazily. This improves the debugger's stepping
 performance in multi-threaded programs.
@@ -467,7 +467,7 @@ Tasks defined for Gulp and Grunt are still auto detected.
 .deb and .rpm packages are now being offered as the primary way to install and
 start using VS Code on Linux. The packages will install the program, a desktop
 entry, a bin command as well as integrating VS Code into the
-[`Debian alternatives system`](https://wiki.debian.org/DebianAlternatives).
+[`Debian alternatives system`](HTTPS://wiki.debian.org/DebianAlternatives).
 
 Installing can be done through a package manager GUI by running the file through
 the file explorer or through the command line:
@@ -537,7 +537,7 @@ We have added accessibility improvements to the suggestion widget, parameter
 hints widget and to the quick fix widget (Lightbulb), which now announce each
 suggestion, as they are selected, to screen readers.
 
-> Tip: If you use the [`NVDA screen reader`](https://www.nvaccess.org), it is
+> Tip: If you use the [`NVDA screen reader`](HTTPS://www.nvaccess.org), it is
 > possible to navigate suggestions using `kb(editor.action.moveLinesUpAction)`
 > and `kb(editor.action.moveLinesDownAction)`, to dismiss the suggestions with
 > `kb(hideSuggestWidget)` and if suggestions get in your way, you can disable
@@ -557,7 +557,7 @@ suggestion, as they are selected, to screen readers.
     overwritten by an extension to implement different editor emulation modes
     such as **Vim** emulation mode.
 -   Added a
-    [`**Vim** emulation sample`](https://github.com/alexandrudima/vscode-vim) that
+    [`**Vim** emulation sample`](HTTPS://github.com/alexandrudima/vscode-vim) that
     shows how a **Vim** emulation extension can use the VS Code API.
 
 ## Licensing Changes
@@ -577,7 +577,7 @@ For Stable 1.0, these are the differences:
 -   The license clarifies that extensions downloaded are covered by the license
     provided by the extension author, not the VS Code license.
 
-You can view the Stable license at https://code.visualstudio.com/license?lang=
+You can view the Stable license at HTTPS://code.visualstudio.com/license?lang=
 where lang is the two or three character language code ('en', 'de', 'fr',
 'zh-CN', 'zh-TW', 'ko', 'ja', 'ru', 'es', 'it').
 
@@ -590,22 +590,22 @@ For Insiders, these are the changes:
     provided by the extension author, not the VS Code license (same as Stable).
 
 You can view the Insiders license at
-https://code.visualstudio.com/license/insiders, there are no localized Insider
+HTTPS://code.visualstudio.com/license/insiders, there are no localized Insider
 licenses.
 
 ## Notable Bug Fixes
 
--   [`2116`](https://github.com/Microsoft/vscode/issues/2116): Inconsistent
+-   [`2116`](HTTPS://github.com/Microsoft/vscode/issues/2116): Inconsistent
     de-indentation behavior while closing html tags using Autocomplete
--   [`2808`](https://github.com/Microsoft/vscode/issues/2808): Make it easier to
+-   [`2808`](HTTPS://github.com/Microsoft/vscode/issues/2808): Make it easier to
     add more file extensions to an existing colorizer/language
--   [`2912`](https://github.com/Microsoft/vscode/issues/2912) Html code returned
+-   [`2912`](HTTPS://github.com/Microsoft/vscode/issues/2912) Html code returned
     from a TextDocumentContentProvider can now embed JavaScript code.
 
 Here are the
-[`closed bugs`](https://github.com/Microsoft/vscode/issues?q=milestone%3A%22March+2016%22+is%3Aclosed)
+[`closed bugs`](HTTPS://github.com/Microsoft/vscode/issues?q=milestone%3A%22March+2016%22+is%3Aclosed)
 and the
-[`closed feature requests`](https://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22March+2016%22+is%3Aclosed+label%3Afeature-request)
+[`closed feature requests`](HTTPS://github.com/Microsoft/vscode/issues?q=is%3Aissue+milestone%3A%22March+2016%22+is%3Aclosed+label%3Afeature-request)
 for the March update.
 
 ## Thank You
@@ -613,25 +613,25 @@ for the March update.
 Last but certainly not least, a big _**Thank You!**_ to the following folks that
 helped to make VS Code even better:
 
--   [`Joe Martella (@martellaj)](https://github.com/martellaj): Adds sort lines
+-   [`Joe Martella (@martellaj)](HTTPS://github.com/martellaj): Adds sort lines
     (ascending and descending) command
-    [`2796`](https://github.com/Microsoft/vscode/pull/2796).
--   [`Ivan Enderlin (@Hywan)](https://github.com/Hywan): Improved PHP support
-    [`4323`](https://github.com/Microsoft/vscode/pull/4323)
-    [`4322`](https://github.com/Microsoft/vscode/pull/4322).
+    [`2796`](HTTPS://github.com/Microsoft/vscode/pull/2796).
+-   [`Ivan Enderlin (@Hywan)](HTTPS://github.com/Hywan): Improved PHP support
+    [`4323`](HTTPS://github.com/Microsoft/vscode/pull/4323)
+    [`4322`](HTTPS://github.com/Microsoft/vscode/pull/4322).
 
-*   [`Sanders Lauture (@golf1052)](https://github.com/golf1052): Fix markdown
-    highlighting for C# [`4225`](https://github.com/Microsoft/vscode/pull/4225).
-*   [`Phillip Johnsen (@phillipj)](https://github.com/phillipj): Multiple script
-    enhancements [`3691`](https://github.com/Microsoft/vscode/pull/3691)
-    [`3649`](https://github.com/Microsoft/vscode/pull/3649)
-    [`3636`](https://github.com/Microsoft/vscode/pull/3636).
-*   [`Ed Muñoz (@edumunoz)](https://github.com/edumunoz): Support
+*   [`Sanders Lauture (@golf1052)](HTTPS://github.com/golf1052): Fix markdown
+    highlighting for C# [`4225`](HTTPS://github.com/Microsoft/vscode/pull/4225).
+*   [`Phillip Johnsen (@phillipj)](HTTPS://github.com/phillipj): Multiple script
+    enhancements [`3691`](HTTPS://github.com/Microsoft/vscode/pull/3691)
+    [`3649`](HTTPS://github.com/Microsoft/vscode/pull/3649)
+    [`3636`](HTTPS://github.com/Microsoft/vscode/pull/3636).
+*   [`Ed Muñoz (@edumunoz)](HTTPS://github.com/edumunoz): Support
     stop-all-threads mode debugging for multi-threaded debuggers
-    [`3990`](https://github.com/Microsoft/vscode/pull/3990).
-*   [`Pierson Lee (@pieandcakes)](https://github.com/pieandcakes): Added
+    [`3990`](HTTPS://github.com/Microsoft/vscode/pull/3990).
+*   [`Pierson Lee (@pieandcakes)](HTTPS://github.com/pieandcakes): Added
     telemetry for debugging scenarios
-    [`3687`](https://github.com/Microsoft/vscode/pull/3687).
-*   [`Guillaume Jenkins (@guillaumejenkins)](https://github.com/guillaumejenkins):
+    [`3687`](HTTPS://github.com/Microsoft/vscode/pull/3687).
+*   [`Guillaume Jenkins (@guillaumejenkins)](HTTPS://github.com/guillaumejenkins):
     Adding descriptions of Ionic HTML tags
-    [`3734`](https://github.com/Microsoft/vscode/pull/3734).
+    [`3734`](HTTPS://github.com/Microsoft/vscode/pull/3734).

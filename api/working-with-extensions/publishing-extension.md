@@ -12,7 +12,7 @@ MetaDescription:
 # Publishing Extension
 
 Once you have made a high-quality extension, you can publish it to the
-[VS Code Extension MarketPlace](https://marketplace.visualstudio.com/vscode) so
+[VS Code Extension MarketPlace](HTTPS://marketplace.visualstudio.com/vscode) so
 others could find, download and use your extension. Alternatively, you can
 [package](#packaging-extensions) an extension into the installable VSIX format
 and share it with other users.
@@ -27,13 +27,13 @@ This topics covers:
 
 ## vsce
 
-[vsce](https://github.com/Microsoft/vsce), short for "Visual Studio Code
+[vsce](HTTPS://github.com/Microsoft/vsce), short for "Visual Studio Code
 Extensions", is a command line tool for packaging, publishing and managing VS
 Code extensions.
 
 ### Installation
 
-Make sure you have [Node.js](https://nodejs.org/) installed. Then run:
+Make sure you have [Node.js](HTTPS://nodejs.org/) installed. Then run:
 
 ```bash
 npm install -g vsce
@@ -77,21 +77,21 @@ The publishing tool checks the following constraints:
 ---
 
 Visual Studio Code leverages
-[Azure DevOps](https://azure.microsoft.com/services/devops/) for its Marketplace
+[Azure DevOps](HTTPS://azure.microsoft.com/services/devops/) for its Marketplace
 services. This means that authentication, hosting, and management of extensions
 are provided through Azure DevOps.
 
 `vsce` can only publish extensions using
-[Personal Access Tokens](https://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats).
+[Personal Access Tokens](HTTPS://docs.microsoft.com/azure/devops/integrate/get-started/authentication/pats).
 You need to create at least one in order to publish an extension.
 
 ### Get a Personal Access Token
 
 First, make sure you have an Azure DevOps
-[organization](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
+[organization](HTTPS://docs.microsoft.com/azure/devops/organizations/accounts/create-organization-msa-or-work-student).
 
 In the following examples, the organization's name is `vscode`. From your
-organization's home page (for example: `https://dev.azure.com/vscode`), go to
+organization's home page (for example: `HTTPS://dev.azure.com/vscode`), go to
 the **Security** page:
 
 ![Security page](images/publishing-extension/token1.png)
@@ -133,7 +133,7 @@ vsce create-publisher (publisher name)
 this publisher.
 
 **Note:** Alternatively, create your publisher in the Marketplace publisher
-[management page](https://marketplace.visualstudio.com/manage) and login in
+[management page](HTTPS://marketplace.visualstudio.com/manage) and login in
 `vsce`, as described in the next section.
 
 ### Login to a publisher
@@ -157,7 +157,7 @@ vsce publish -p <token>
 ## Auto-incrementing the extension version
 
 You can auto-increment an extension's version number when you publish by
-specifying the [SemVer](https://semver.org/) compatible number to increment:
+specifying the [SemVer](HTTPS://semver.org/) compatible number to increment:
 `major`, `minor`, or `patch`.
 
 For example, if you want to update an extension's version from 1.0.0 to 1.1.0,
@@ -254,7 +254,7 @@ it, while the Stable ones will only get the update when Stable reaches `1.9.0`.
 ### Marketplace integration
 
 You can customize how your extension looks in the Visual Studio Marketplace. See
-the [Go extension](https://marketplace.visualstudio.com/items/ms-vscode.Go) for
+the [Go extension](HTTPS://marketplace.visualstudio.com/items/ms-vscode.Go) for
 an example.
 
 Here are some tips for making your extension look great on the Marketplace:
@@ -285,7 +285,7 @@ Also see
 
 You can create a `.vscodeignore` file to exclude some files from being included
 in your extension's package. This file is a collection of
-[glob](https://github.com/isaacs/minimatch) patterns, one per line.
+[glob](HTTPS://github.com/isaacs/minimatch) patterns, one per line.
 
 For example:
 
@@ -321,7 +321,7 @@ be called every time the extension is packaged.
 }
 ```
 
-This will always invoke the [TypeScript](https://www.typescriptlang.org/)
+This will always invoke the [TypeScript](HTTPS://www.typescriptlang.org/)
 compiler whenever the extension is packaged.
 
 ## Next steps
@@ -346,7 +346,7 @@ selecting a specific account). You should also set the Authorized Scopes to
 
 You may have changed your extension ID or publisher name. You can also manage
 your extensions directly on the Marketplace by going to the
-[manage page](https://marketplace.visualstudio.com/manage). You can update or
+[manage page](HTTPS://marketplace.visualstudio.com/manage). You can update or
 unpublish your extension from your publisher manage page.
 
 ### Why does vsce not preserve file attributes?

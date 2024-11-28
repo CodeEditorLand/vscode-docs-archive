@@ -27,7 +27,7 @@ Upon completion, a new directory is created within your Function app named
 `HttpTriggerJS` that includes `index.js`and `functions.json` files. The
 `index.js` file contains the source code that responds to the HTTP request and
 `functions.json` contains the
-[binding configuration](https://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
+[binding configuration](HTTPS://docs.microsoft.com/en-us/azure/azure-functions/functions-triggers-bindings)
 for the HTTP trigger.
 
 ![Completed Project](images/functions-extension/functions-vscode-intro.png)

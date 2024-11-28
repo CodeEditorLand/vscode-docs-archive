@@ -526,13 +526,13 @@ The example below shows adding snippets for the Go language.
 
 Contribute a validation schema for a specific type of `json` file. The `url`
 value can be either a local path to a schema file included in the extension or a
-remote server URL such as a [json schema store](http://schemastore.org/json).
+remote server URL such as a [json schema store](HTTP://schemastore.org/json).
 
 ```json
 "contributes": {
     "jsonValidation": [{
         "fileMatch": ".jshintrc",
-        "url": "http://json.schemastore.org/jshintrc"
+        "url": "HTTP://json.schemastore.org/jshintrc"
     }]
 }
 ```
@@ -576,7 +576,7 @@ Extension writers should create a
 `createTreeView` API or register the
 [data provider](/api/references/vscode-api#TreeDataProvider) directly through
 `registerTreeDataProvider` API to populate data. Refer to examples
-[here](https://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample).
+[here](HTTPS://github.com/Microsoft/vscode-extension-samples/tree/master/tree-view-sample).
 
 ## contributes.viewsContainers
 
@@ -755,7 +755,7 @@ can either be a reference to an existing color or a
 ## contributes.typescriptServerPlugins
 
 Contributes
-[TypeScript server plugins](https://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin)
+[TypeScript server plugins](HTTPS://github.com/Microsoft/TypeScript/wiki/Writing-a-Language-Service-Plugin)
 that augment VS Code's JavaScript and TypeScript support:
 
 ```json
@@ -769,7 +769,7 @@ that augment VS Code's JavaScript and TypeScript support:
 ```
 
 The above example extension contributes the
-[`typescript-styled-plugin`](https://github.com/Microsoft/typescript-styled-plugin)
+[`typescript-styled-plugin`](HTTPS://github.com/Microsoft/typescript-styled-plugin)
 which adds styled-component IntelliSense for JavaScript and TypeScript. This
 plugin will be loaded from the extension and must be installed as a normal NPM
 `dependency` in the extension:
@@ -869,7 +869,7 @@ export = function init({ typescript }: { typescript: typeof ts_module }) {
 This API allows VS Code extensions to synchronize VS Code settings with a
 TypeScript server plugin, or dynamically change the behavior of a plugin. Take a
 look at the
-[TypeScript TSLint plugin](https://github.com/Microsoft/vscode-typescript-tslint-plugin/blob/master/src/index.ts)
+[TypeScript TSLint plugin](HTTPS://github.com/Microsoft/vscode-typescript-tslint-plugin/blob/master/src/index.ts)
 and
-[lit-html](https://github.com/mjbvz/vscode-lit-html/blob/master/src/index.ts)
+[lit-html](HTTPS://github.com/mjbvz/vscode-lit-html/blob/master/src/index.ts)
 extensions to see how this API is used in practice.

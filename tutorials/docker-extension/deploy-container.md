@@ -11,7 +11,7 @@ DateApproved: 1/11/2018
 # Deploy the image to Azure App Service
 
 Now that you have your app image built and pushed to a registry, you can deploy
-to [Azure App Service](https://azure.microsoft.com/en-us/services/app-service/)
+to [Azure App Service](HTTPS://azure.microsoft.com/en-us/services/app-service/)
 directly from the Docker extension explorer.
 
 ## Deploy the image
@@ -26,7 +26,7 @@ Service Plan. For this tutorial, use 'myResourceGroup' and 'myPlan' for the
 Resource Group and plan names then give your app a **unique** name.
 
 Once created, your app is accessible via
-http://**unique-name**.azurewebsites.net. In this example, I called it
+HTTP://**unique-name**.azurewebsites.net. In this example, I called it
 `myExpressApp4321`.
 
 ![Create and Deploy](images/docker-extension/create.gif)
