@@ -165,7 +165,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
 </body>
 </html>`;
 }
@@ -684,7 +684,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -775,7 +775,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -858,7 +858,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>
@@ -1112,7 +1112,7 @@ function getWebviewContent() {
     <title>Cat Coding</title>
 </head>
 <body>
-    <img src="HTTPS://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
+    <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" width="300" />
     <h1 id="lines-of-code-counter">0</h1>
 
     <script>

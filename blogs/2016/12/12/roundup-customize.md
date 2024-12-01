@@ -56,7 +56,7 @@ Here are two File Icon themes I really like:
 
 Do you use snippets while writing code? Many snippets come built into VS Code and are shown in the IntelliSense suggest window while you type.
 
-<video id="snippets-showcase" src="HTTPS://az754404.vo.msecnd.net/public/snippets_showcase.mp4" placeholder="/images/userdefinedsnippets_snippets_placeholder.png" autoplay loop controls muted>
+<video id="snippets-showcase" src="https://az754404.vo.msecnd.net/public/snippets_showcase.mp4" placeholder="/images/userdefinedsnippets_snippets_placeholder.png" autoplay loop controls muted>
     Sorry you're browser doesn't support HTML 5 video.
 </video>
 

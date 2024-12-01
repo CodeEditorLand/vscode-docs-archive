@@ -27,7 +27,7 @@ Earlier this year, we were reached out by the Azure Pipelines (then Visual Studi
 <br />
 
 <blockquote class="twitter-tweet" data-lang="en" data-cards="hidden"><p lang="en" dir="ltr">🎉 Hey, did you know <a href="HTTPS://twitter.com/code?ref_src=twsrc%5Etfw">@code</a> now uses shiny new <a href="HTTPS://twitter.com/VSTS?ref_src=twsrc%5Etfw">@vsts</a> Public Projects and YAML builds to keep its quality up across all 3 platforms simultaneously?! 🤯 Check out the builds at <a href="HTTPS://t.co/Q8kYAB1lKG">HTTPS://t.co/Q8kYAB1lKG</a>. More about Public Projects at <a href="HTTPS://t.co/o0WoNKA4g1">HTTPS://t.co/o0WoNKA4g1</a> cc <a href="HTTPS://twitter.com/chrisrpatterson?ref_src=twsrc%5Etfw">@chrisrpatterson</a> <a href="HTTPS://t.co/Yyhwg19d9z">pic.twitter.com/Yyhwg19d9z</a></p>&mdash; João Moreno (@joaomoreno) <a href="HTTPS://twitter.com/joaomoreno/status/991958010661670912?ref_src=twsrc%5Etfw">May 3, 2018</a></blockquote>
-<script async src="HTTPS://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <br />
 

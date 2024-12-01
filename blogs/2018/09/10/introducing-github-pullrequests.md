@@ -40,7 +40,7 @@ Today when reviewing source code, many of us are forced to leave our editors to 
 
 The new pull request extension changes this with a new **Pull Requests** explorer inside the Source Control view in Visual Studio Code, where you can browse and interact with pull requests.
 
-<iframe src="HTTPS://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A107/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
+<iframe src="https://channel9.msdn.com/Events/Microsoft-Azure/Azure-DevOps-Launch-2018/A107/player" width="960" height="540" allowFullScreen frameBorder="0"></iframe>
 
 ## New open extension APIs
 

@@ -74,7 +74,7 @@ This observation is especially relevant for JavaScript developers, who mostly de
 
 <br />
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Debuggers don&#39;t actually remove bugs, they just run your code as slow as you can think.</p>&mdash; Daniel Rosenwasser (@drosenwasser) <a href="HTTPS://twitter.com/drosenwasser/status/1009850470221791232?ref_src=twsrc%5Etfw">June 21, 2018</a></blockquote> <script async src="HTTPS://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Debuggers don&#39;t actually remove bugs, they just run your code as slow as you can think.</p>&mdash; Daniel Rosenwasser (@drosenwasser) <a href="HTTPS://twitter.com/drosenwasser/status/1009850470221791232?ref_src=twsrc%5Etfw">June 21, 2018</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <br />
 
