@@ -1,6 +1,16 @@
 {
-	"devDependencies": {
-		"shelljs": "0.8.5"
+	"name": "@codeeditorland/docs",
+	"version": "0.10.3",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/Microsoft/vscode-docs.git"
 	},
-	"name": "vscode-docs"
+	"author": {
+		"name": "Microsoft Corporation"
+	},
+	"dependencies": {},
+	"devDependencies": {
+		"gulp": "^3.9.1",
+		"shelljs": "^0.7.8"
+	}
 }
