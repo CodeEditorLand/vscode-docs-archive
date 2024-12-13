@@ -1,7 +1,7 @@
 {
+	"name": "@codeeditorland/docs",
 	"dependencies": {},
 	"devDependencies": {
 		"shelljs": "^0.7.8"
-	},
-	"name": "@codeeditorland/docs"
+	}
 }
