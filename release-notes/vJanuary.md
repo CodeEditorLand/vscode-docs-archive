@@ -88,7 +88,7 @@ JavaScript inside a TypeScript project, you can set the `allowJs` property to
 Finally, the TypeScript compiler `tsc` can down-level compile JavaScript files
 from ES6 to another language level.
 
-### Changes from the existing VS Code JavaScript support
+### Change from the existing VS Code JavaScript support
 
 Salsa will undoubtedly provide a much better experience writing JavaScript
 applications in VS Code. By moving to this new service, we give up a few
@@ -352,7 +352,7 @@ Node.js, must support conditional breakpoints for this feature to work.
 
 ![`conditional breakpoints`](images/January/conditional-breakpoints.png)
 
-### Changed Variable Indication
+### Change Variable Indication
 
 We now indicate in the Debug and Watch views which variables have changed values
 between step events.

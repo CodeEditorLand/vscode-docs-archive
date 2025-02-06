@@ -128,7 +128,7 @@ Code can provide you with IntelliSense when you edit the `.eslintrc.json` file.
 This [`.eslintrc.json`](HTTPS://gist.github.com/egamma/65c0e2a832393e3b625a)
 corresponds roughly to the lint settings of the old JavaScript infrastructure.
 
-### Changes in `jsconfig.json`
+### Change in `jsconfig.json`
 
 #### `exclude` lists
 
